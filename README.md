@@ -25,7 +25,7 @@ Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https
 * `npm run start` to compile the site with development settings and run BrowserSync
 
 ## Build your site
-Site builds to `dist`. Modify as needed for deployment in `_config.yml` and `gulpfile.babel.js`.
+Site builds to `_site`. Modify as needed for deployment in `_config.yml` and `gulpfile.babel.js`.
 
 * `npm run build:dev` to compile the site with development settings
 * `npm run build` to compile the site for production

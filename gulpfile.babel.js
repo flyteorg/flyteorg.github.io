@@ -11,7 +11,7 @@ import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
 
 const rawStylesheet = "src/style.css";
-const siteRoot = "dist";
+const siteRoot = "_site";
 const cssRoot = `${siteRoot}/assets/css/`;
 const tailwindConfig = "tailwind.config.js";
 
@@ -52,7 +52,7 @@ task("processStyles", done => {
       gulpif(
         !devBuild,
         new purgecss({
-          content: ["dist/**/*.html"],
+          content: ["_site/**/*.html"],
           extractors: [
             {
               extractor: TailwindExtractor,
@@ -87,7 +87,7 @@ task("startServer", () => {
       "**/*.js",
       "**/*.md",
       "**/*.markdown",
-      "!dist/**/*",
+      "!_site/**/*",
       "!node_modules/**/*"
     ],
     { interval: 500 },
