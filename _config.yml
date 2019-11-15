@@ -1,7 +1,7 @@
 title: Flyte by Lyft
 description: A managed platform for executing distributed workflows at scale.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kylewaynebenson.github.io/flyte" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 #Links within the site
 documentation: "https://lyft.github.io/flyte/"
