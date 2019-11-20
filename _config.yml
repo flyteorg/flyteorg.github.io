@@ -5,7 +5,7 @@ url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. 
 
 #Links within the site
 documentation: "https://lyft.github.io/flyte/"
-getstarted: "https://github.com/lyft/flyte"
+getstarted: "https://lyft.github.io/flyte/user/getting_started/index.html"
 contribute: "https://lyft.github.io/flyte/contributor/index.html"
 learnmore: "https://lyft.github.io/flyte/"
 email: "https://groups.google.com/d/forum/flyte-discuss"
