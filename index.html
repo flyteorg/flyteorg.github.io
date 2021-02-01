@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Flyte by Lyft</title>
+  <title>Flyte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css?1574270333379684000">
  <!--<script type="text/javascript" src="/assets/js/script.js?1574270333379684000"></script>-->
@@ -26,17 +26,17 @@
       </div>
       <div class="flex items-center flex-wrap sm:flex-no-wrap mt-10 -mb-4 sm:mb-0 sm:mt-0 w-full sm:w-auto">
           <div class="w-2/5 flex-grow sm:flex-no-grow mb-3 sm:mb-0 sm:mr-4 md:mr-6 lg:mr-12 ">
-            <a href="https://lyft.github.io/flyte/" class="link-white hover:border-purple-lightest">
+            <a href="https://flyte.readthedocs.io/en/latest/" class="link-white hover:border-purple-lightest">
             Documentation
             </a>
           </div>
           <div class="w-2/5 flex-grow sm:flex-no-grow sm:mr-4 md:mr-6 lg:mr-12 ">
-            <a href="https://github.com/lyft/flyte" class="link-white hover:border-purple-lightest">
+            <a href="https://github.com/flyteorg/flyte" class="link-white hover:border-purple-lightest">
             Github
             </a>
           </div>
           <div class="w-2/5 flex-grow sm:flex-no-grow">
-            <a href="https://flyte-org.slack.com" class="link-white hover:border-purple-lightest">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScWPJZncyL-bBCWbuQ9HWuMzA8-r2RJc__CSWJoAYUQADN-BQ/viewform" class="link-white hover:border-purple-lightest">
             Community
             </a>
           </div>
@@ -49,12 +49,14 @@
     <section class="mb-10 sm:mb-16 md:mb-20 lg:mb-32"><!--hero-->
     <div class="my-8 sm:my-16 md:my-20 lg:my-32 container mx-auto px-4 flex items-center"><!--wrapper-->
       <div>
-        <h1 class="text-white text-5xl sm:text-4xl md:text-6xl leading-tighter font-body font-regular text-left sm:text-center lg:w-5/6 mx-auto">Lyft’s Cloud Native Machine Learning and Data Processing Platform, Now Open Sourced</h1>
+        <h1 class="text-white text-5xl sm:text-4xl md:text-6xl leading-tighter
+          font-body font-regular text-left sm:text-center lg:w-5/6
+          mx-auto">Accelerate your Machine Learning and Data Workflows to production!</h1>
         <div class="flex  flex-wrap md:flex-no-wrap sm:justify-center sm:items-center mt-16 md:mt-24">
-          <a href="https://lyft.github.io/flyte/user/getting_started/index.html" class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-white bg-white text-purple-darkest hover:bg-pink hover:border-pink">Get started</a>
-          <a href="https://lyft.github.io/flyte/contributor/index.html" class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-pink text-white hover:border-white">Contribute</a>
+          <a href="https://flyte.readthedocs.io/en/latest/user/getting_started/index.html" class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-white bg-white text-purple-darkest hover:bg-pink hover:border-pink">Get started</a>
+          <a href="https://flyte.readthedocs.io/en/latest/contributor/index.html" class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-pink text-white hover:border-white">Contribute</a>
           <div class="mb-4 font-body font-semibold py-2 text-md sm:text-lg md:text-xl text-white">
-            <a href="https://lyft.github.io/flyte/" class="border-b-2 border-pink hover:border-white pb-1">Learn more</a>
+            <a href="https://flyte.readthedocs.io/en/latest/index.html" class="border-b-2 border-pink hover:border-white pb-1">Learn more</a>
           </div>
         </div>
       </div>
@@ -117,7 +119,8 @@
   <section class="my-16 md:my-20 lg:my-32"><!--about-->
     <div class="container mx-auto px-4 text-center lg:w-9/12"><!--wrapper-->
         <div class="text-3xl md:text-5xl text-white font-body font-medium leading-tight mb-4 sm:mb-6 md:mb-8 lg:mb-12">Flyte makes it easy to create concurrent, scalable, and maintainable workflows for machine learning and data processing.</div>
-        <div class="text-body md:text-xl text-white font-body font-regular leading">Our scale is proven at Lyft, where Flyte has been serving production model training and data processing for over three years, becoming the de-facto platform for teams like Pricing, Locations, ETA, Mapping, Autonomous, and more. In fact, Flyte manages over 7,000 unique workflows at Lyft, totaling over 100,000 executions every month, 1 million tasks, and 10 million containers.</div>
+        <div class="text-body md:text-xl text-white font-body font-regular
+          leading">Flyte is used in production at Lyft, Spotify, Freenome and others. At Lyft, Flyte has been serving production model training and data processing for over four years, becoming the de-facto platform for teams like Pricing, Locations, ETA, Mapping, Autonomous, and more. In fact, Flyte manages over 10,000 unique workflows at Lyft, totaling over 1,000,000 executions every month, 20 million tasks, and 40 million containers.</div>
      </div>
   </section><!--/about-->
   <section class="mx-4 mb-8 sm:mb-16 md:mb-20 lg:mb-32"><!--differentiators-->
@@ -265,8 +268,8 @@
             <div class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0">
               <h3 class="font-bold font-body text-2xl md:text-3xl mb-4 leading-tight">Elastic Scale</h3>
               <div>
-                <p class="my-4">Flyte is purpose built to scale. With a fully distributed, fault-tolerant control plane, we have no single point of failure and can scale to multiple clusters, thousands of nodes, and thousands of concurrent workflows.</p>
-                <p class="my-4">Our scale is proven at Lyft, where Flyte has been serving production model training and data processing for over three years, becoming the de-facto platform for teams like Pricing, Locations, ETA, Mapping, Autonomous, and more. In fact, Flyte manages over 7,000 unique workflows at Lyft, totaling over 100,000 executions every month, 1 million tasks, and 10 million containers.</p>
+                <p class="my-4">Flyte was born out of the need to scale to multiple tenants, yet be intuitive and simple to use. It is built ground up to be distributed, fault-tolerant control plane, with no single point of failure. It can scale to multiple clusters, thousands of nodes, and thousands of concurrent workflows.</p>
+                <p class="my-4">Flyte is used in production at Lyft, Spotify, Freenome and others. At Lyft, Flyte has been serving production model training and data processing for over four years, becoming the de-facto platform for teams like Pricing , Locations, ETA, Mapping, Autonomous, and more. In fact, Flyte manages over 10,000 unique workflows at Lyft, totaling over 1,000,000 executions every month, 20 million tasks, and 40 million containers.</p>
               </div>
             </div>
           </div>
@@ -514,8 +517,8 @@
             <div class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0">
               <h3 class="font-bold font-body text-2xl md:text-3xl mb-4 leading-tight">Dynamic and extensible</h3>
               <div class="mb-4">
-                <p class="my-4">Flyte is framework-agnostic and has a growing collection of plugins to assist with all of your workflow needs, including Spark on K8s, AWS Batch, Array Jobs, Hive Qubole, Containers, Pods, and more. It’s easy to contribute a plugin, too! <a class="link" href="https://lyft.github.io/flyte/contributor/index.html">Get started here</a>.</p>
-                <p class="my-4">It can also be advantageous to author workflow tasks in a variety of languages, so our SDK can be <a class="link" href="https://lyft.github.io/flyte/contributor/index.html">extended</a> beyond Python to allow true polyglot programming.  </p>
+                <p class="my-4">Flyte is framework-agnostic and has a growing collection of plugins to assist with all of your workflow needs, including Spark on K8s, AWS Batch, Array Jobs, Hive Qubole, Containers, Pods, and more. It’s easy to contribute a plugin, too! <a class="link" href="https://flyte.readthedocs.io/en/latest/index.html">Get started here</a>.</p>
+                <p class="my-4">It can also be advantageous to author workflow tasks in a variety of languages, so our SDK can be <a class="link" href="https://flyte.readthedocs.io/en/latest/index.html">extended</a> beyond Python to allow true polyglot programming.  </p>
               </div>
             </div>
           </div>
@@ -631,21 +634,21 @@
     <div class="flex flex-wrap sm:flex-no-wrap mb-4">
       <div class="w-full sm:w-full md:w-1/2 lg:w-4/6 h-auto">
           <div class="mb-6 sm:mb-8 lg:mb-10 font-mono font-bold text-3xl leading-tight">Ready To Take Flyte?</div>
-          <a href="https://lyft.github.io/flyte/user/getting_started/index.html" class="btn bg-white text-purple-darkest hover:bg-pink hover:text-purple-black">Get Started</a>
+          <a href="https://flyte.readthedocs.io/en/latest/user/getting_started/index.html" class="btn bg-white text-purple-darkest hover:bg-pink hover:text-purple-black">Get Started</a>
       </div>
       <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/6 h-auto sm:mt-0 mt-8">
           <div class="mb-2 text-body font-bold uppercase">Site</div>
           <ul class="list-reset text-base leading-normal">
-              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://lyft.github.io/flyte/">Documentation</a></li>
-              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://github.com/lyft/flyte">Github</a></li>
+              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://flyte.readthedocs.io/en/latest/">Documentation</a></li>
+              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://github.com/flyteorg/flyte">Github</a></li>
               <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://stackoverflow.com/questions/tagged/flyte">StackOverflow</a></li>
           </ul>
       </div>
       <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/6 h-auto sm:mt-0 mt-8 pl-4">
           <div class="mb-2 text-body font-bold uppercase">Social</div>
           <ul class="list-reset text-base leading-normal">
-              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://flyte-org.slack.com">Slack</a></li>
-              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://github.com/lyft/flyte">Github</a></li>
+              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://docs.google.com/forms/d/e/1FAIpQLScWPJZncyL-bBCWbuQ9HWuMzA8-r2RJc__CSWJoAYUQADN-BQ/viewform">Slack</a></li>
+              <li class="my-2"><a class="link-white hover:border-purple-lightest" href="https://github.com/flyteorg/flyte">Github</a></li>
           </ul>
       </div>
     </div>
