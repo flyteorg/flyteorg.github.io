@@ -1,9 +1,10 @@
-title: Flyte by Lyft
-description: A managed platform for executing distributed workflows at scale.
+title: Flyte 
+description: Flyte enables production-grade orchestration for machine learning workflows and data processing created to accelerate local workflows to production.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 #Links within the site
 documentation: "https://lyft.github.io/flyte/"
