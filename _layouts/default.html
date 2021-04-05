@@ -1,11 +1,15 @@
 ---
 ---
 
-{% include header.html %}
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+  {% seo title=false %} {% include header.html %}
 
-<main
->
-  {{ content }}
-</main>
-
-{% include footer.html %}
+  <body>
+    <div class="main overflow-x-hidden bg-gradient-purple-darkest-to-light">
+      {% include navbar.html %}
+      <main>{{ content }}</main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

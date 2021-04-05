@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700");
 
 @tailwind base;
 
@@ -20,15 +20,20 @@
   }
 }
 @keyframes stroke-flash-purple {
-  0%, 33%, 78%, 100% {
+  0%,
+  33%,
+  78%,
+  100% {
     stroke: #959595;
   }
-  50%, 60% {
-    stroke: #641AF1;
+  50%,
+  60% {
+    stroke: #641af1;
   }
 }
 @keyframes left-right {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0px);
   }
   25% {
@@ -39,7 +44,8 @@
   }
 }
 @keyframes right-left {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0px);
   }
   25% {
@@ -50,7 +56,8 @@
   }
 }
 @keyframes up-down {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   25% {
@@ -61,31 +68,44 @@
   }
 }
 @keyframes gradient {
-  0%{
-    background-position:10% 0%;
+  0% {
+    background-position: 10% 0%;
     background-size: 200% 200%;
   }
-  50%{
-    background-position:91% 100%;
+  50% {
+    background-position: 91% 100%;
     background-size: 200% 200%;
   }
-  100%{
-    background-position:10% 0%;
+  100% {
+    background-position: 10% 0%;
     background-size: 100% 100%;
   }
 }
 @keyframes opacity-fade {
-  0%, 100% {opacity:1;}
-  50%{opacity:0;}
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .bg-gradient-purple-darkest-to-light {
-  background: linear-gradient(180deg, #641BF2, #7F3FEC, #9963E5, #B486DF, #CEAAD8, #E9CED2);
+  background: linear-gradient(
+    180deg,
+    #641bf2,
+    #7f3fec,
+    #9963e5,
+    #b486df,
+    #ceaad8,
+    #e9ced2
+  );
   background-size: 200% 200%;
   animation: gradient 10s normal forwards ease-in-out;
 }
 .bg-gradient-purple-light-to-darkest {
-  background: linear-gradient(90deg, #E9CED2 8.85%, #641BF2 100%);
+  background: linear-gradient(90deg, #e9ced2 8.85%, #641bf2 100%);
 }
 
 .btn {
@@ -112,7 +132,7 @@
   stroke-linejoin: round;
   stroke-dasharray: 1 6;
   animation: dash 102s linear;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
 }
 .rotate {
   transform-box: fill-box;
