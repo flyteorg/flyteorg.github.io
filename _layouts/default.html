@@ -1,11 +1,29 @@
 ---
 ---
 
-{% include header.html %}
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+  {% seo title=false %} {% include header.html %}
 
-<main
->
-  {{ content }}
-</main>
+  <body>
+    <div class="main overflow-x-hidden bg-gradient-purple-darkest-to-light">
+      {% include navbar.html %}
+      <main>{{ content }}</main>
+    </div>
+    {% include footer.html %}
+  </body>
 
-{% include footer.html %}
+  <script>
+    fetch("https://api.github.com/repos/flyteorg/flyte")
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("github-stars").innerHTML =
+          data.stargazers_count;
+      });
+
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("flex");
+    }
+  </script>
+</html>

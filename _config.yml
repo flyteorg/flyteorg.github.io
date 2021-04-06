@@ -1,21 +1,23 @@
-title: Flyte by Lyft
-description: A managed platform for executing distributed workflows at scale.
+title: Flyte
+description: Flyte enables production-grade orchestration for machine learning workflows and data processing created to accelerate local workflows to production.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. http://example.com
 
+plugins:
+  - jekyll-seo-tag
+
 #Links within the site
-documentation: "https://lyft.github.io/flyte/"
-getstarted: "https://lyft.github.io/flyte/user/getting_started/index.html"
-contribute: "https://lyft.github.io/flyte/contributor/index.html"
-learnmore: "https://lyft.github.io/flyte/"
+documentation: "https://docs.flyte.org/"
+getstarted: "https://docs.flyte.org/en/latest/getting_started.html"
+contribute: "https://docs.flyte.org/en/latest/community/docs.html"
+learnmore: "https://docs.flyte.org/en/latest/index.html"
 email: "https://groups.google.com/d/forum/flyte-discuss"
 blog: "https://medium.com/flyte-org"
-github: "https://github.com/lyft/flyte"
+github: "https://github.com/flyteorg/flyte"
 community: "https://flyte-org.slack.com"
 twitter: "https://twitter.com/flyteorg"
 stackoverflow: "https://stackoverflow.com/questions/tagged/flyte"
-
-destination: _site
+slack: "https://docs.google.com/forms/d/e/1FAIpQLScWPJZncyL-bBCWbuQ9HWuMzA8-r2RJc__CSWJoAYUQADN-BQ/viewform"
 
 exclude:
   - Gemfile
