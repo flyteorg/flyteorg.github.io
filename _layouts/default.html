@@ -12,4 +12,18 @@
     </div>
     {% include footer.html %}
   </body>
+
+  <script>
+    fetch("https://api.github.com/repos/flyteorg/flyte")
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("github-stars").innerHTML =
+          data.stargazers_count;
+      });
+
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("flex");
+    }
+  </script>
 </html>

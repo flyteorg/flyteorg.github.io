@@ -164,3 +164,7 @@
 .leading-tighter {
   line-height: 1.15;
 }
+.border-highlight:hover {
+  text-decoration: underline;
+  text-decoration-color: #e9ced2;
+}
