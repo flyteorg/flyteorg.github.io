@@ -4,7 +4,7 @@ flyte.org home page
 
 Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https://jekyllrb.com/).
 
-##Gulpfile
+## Gulpfile
 
 - Compiles Tailwind
 - Strips out unused CSS using [Purgecss](http://www.purgecss.com/)
@@ -15,7 +15,7 @@ Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https
 - Runs [Browsersync](https://www.browsersync.io/) for local development
 
 ## Requirements
-
+This site uses the following packages. To setup the environment - directly jump to the [Get Started](#get-started) section
 - [Bundler](http://bundler.io/)
 - [Jekyll](https://jekyllrb.com/)
 - [Node.js](https://nodejs.org/en/)
