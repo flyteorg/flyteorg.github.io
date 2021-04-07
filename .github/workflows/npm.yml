@@ -2,7 +2,8 @@ name: Run NPM command
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: 
+      - development
 
 jobs:
   build:
