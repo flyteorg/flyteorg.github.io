@@ -12,6 +12,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6.6
+    - name: Bundle Install
+      env:
+        BUNDLE_FROZEN: "true"
+      run: bundle install
     - uses: actions/setup-node@v1
     - run: npm install
     - run: npm run build
