@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700");
 
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;

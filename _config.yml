@@ -5,6 +5,7 @@ url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. 
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-postcss
 
 #Links within the site
 documentation: "https://docs.flyte.org/"
