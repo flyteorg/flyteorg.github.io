@@ -2,20 +2,12 @@
 
 flyte.org home page
 
-Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https://jekyllrb.com/).
+Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https://jekyllrb.com/). You can refer to the [Get started](#get-started) section to get a local testing environment for the site. Once you modify and verify the changes locally, simply push it to remote and the site will be automatically built.
 
-##Gulpfile
-
-- Compiles Tailwind
-- Strips out unused CSS using [Purgecss](http://www.purgecss.com/)
-- Runs [Autoprefixer](https://github.com/postcss/autoprefixer)
-- Minifies your CSS
-- Generate a CSS sourcemap
-- Compiles Jekyll
-- Runs [Browsersync](https://www.browsersync.io/) for local development
+**Note**: Currently we are using the development branch as the primary branch to host the website
 
 ## Requirements
-
+This site uses the following packages. To setup the environment - directly jump to the [Get Started](#get-started) section
 - [Bundler](http://bundler.io/)
 - [Jekyll](https://jekyllrb.com/)
 - [Node.js](https://nodejs.org/en/)
@@ -35,3 +27,15 @@ Site builds to `_site`. Modify as needed for deployment in `_config.yml` and `gu
 
 - `npm run build:dev` to compile the site with development settings
 - `npm run build` to compile the site for production
+
+## Gulpfile
+
+- Compiles Tailwind
+- Strips out unused CSS using [Purgecss](http://www.purgecss.com/)
+- Runs [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Minifies your CSS
+- Generate a CSS sourcemap
+- Compiles Jekyll
+- Runs [Browsersync](https://www.browsersync.io/) for local development
+
+
