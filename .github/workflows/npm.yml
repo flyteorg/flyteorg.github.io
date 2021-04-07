@@ -1,0 +1,13 @@
+name: Run NPM command
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: npm run start
