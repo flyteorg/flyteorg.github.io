@@ -35,7 +35,9 @@
     "access": "public"
   },
   "babel": {
-    "presets": ["babel-preset-env"]
+    "presets": [
+      "babel-preset-env"
+    ]
   },
   "dependencies": {
     "jquery": "^3.4.1"
