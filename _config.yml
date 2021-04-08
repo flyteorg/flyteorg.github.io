@@ -5,7 +5,6 @@ url: "https://www.flyte.org" # the base hostname & protocol for your site, e.g. 
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-postcss
 
 #Links within the site
 documentation: "https://docs.flyte.org/"
@@ -23,11 +22,5 @@ slack: "https://docs.google.com/forms/d/e/1FAIpQLScWPJZncyL-bBCWbuQ9HWuMzA8-r2RJ
 exclude:
   - Gemfile
   - Gemfile.lock
-  - gulpfile.babel.js
   - LICENSE.md
-  - node_modules
-  - package.json
-  - package-lock.json
   - README.md
-  - src
-  - tailwind.config.js
