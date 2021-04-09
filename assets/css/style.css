@@ -1023,3 +1023,17 @@ svg {
   text-decoration: underline;
   text-decoration-color: #e9ced2;
 }
+#flyte-svg-main {
+  display: block;
+}
+#flyte-svg-mobile {
+  display: none;
+}
+@media all and (max-width: 799px) {
+  #flyte-svg-main {
+    display: none;
+  }
+  #flyte-svg-mobile {
+    display: block;
+  }
+}

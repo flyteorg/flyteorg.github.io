@@ -130,7 +130,6 @@ GEM
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
-    jekyll-postcss (0.4.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -213,7 +212,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.4)
     multipart-post (2.1.1)
-    nokogiri (1.11.2)
+    nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     octokit (4.20.0)
@@ -261,8 +260,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 214)
-  jekyll
-  jekyll-postcss
+  jekyll (~> 3.9.0)
   jekyll-seo-tag
 
 BUNDLED WITH
