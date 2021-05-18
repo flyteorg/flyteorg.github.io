@@ -1053,3 +1053,7 @@ svg {
 .main-navbar {
   font-family: "Inter", sans-serif;
 }
+
+.iframe-block {
+  overflow: scroll;
+}

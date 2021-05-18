@@ -22,14 +22,12 @@ title: Flyte
     <div>
       <h1
         class="
-          text-white
-          text-4xl
+          text-white text-4xl
           sm:text-5xl
           md:text-6xl
           leading-tighter
           font-body font-regular
-          text-left
-          text-center
+          text-left text-center
           lg:w-5/6
           mx-auto
         "
@@ -612,7 +610,7 @@ title: Flyte
       </div>
       <!--item-2-->
       <div class="md:flex md:items-center md:flex-row-reverse relative">
-        <div class="illustration md:w-6/12 text-center">
+        <div class="illustration md:w-7/12 text-center">
           <div class="flex flex-wrap" id="tabs-id">
             <div class="w-full px-3 py-10">
               <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
@@ -691,12 +689,12 @@ title: Flyte
               >
                 <div class="px-4 py-5 flex-auto">
                   <div class="tab-content tab-space">
-                    <div class="block" id="tab-profile">
+                    <div class="block iframe-block" id="tab-profile">
                       <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=python&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540task%28limits%253DResources%28cpu%253D%25222%2522%252C%2520mem%253D%2522150Mi%2522%29%29%250Adef%2520total_pay%28hourly_pay%253A%2520float%252C%2520hours_worked%253A%2520int%252C%2520df%253A%2520pd.DataFrame%29%2520-%253E%2520pd.DataFrame%253A%250A%2520%2520%2520%2520return%2520df.assign%28total_pay%253Dhourly_pay%2520*%2520hours_worked%29"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=python&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520pandas%2520as%2520pd%250Afrom%2520flytekit%2520import%2520Resources%252C%2520task%250A%250A%250A%2540task%28limits%253DResources%28cpu%253D%25222%2522%252C%2520mem%253D%2522150Mi%2522%29%29%250Adef%2520total_pay%28hourly_pay%253A%2520float%252C%2520hours_worked%253A%2520int%252C%2520df%253A%2520pd.DataFrame%29%2520-%253E%2520pd.DataFrame%253A%250A%2520%2520%2520%2520return%2520df.assign%28total_pay%253Dhourly_pay%2520*%2520hours_worked%29"
                         style="
-                          width: 100%;
-                          height: 100%;
+                          width: 600px;
+                          height: 220px;
                           border: 0;
                           transform: scale(1);
                           overflow: hidden;
@@ -705,11 +703,33 @@ title: Flyte
                       >
                       </iframe>
                     </div>
-                    <div class="hidden" id="tab-settings">
-                      <p>Coming Soon!</p>
+                    <div class="hidden iframe-block" id="tab-settings">
+                      <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=text%2Fx-java&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520com.google.auto.service.AutoService%253B%250Aimport%2520com.google.auto.value.AutoValue%253B%250Aimport%2520org.flyte.flytekit.SdkRunnableTask%253B%250Aimport%2520org.flyte.flytekit.jackson.JacksonSdkType%253B%250A%250A%2540AutoService%28SdkRunnableTask.class%29%250Apublic%2520class%2520TotalPayTask%2520extends%2520SdkRunnableTask%253CTotalPayTask.Input%252C%2520TotalPayTask.Output%253E%2520%257B%250A%2520%2520public%2520TotalPayTask%28%29%2520%257B%250A%2520%2520%2520%2520super%28JacksonSdkType.of%28Input.class%29%252C%2520JacksonSdkType.of%28Output.class%29%29%253B%250A%2520%2520%257D%250A%2520%2520%2540AutoValue%250A%2520%2520public%2520abstract%2520static%2520class%2520Input%2520%257B%250A%2520%2520%2520%2520public%2520abstract%2520double%2520hourlyPay%28%29%253B%250A%2520%2520%2520%2520public%2520abstract%2520long%2520hoursWorked%28%29%253B%250A%2520%2520%257D%250A%2520%2520%2540AutoValue%250A%2520%2520public%2520abstract%2520static%2520class%2520Output%2520%257B%250A%2520%2520%2520%2520public%2520abstract%2520double%2520output%28%29%253B%250A%2520%2520%2520%2520public%2520static%2520Output%2520create%28double%2520output%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520new%2520AutoValue_TotalPayTask_Output%28output%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%250A%2520%2520%2540Override%250A%2520%2520public%2520Output%2520run%28Input%2520input%29%2520%257B%250A%2520%2520%2520%2520return%2520Output.create%28input.hourlyPay%28%29%2520*%2520input.hoursWorked%28%29%29%253B%250A%2520%2520%257D%250A%257D"
+                        style="
+                          width: 600px;
+                          height: 500px;
+                          border: 0;
+                          transform: scale(1);
+                          overflow: scroll;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                      >
+                      </iframe>
                     </div>
-                    <div class="hidden" id="tab-options">
-                      <p>Coming Soon!</p>
+                    <div class="hidden iframe-block" id="tab-options">
+                      <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=text%2Fx-scala&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520org.flyte.flytekit.SdkRunnableTask%250Aimport%2520org.flyte.flytekitscala.SdkScalaType%250A%250Acase%2520class%2520TotalPayInput%28hourlyPay%253A%2520Double%252C%2520hoursWorked%253A%2520Long%29%250Acase%2520class%2520TotalPayOutput%28output%253A%2520Double%29%250A%250Aclass%2520TotalPayTask%2520extends%2520SdkRunnableTask%28SdkScalaType%255BTotalPayInput%255D%252C%2520SdkScalaType%255BTotalPayOutput%255D%29%2520%257B%250A%2520%2520def%2520run%28input%253A%2520TotalPayInput%29%253A%2520TotalPayOutput%2520%253D%2520%250A%2520%2520%2520%2520TotalPayOutput%28output%2520%253D%2520input.hourlyPay%2520%252B%2520input.hoursWorked%29%250A%257D"
+                        style="
+                          width: 600px;
+                          height: 295px;
+                          border: 0;
+                          transform: scale(1);
+                          overflow: scroll;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                      >
+                      </iframe>
                     </div>
                   </div>
                 </div>
@@ -721,7 +741,7 @@ title: Flyte
         <div
           class="
             md:w-5/12
-            lg:w-6/12
+            lg:w-5/12
             px-6
             sm:px-10
             md:px-16
@@ -1159,9 +1179,7 @@ title: Flyte
           </h3>
           <div class="mb-4">
             <p>
-              <span class="tagline">
-                Lessen the execution time effortlessly</span
-              >
+              <span class="tagline"> Lessen the execution time</span>
             </p>
             <p>
               <span class="tagline">Backtrack to the error-source</span>
