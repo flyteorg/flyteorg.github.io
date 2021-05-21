@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html class="no-js" lang="en-US">
   {% seo title=false %} {% include header.html %}
@@ -24,6 +21,32 @@
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("flex");
+    }
+
+    function changeAtiveTab(event, tabID) {
+      let element = event.target;
+      while (element.nodeName !== "A") {
+        element = element.parentNode;
+      }
+      ulElement = element.parentNode.parentNode;
+      aElements = ulElement.querySelectorAll("li > a");
+      tabContents = document
+        .getElementById("tabs-id")
+        .querySelectorAll(".tab-content > div");
+      for (let i = 0; i < aElements.length; i++) {
+        aElements[i].classList.remove("text-white");
+        aElements[i].classList.remove("code-option-bg");
+        aElements[i].classList.add("code-option-text");
+        aElements[i].classList.add("bg-white");
+        tabContents[i].classList.add("hidden");
+        tabContents[i].classList.remove("block");
+      }
+      element.classList.remove("code-option-text");
+      element.classList.remove("bg-white");
+      element.classList.add("text-white");
+      element.classList.add("code-option-bg");
+      document.getElementById(tabID).classList.remove("hidden");
+      document.getElementById(tabID).classList.add("block");
     }
   </script>
 </html>

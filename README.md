@@ -25,5 +25,5 @@ gem install jekyll bundler
 
 - `bundle install` to install the Ruby gems specified in Gemfile
 - (Optional) Run `bundle update` if you need to update the Ruby gems
-- Run the command `bundle exec jekyll serve` to test the site locally
+- Run the command `bundle exec jekyll serve --livereload` to test the site locally
 - Visit `http://127.0.0.1:4000/` to view your site
