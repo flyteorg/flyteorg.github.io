@@ -1,44 +1,18 @@
-<!doctype html>
-<html class="no-js" lang="en-US">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?{{site.time | date: '%s%N'}}">
- <!--<script type="text/javascript" src="{{ site.baseurl }}/assets/js/script.js?{{site.time | date: '%s%N'}}"></script>-->
-
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Flyte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" />
+  <meta
+    name="google-site-verification"
+    content="w0DQ8-NJDgkQKJBlk8Som0w0qdJvzwWhUYmh9iE9t8o"
+  />
+  <meta
+    name="description"
+    content="Flyte enables production-grade orchestration for machine learning workflows and data processing created to accelerate local workflows to production."
+  />
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
-<body>
-  <div class="main overflow-x-hidden bg-gradient-purple-darkest-to-light">
-    <nav class="flex flex-wrap sm:flex-no-wrap p-6 sm:px-0 container mx-auto">
-      <div class="flex-grow">
-        <svg class="" width="177" height="48" viewBox="0 0 177 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <title>Flyte</title>
-        <path d="M78.984 26.2974V38.8326H72.8132V5.40024H94.9537V11.2768H78.9801V20.4247H91.5582V26.3013H78.984V26.2974Z" fill="white"/>
-        <path d="M99.4965 38.8326V5.40024H105.38V38.8326H99.4965Z" fill="white"/>
-        <path d="M133.711 14.4745L123.238 40.3114C121.18 45.3751 117.928 47.9998 113.051 47.9998C111.474 47.9998 110.136 47.7598 108.415 47.1404V42.0303C109.753 42.6032 111.427 42.9865 112.575 42.9865C114.772 42.9865 116.687 41.5541 117.451 39.452L117.784 38.5461L108.078 14.4745H114.389L120.846 31.1442L127.35 14.4745H133.711Z" fill="white"/>
-        <path d="M145.832 39.2623C140.475 39.2623 136.409 35.7743 136.409 29.0886V7.07263H142.293V14.4745H151.619V19.9679H142.293V29.4254C142.293 32.7702 144.491 34.2026 147.169 34.2026C148.797 34.2026 150.611 33.6296 152.142 32.6269V37.8338C149.944 38.7862 147.793 39.2623 145.832 39.2623Z" fill="white"/>
-        <path d="M176.856 28.8524H160.17C160.36 32.054 163.612 34.2026 167.581 34.2026C170.639 34.2026 173.608 32.9599 176.186 31.241V36.4944C173.461 38.4532 170.019 39.2623 166.86 39.2623C159.255 39.2623 154.282 34.1987 154.282 26.5568C154.282 19.0117 159.208 13.9945 166.143 13.9945C172.837 13.9945 176.853 18.5781 176.853 25.9838V28.8524H176.856ZM160.216 24.4585H171.12C171.12 21.2105 169.061 19.2517 166.096 19.2517C163.181 19.2517 160.503 21.0673 160.216 24.4585Z" fill="white"/>
-        <path d="M12.8998 24.7411C12.8998 24.7411 0 13.5841 0 2.43095C0 2.43095 1.89543 0.514667 9.46552 0.050113L9.38025 2.43095C9.37637 13.5841 12.8998 24.7411 12.8998 24.7411ZM25.7957 2.43095C25.7957 2.43095 23.8964 0.510795 16.3302 0.050113L16.4154 2.43095C16.4154 13.588 12.892 24.745 12.892 24.745C12.892 24.745 25.7957 13.5841 25.7957 2.43095ZM21.1404 38.9449L19.0318 40.0598C23.218 46.3777 25.8267 47.0552 25.8267 47.0552C35.5015 41.4767 38.7265 24.7411 38.7265 24.7411C38.7265 24.7411 30.8153 33.3663 21.1404 38.9449ZM12.9308 24.7411C12.9308 24.7411 12.8688 24.9734 12.8688 25.4728C12.8688 26.6574 13.2215 29.3557 15.6014 34.1174L17.6209 32.8515C27.2957 27.273 38.7303 24.7411 38.7303 24.7411C38.7303 24.7411 31.5634 22.2635 23.9196 22.2635C20.0978 22.2635 16.1557 22.8829 12.9308 24.7411ZM46.8741 10.5877L48.8936 11.8536C51.2735 7.09197 51.6262 4.39369 51.6262 3.20908C51.6262 2.70968 51.5642 2.47741 51.5642 2.47741C48.3393 0.619191 44.3972 -0.000213623 40.5754 -0.000213623C32.9316 -0.000213623 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 37.1993 5.00922 46.8741 10.5877ZM38.6644 24.7915C38.9009 24.7295 41.4746 23.812 45.4593 17.7961L43.3507 16.6811C33.6797 11.1026 25.7647 2.47741 25.7647 2.47741C25.7647 2.47741 28.9896 19.2129 38.6644 24.7915Z" fill="white"/>
-        </svg>
-      </div>
-      <div class="flex items-center flex-wrap sm:flex-no-wrap mt-10 -mb-4 sm:mb-0 sm:mt-0 w-full sm:w-auto">
-          <div class="w-2/5 flex-grow sm:flex-no-grow mb-3 sm:mb-0 sm:mr-4 md:mr-6 lg:mr-12 ">
-            <a href="{{ site.documentation }}" class="link-white hover:border-purple-lightest">
-            Documentation
-            </a>
-          </div>
-          <div class="w-2/5 flex-grow sm:flex-no-grow sm:mr-4 md:mr-6 lg:mr-12 ">
-            <a href="{{ site.github }}" class="link-white hover:border-purple-lightest">
-            GitHub
-            </a>
-          </div>
-          <div class="w-2/5 flex-grow sm:flex-no-grow">
-            <a href="{{ site.community }}" class="link-white hover:border-purple-lightest">
-            Community
-            </a>
-          </div>
-      </div>
-    </nav>
