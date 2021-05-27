@@ -8,7 +8,7 @@ Flyte.org is built using [Tailwind](https://tailwindcss.com) with [Jekyll](https
 
 ## Requirements
 
-This site uses the following packages. To setup the environment - directly jump to the [Get Started](#get-started) section.
+This site uses the following packages. To set up the environment - directly jump to the [Get Started](#get-started) section.
 
 - [Bundler](http://bundler.io/)
 - [Jekyll](https://jekyllrb.com/)
@@ -27,3 +27,22 @@ gem install jekyll bundler
 - (Optional) Run `bundle update` if you need to update the Ruby gems
 - Run the command `bundle exec jekyll serve --livereload` to test the site locally
 - Visit `http://127.0.0.1:4000/` to view your site
+
+## Troubleshooting Guidelines
+
+- If you encounter an error relating to `eventmachine` package during `bundle install`:
+```
+Make sure that `gem install eventmachine -v '1.2.7' --source 'https://rubygems.org/'` succeeds before bundling.
+```
+run the following command:
+```
+gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include
+```
+- If jekyll isn't being identified:
+```
+bundler: failed to load command: jekyll
+```
+run the following command:
+```
+bundle add webrick
+```
