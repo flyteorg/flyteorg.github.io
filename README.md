@@ -31,18 +31,72 @@ gem install jekyll bundler
 ## Troubleshooting Guidelines
 
 - If you encounter an error relating to `eventmachine` package during `bundle install`:
+
 ```
 Make sure that `gem install eventmachine -v '1.2.7' --source 'https://rubygems.org/'` succeeds before bundling.
 ```
+
 run the following command:
+
 ```
 gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include
 ```
+
 - If jekyll isn't being identified:
+
 ```
 bundler: failed to load command: jekyll
 ```
+
 run the following command:
+
 ```
 bundle add webrick
 ```
+
+## How to Add/Modify Announcements
+
+### Talk
+
+To add a talk, copy the card1 template code and add it to the card series.
+To delete a talk, delete the concerning card.
+
+### Feature Release
+
+To add a feature release, copy the card5 template code and add it to the card series.
+To delete a feature release, delete the concerning card.
+
+### Blog
+
+To add a blog, copy the card6 template code and add it to the card series.
+To delete a blog, delete the concerning card.
+
+You can find all cards in the `index.html` file.
+
+- card series
+
+```
+<!--cards-->
+```
+
+^ start of cards' section
+
+```
+<!--end of cards-->
+```
+
+^ end of cards' section
+
+- card
+
+```
+<!--card x-->
+```
+
+^ start of card x
+
+```
+<!--end of card x-->
+```
+
+^ end of card x
