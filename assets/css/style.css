@@ -26,119 +26,32 @@ h1 {
 
 /* TALK */
 .gradient-text-talk {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: rgb(226, 129, 241);
-  background: radial-gradient(
-    circle,
-    rgba(226, 129, 241, 1) 0%,
-    rgba(159, 7, 121, 1) 71%
-  );
-  background-size: 57%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: gradient-text-animation-rev 0.5s ease forwards;
-
+  color: rgba(159, 7, 121, 1);
   cursor: pointer;
 }
 
 /* FEATURE */
 .gradient-text-feature {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: rgb(34, 178, 181);
-  background: radial-gradient(
-    circle,
-    rgba(34, 178, 181, 1) 0%,
-    rgba(7, 42, 159, 1) 71%
-  );
-  background-size: 57%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: gradient-text-animation-rev 0.5s ease forwards;
-
+  color: rgba(7, 42, 159, 1);
   cursor: pointer;
 }
 
 /* BLOG */
 .gradient-text-blog {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: rgb(152, 198, 114);
-  background: radial-gradient(
-    circle,
-    rgba(152, 198, 114, 1) 0%,
-    rgba(7, 159, 124, 1) 71%
-  );
-  background-size: 57%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: gradient-text-animation-rev 0.5s ease forwards;
-
+  color: rgba(7, 159, 124, 1);
   cursor: pointer;
 }
 
 /* ANIMATION */
 /* Add animation on hover. */
-.gradient-text-blog:hover,
-.gradient-text-talk:hover,
+.gradient-text-blog:hover {
+ color: #78bd40;
+}
+.gradient-text-talk:hover {
+  color: #d753ec;
+}
 .gradient-text-feature:hover {
-  animation: gradient-text-animation 0.5s ease forwards;
-}
-
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
-@keyframes gradient-text-animation {
-  0% {
-    background-size: 57%;
-    background-position: 0 0;
-  }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 300%;
-    background-position: -9em 1em;
-  }
-}
-
-/* Move the background and make it smaller. */
-/* Animation shown when entering the page and after the hover animation. */
-@keyframes gradient-text-animation-rev {
-  0% {
-    background-size: 300%;
-    background-position: -9em 1em;
-  }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 57%;
-    background-position: 0 0;
-  }
+  color: rgb(34, 178, 181);
 }
 
 .center-feature-text {
