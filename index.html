@@ -2049,48 +2049,97 @@ title: Flyte
     </h3>
   </div>
   <div
-    class="grid py-4 justify-center md:grid-cols-8 lg:grid-cols-12 grid-cols-4"
+    class="
+      grid
+      py-4
+      justify-center
+      md:grid-cols-8
+      lg:grid-cols-12
+      grid-cols-4
+      gap-5
+    "
   >
     <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/spark.svg" |
       prepend: site.baseurl }}" />
     </div>
     <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
-      <img class="h-16" src="{{ "/assets/images/integrations/aws.svg" | prepend:
-      site.baseurl }}"/>
-    </div>
-    <div
-      class="
-        md:col-start-5
-        lg:col-start-5
-        col-start-2
-        ml-auto
-        mr-auto
-      "
-    >
       <img class="h-16" src="{{ "/assets/images/integrations/hive.png" |
       prepend: site.baseurl }}" />
     </div>
-    <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
+    <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/kubeflow.svg" |
       prepend: site.baseurl }}" />
     </div>
-    <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
+    <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
       <img class="h-16" src="{{
       "/assets/images/integrations/greatexpectations.svg" | prepend:
       site.baseurl }}" />
     </div>
-    <div class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto">
+    <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/dolthub.svg" |
       prepend: site.baseurl }}" />
     </div>
-    <div class="md:col-start-5 lg:col-start-9 col-start-2 ml-auto mr-auto">
+    <div class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/pandera.png" |
       prepend: site.baseurl }}" />
     </div>
     <div
       class="
-        md:col-start-6 md:col-end-7
+        md:col-start-5 md:col-end-6
+        lg:col-start-9 lg:col-end-10
+        col-start-2
+        ml-auto
+        mr-auto
+      "
+      style="align-content: center; display: inherit"
+    >
+      <img src="{{ "/assets/images/integrations/papermill.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div
+      class="
+        md:col-start-6
+        lg:col-start-10 lg:col-end-11
+        col-start-3
+        ml-auto
+        mr-auto
+      "
+    >
+      <img class="h-16" src="{{ "/assets/images/integrations/pandas.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/parquet.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/gcp.svg" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/athena.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/sagemaker.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/kubernetes.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/bigquery.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="md:col-start-5 lg:col-start-9 col-start-2 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/prestodb.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div
+      class="
+        md:col-start-6
         lg:col-start-10 lg:col-end-11
         col-start-3
         ml-auto
@@ -2098,7 +2147,38 @@ title: Flyte
       "
       style="align-content: center; display: inherit"
     >
-      <img class="h-8" src="{{ "/assets/images/integrations/papermill.png" |
+      <img src="{{ "/assets/images/integrations/arrow.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div
+      class="md:col-start-3 lg:col-start-5 col-start-2 ml-auto mr-auto"
+      style="align-content: center; display: inherit"
+    >
+      <img src="{{ "/assets/images/integrations/sqlalchemy.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div
+      class="
+        md:col-start-4 md:col-end-6
+        lg:col-start-6 lg:col-end-8
+        col-start-3
+        ml-auto
+        mr-auto
+      "
+    >
+      <img class="h-16" src="{{ "/assets/images/integrations/tensorflow.svg" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div
+      class="
+        md:col-start-6 md:col-end-7
+        lg:col-start-8 lg:col-end-9
+        col-start-2 col-end-3
+        ml-auto
+        mr-auto
+      "
+    >
+      <img class="h-16" src="{{ "/assets/images/integrations/pytorch.svg" |
       prepend: site.baseurl }}" />
     </div>
   </div>
