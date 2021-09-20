@@ -16,6 +16,16 @@ h1 {
   margin: 0.67em 0;
 }
 
+.slack-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.twitter-icon {
+  width: 35px;
+  height: 35px;
+}
+
 /* ******** */
 /* CAROUSEL */
 /* ******** */
@@ -45,7 +55,7 @@ h1 {
 /* ANIMATION */
 /* Add animation on hover. */
 .gradient-text-blog:hover {
- color: #78bd40;
+  color: #78bd40;
 }
 .gradient-text-talk:hover {
   color: #d753ec;
