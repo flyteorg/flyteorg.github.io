@@ -2118,7 +2118,8 @@ title: Flyte
     </div>
     <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/gcp.svg" | prepend:
-      site.baseurl }}" title="Google Cloud Platform" alt="Google Cloud Platform" />
+      site.baseurl }}" title="Google Cloud Platform" alt="Google Cloud Platform"
+      />
     </div>
     <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
       <img class="h-16" src="{{ "/assets/images/integrations/athena.svg" |
@@ -2153,8 +2154,12 @@ title: Flyte
       <img src="{{ "/assets/images/integrations/arrow.png" | prepend:
       site.baseurl }}" title="Apache Arrow" alt="Apache Arrow" />
     </div>
+    <div class="md:col-start-3 lg:col-start-4 col-start-2 ml-auto mr-auto">
+      <img class="h-16" src="{{ "/assets/images/integrations/tensorflow.svg" |
+      prepend: site.baseurl }}" title="TensorFlow" alt="TensorFlow" />
+    </div>
     <div
-      class="md:col-start-3 lg:col-start-5 col-start-2 ml-auto mr-auto"
+      class="md:col-start-4 lg:col-start-5 col-start-3 ml-auto mr-auto"
       style="align-content: center; display: inherit"
     >
       <img src="{{ "/assets/images/integrations/sqlalchemy.png" | prepend:
@@ -2162,27 +2167,37 @@ title: Flyte
     </div>
     <div
       class="
-        md:col-start-4 md:col-end-6
+        md:col-start-5
         lg:col-start-6 lg:col-end-8
-        col-start-3
+        col-start-2
         ml-auto
         mr-auto
       "
+      style="align-content: center; display: inherit"
     >
-      <img class="h-16" src="{{ "/assets/images/integrations/tensorflow.svg" |
-      prepend: site.baseurl }}" title="TensorFlow" alt="TensorFlow" />
+      <img class="h-20" src="{{ "/assets/images/integrations/horovod.png" |
+      prepend: site.baseurl }}" title="Horovod" alt="Horovod" />
+    </div>
+    <div
+      class="md:col-start-6 lg:col-start-8 col-start-3 ml-auto mr-auto"
+      style="align-content: center; display: inherit"
+    >
+      <img src="{{ "/assets/images/integrations/feast.png" | prepend:
+      site.baseurl }}" title="Feast" alt="Feast" />
     </div>
     <div
       class="
-        md:col-start-6 md:col-end-7
-        lg:col-start-8 lg:col-end-9
+        md:col-start-4 md:col-end-6
+        lg:col-start-9 lg:col-end-10
         col-start-2 col-end-3
         ml-auto
         mr-auto
       "
+      style="align-content: center; display: inherit"
     >
-      <img class="h-16" src="{{ "/assets/images/integrations/pytorch.svg" |
-      prepend: site.baseurl }}" title="PyTorch" alt="PyTorch" />
+      <img class="lg:h-16 md:h-6 sm:h-6 h-6" src="{{
+      "/assets/images/integrations/pytorch.svg" | prepend: site.baseurl }}"
+      title="PyTorch" alt="PyTorch" />
     </div>
   </div>
 </section>
