@@ -26,7 +26,7 @@
       document.getElementById(collapseID).classList.toggle("flex");
     }
 
-    function changeAtiveTab(event, tabID) {
+    function changeActiveTab(event, tabID) {
       let element = event.target;
       while (element.nodeName !== "A") {
         element = element.parentNode;
@@ -52,6 +52,7 @@
       document.getElementById(tabID).classList.add("block");
     }
 
+    // carousel at top of the main page
     var owl = $(".owl-carousel");
     owl.owlCarousel({
       loop: true,
@@ -78,6 +79,66 @@
     });
     $(".stop").on("click", function () {
       owl.trigger("stop.owl.autoplay");
+    });
+
+    let metricCounter = (elementId, counterParams) => {
+      let element = document.getElementById(elementId);
+      let count = 0;
+      let counter = () => {
+        count += counterParams["increment"];
+        if (count <= counterParams["total"]) {
+          element.innerHTML = count.toLocaleString();
+        } else {
+          clearInterval(intervalId);
+        }
+      }
+      var intervalId = setInterval(counter, 10);
+    };
+
+    // animations in the differentiators section
+    let callback = (entries, observer) => {
+      entries.forEach(entry => {
+        // Each entry describes an intersection change for one observed
+        // target element:
+        //   entry.boundingClientRect
+        //   entry.intersectionRatio
+        //   entry.intersectionRect
+        //   entry.isIntersecting
+        //   entry.rootBounds
+        //   entry.target
+        //   entry.time
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fadeIn");
+        }
+        if (entry.target.id.startsWith("metric-") && !entry.target.classList.contains("metric-counter-complete")) {
+          let counterParams = {
+            "metric-users": {"total": 500, "increment": 1},
+            "metric-executions": {"total": 1000000, "increment": 2000},
+            "metric-tasks": {"total": 20000000, "increment": 40000},
+            "metric-containers": {"total": 40000000, "increment": 80000},
+          }[entry.target.id]
+
+          metricCounter(entry.target.id, counterParams)
+          entry.target.classList.add("metric-counter-complete");
+        }
+      });
+    };
+
+    let options = {
+      root: document.querySelector(".main"),
+      threshold: 1.0
+    }
+    let observer = new IntersectionObserver(callback);
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+    targets.forEach(function (target) {
+      target.classList.add("opacity-0");
+      observer.observe(target);
+    });
+
+    const metricsTargets = document.querySelectorAll(".metric");
+    metricsTargets.forEach(function (target) {
+      target.classList.add("opacity-0");
+      observer.observe(target);
     });
   </script>
 </html>

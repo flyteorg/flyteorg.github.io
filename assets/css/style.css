@@ -1142,3 +1142,33 @@ svg {
   padding: 7px;
   margin-bottom: 5px;
 }
+
+/* fading animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.flyte-metrics div {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.flyte-metrics .metric {
+  font-size: 1.4em;
+  font-family: monospace, monospace;
+  color: #793BEE;
+  padding-right: 5px;
+}
