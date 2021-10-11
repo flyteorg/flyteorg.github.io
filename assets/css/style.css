@@ -1146,8 +1146,10 @@ svg {
 /* fading animations */
 @keyframes fadeIn {
   from {
-    opacity: 0;
-    transform: translateY(-50px);
+    /* opacity: 0; */
+    opacity: 1;
+    /* transform: translateY(-50px); */
+    transform: translateY(0px);
   }
 
   to {
