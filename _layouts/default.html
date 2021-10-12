@@ -131,13 +131,13 @@
     let observer = new IntersectionObserver(callback);
     const targets = document.querySelectorAll(".js-show-on-scroll");
     targets.forEach(function (target) {
-      // target.classList.add("opacity-0");
+      target.classList.add("opacity-0");
       observer.observe(target);
     });
 
     const metricsTargets = document.querySelectorAll(".metric");
     metricsTargets.forEach(function (target) {
-      // target.classList.add("opacity-0");
+      target.classList.add("opacity-0");
       observer.observe(target);
     });
   </script>
