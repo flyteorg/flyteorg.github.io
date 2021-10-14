@@ -109,17 +109,18 @@
         //   entry.time
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fadeIn");
-        }
-        if (entry.target.id.startsWith("metric-") && !entry.target.classList.contains("metric-counter-complete")) {
-          let counterParams = {
-            "metric-users": {"total": 500, "increment": 1},
-            "metric-executions": {"total": 1000000, "increment": 2000},
-            "metric-tasks": {"total": 20000000, "increment": 40000},
-            "metric-containers": {"total": 40000000, "increment": 80000},
-          }[entry.target.id]
 
-          metricCounter(entry.target.id, counterParams)
-          entry.target.classList.add("metric-counter-complete");
+          if (entry.target.id.startsWith("metric-") && !entry.target.classList.contains("metric-counter-complete")) {
+            let counterParams = {
+              "metric-users": {"total": 500, "increment": 1},
+              "metric-executions": {"total": 1000000, "increment": 2000},
+              "metric-tasks": {"total": 20000000, "increment": 40000},
+              "metric-containers": {"total": 40000000, "increment": 80000},
+            }[entry.target.id]
+
+            metricCounter(entry.target.id, counterParams)
+            entry.target.classList.add("metric-counter-complete");
+          }
         }
       });
     };
