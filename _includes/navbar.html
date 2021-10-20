@@ -1,5 +1,8 @@
 <div class="header-banner">
-  <a href="https://blog.flyte.org/meet-flyte-at-hacktoberfest-2021" target="_blank">
+  <a
+    href="https://blog.flyte.org/meet-flyte-at-hacktoberfest-2021"
+    target="_blank"
+  >
     ✨ 📢 &nbsp; Meet Flyte at Hacktoberfest 2021! ✨ | Learn More &rarr;
   </a>
 </div>
@@ -395,7 +398,8 @@
             target="_blank"
           >
             <img src="{{ "/assets/images/slack.svg" | prepend: site.baseurl}}"
-            class="slack-icon" title="Slack" alt="Slack" />
+            class="slack-icon hidden lg:block" title="Slack" alt="Slack" />
+            <span class="lg:hidden">Slack</span>
           </a>
         </li>
         <li class="nav-item">
@@ -416,7 +420,31 @@
             target="_blank"
           >
             <img src="{{ "/assets/images/twitter.svg" | prepend: site.baseurl}}"
-            class="twitter-icon" title="Twitter" alt="Twitter" />
+            class="twitter-icon hidden lg:block" title="Twitter" alt="Twitter"
+            />
+            <span class="lg:hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="
+              px-3
+              py-2
+              flex
+              items-center
+              text-md
+              font-bold
+              leading-snug
+              text-white
+              hover:opacity-75
+              h-full
+            "
+            href="{{ site.discussions }}"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/forum.png" | prepend: site.baseurl}}"
+            class="slack-icon hidden lg:block" title="Forum" alt="Forum"/>
+            <span class="lg:hidden">Forum</span>
           </a>
         </li>
       </ul>
