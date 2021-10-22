@@ -19,6 +19,7 @@ twitter: "https://twitter.com/flyteorg"
 stackoverflow: "https://stackoverflow.com/questions/tagged/flyte"
 slack: "https://slack.flyte.org"
 discussions: "https://github.com/flyteorg/flyte/discussions"
+youtube: "https://www.youtube.com/channel/UCNduEoLOToNo3nFVly-vUTQ"
 
 exclude:
   - Gemfile
