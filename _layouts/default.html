@@ -2,9 +2,6 @@
 <html class="no-js" lang="en-US">
   {% seo title=false %} {% include header.html %}
 
-  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap' rel='stylesheet' type='text/css'>
-
   <body>
     <div class="main overflow-x-hidden bg-gradient-purple-darkest-to-light">
       {% include navbar.html %}
@@ -53,13 +50,12 @@
     }
 
     // carousel at top of the main page
-    var owl = $(".owl-carousel");
-    owl.owlCarousel({
+    var mediaCarousel = $("#media-carousel");
+    mediaCarousel.owlCarousel({
       loop: true,
       margin: 10,
-      autoplayTimeout: 6000,
+      autoplayTimeout: 10000,
       autoplayHoverPause: true,
-      responsiveClass: true,
       responsive: {
         0: {
           items: 1,
@@ -76,12 +72,35 @@
       },
     });
     $(".play").on("click", function () {
-      owl.trigger("play.owl.autoplay", [2000]);
+      mediaCarousel.trigger("play.owl.autoplay", [2000]);
     });
     $(".stop").on("click", function () {
-      owl.trigger("stop.owl.autoplay");
+      mediaCarousel.trigger("stop.owl.autoplay");
     });
 
+    // testimonials carousel
+    var testimonialsCarousel = $("#testimonials-carousel");
+    testimonialsCarousel.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplayTimeout: 10000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          autoplay: false,
+        },
+      },
+    });
+    $(".play").on("click", function () {
+      testimonialsCarousel.trigger("play.owl.autoplay", [2000]);
+    });
+    $(".stop").on("click", function () {
+      testimonialsCarousel.trigger("stop.owl.autoplay");
+    });
+
+    // metrics counter
     let metricCounter = (elementId, counterParams) => {
       let element = document.getElementById(elementId);
       let count = 0;
