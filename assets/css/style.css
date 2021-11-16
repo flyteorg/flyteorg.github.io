@@ -43,9 +43,9 @@ h1 {
   height: 35px;
 }
 
-/* ******** */
-/* CAROUSEL */
-/* ******** */
+/* ************** */
+/* MEDIA CAROUSEL */
+/* ************** */
 .carousel {
   font-family: "Inter", sans-serif;
   opacity: 0.9;
@@ -67,6 +67,11 @@ h1 {
     #262262 20%,
     #844cde
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* TESTIMONIALS */
+.testimonial-quote {
+  font-family: 'Lora', serif;
 }
 
 /* TALK */

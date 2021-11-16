@@ -1,0 +1,65 @@
+# Testimonials Data
+# -----------------
+#
+# This file contains the data needed for populating the testimonials carousel. To add a new entry, just create
+# a new list item like so:
+# - name: <name>
+#   job_title: <job title>
+#   company: <company name>
+#   quote: <quote text>
+#
+# Only the "company" field is optional
+
+- name: Jim Rebesco
+  job_title: Cofounder
+  company: Striveworks
+  quote: |
+    "It is a privilege to be part of an open-source community as vibrant and committed as the one Ketan and
+    team have built around Flyte. The diversity of problems the community is tackling, along with the commitment
+    and engagement from the core team is something special, and the team here at Striveworks is excited to be
+    a part of it."
+
+- name: Nicholas LoFaso
+  job_title: Tech Lead Data Platform
+  company: MethaneSAT
+  quote: |
+    "The Flyte community has been invaluable as we learn to utilize Flyte’s capabilities. My myriad of questions
+    have all been answered thoughtfully and promptly. The Flyte team has encouraged my feedback throughout this
+    process, and have incorporated it into their documentation and roadmaps. After only a few weeks of engagement
+    with Flyte, I feel I am a member of the Flyte community now too."
+
+- name: Sean Han
+  job_title: ML Engineer
+  company: Convoy
+  quote: |
+    "I had a great experience working with the Flyte community. It is amazing how quickly the community has grown
+    and how fast the product evolves. Ketan has been super helpful and responsive when I try to build a proof of
+    concept based on Flyte. I particularly like the community sync to keep the community updated on the latest
+    and get feedback. I see high potential for Flyte and its community."
+
+- name: Nitin Aggarwal
+  job_title: CTO Cofounder
+  company: RunX
+  quote: |
+    "Contributing to Flyte has been a very welcoming and enriching experience, They have been super patient in
+    explaining to us their architecture and reasons behind it. Which later helped us recommend Flyte to various
+    folks in our network."
+
+- name: Olivier Mannion
+  job_title: Principal Engineer
+  quote: |
+    "The community is super responsive, it generally takes no more than 24 hours to receive an answer to a
+    question or jump on a Meet to troubleshoot. I watch every meetup asynchronously when I'm awake. The other
+    thing is providing pathways for people's contributions. eg: supporting folks with an RFC, and being really
+    responsive merging PRs (again < 24 hours)."
+
+- name: Claire McGinty
+  job_title: Engineer
+  company: Spotify
+  quote: |
+    "Open source projects can be challenging, particularly when there are communication gaps, delays, or roadblocks
+    in applying larger changes or supporting new use cases. Contributing to flyte.org was an incredibly streamlined,
+    supportive, and collaborative experience. Haytham and Ketan were extremely helpful as I implemented my original
+    idea; they shared feedback quickly and added me to the Github organization, so I could run CI builds. They
+    are great at encouraging new contributors and new ideas while also maintaining the product vision and high
+    code quality."
