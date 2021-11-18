@@ -11,7 +11,7 @@
 # Only the "company" field is optional
 
 - name: Jim Rebesco
-  job_title: Cofounder
+  job_title: CEO & Cofounder
   company: Striveworks
   quote: |
     "It is a privilege to be part of an open-source community as vibrant and committed as the one Ketan and
@@ -20,7 +20,7 @@
     a part of it."
 
 - name: Nicholas LoFaso
-  job_title: Tech Lead Data Platform
+  job_title: Senior Platform Software Engineer
   company: MethaneSAT
   quote: |
     "The Flyte community has been invaluable as we learn to utilize Flyte’s capabilities. My myriad of questions
@@ -38,7 +38,7 @@
     and get feedback. I see high potential for Flyte and its community."
 
 - name: Nitin Aggarwal
-  job_title: CTO Cofounder
+  job_title: CTO & Cofounder
   company: RunX
   quote: |
     "Contributing to Flyte has been a very welcoming and enriching experience, They have been super patient in
@@ -54,7 +54,7 @@
     responsive merging PRs (again < 24 hours)."
 
 - name: Claire McGinty
-  job_title: Engineer
+  job_title: Data Engineer
   company: Spotify
   quote: |
     "Open source projects can be challenging, particularly when there are communication gaps, delays, or roadblocks
@@ -63,3 +63,11 @@
     idea; they shared feedback quickly and added me to the Github organization, so I could run CI builds. They
     are great at encouraging new contributors and new ideas while also maintaining the product vision and high
     code quality."
+    
+- name: Jeev Balakrishnan
+  job_title: Staff Software Engineer
+  company: Freenome
+  quote: |
+    "Flyte is quickly becoming a workhorse at Freenome. The regular cadence of high quality backward-compatible releases,
+    quick turnarounds on bug fixes, realtime support on Slack, and a vibrant community of helpful power users across many
+    industries have really supercharged our adoption."
