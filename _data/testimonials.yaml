@@ -9,7 +9,26 @@
 #   quote: <quote text>
 #
 # Only the "company" field is optional
+    
+- name: Jeev Balakrishnan
+  job_title: Staff Software Engineer
+  company: Freenome
+  quote: |
+    "Flyte is quickly becoming a workhorse at Freenome. The regular cadence of high quality backward-compatible releases,
+    quick turnarounds on bug fixes, realtime support on Slack, and a vibrant community of helpful power users across many
+    industries have really supercharged our adoption."
 
+- name: Claire McGinty
+  job_title: Data Engineer
+  company: Spotify
+  quote: |
+    "Open source projects can be challenging, particularly when there are communication gaps, delays, or roadblocks
+    in applying larger changes or supporting new use cases. Contributing to flyte.org was an incredibly streamlined,
+    supportive, and collaborative experience. Haytham and Ketan were extremely helpful as I implemented my original
+    idea; they shared feedback quickly and added me to the Github organization, so I could run CI builds. They
+    are great at encouraging new contributors and new ideas while also maintaining the product vision and high
+    code quality."
+    
 - name: Jim Rebesco
   job_title: CEO & Cofounder
   company: Striveworks
@@ -28,6 +47,14 @@
     process, and have incorporated it into their documentation and roadmaps. After only a few weeks of engagement
     with Flyte, I feel I am a member of the Flyte community now too."
 
+- name: Nitin Aggarwal
+  job_title: CTO & Cofounder
+  company: RunX
+  quote: |
+    "Contributing to Flyte has been a very welcoming and enriching experience, They have been super patient in
+    explaining to us their architecture and reasons behind it. Which later helped us recommend Flyte to various
+    folks in our network."
+    
 - name: Sean Han
   job_title: ML Engineer
   company: Convoy
@@ -37,14 +64,6 @@
     concept based on Flyte. I particularly like the community sync to keep the community updated on the latest
     and get feedback. I see high potential for Flyte and its community."
 
-- name: Nitin Aggarwal
-  job_title: CTO & Cofounder
-  company: RunX
-  quote: |
-    "Contributing to Flyte has been a very welcoming and enriching experience, They have been super patient in
-    explaining to us their architecture and reasons behind it. Which later helped us recommend Flyte to various
-    folks in our network."
-
 - name: Olivier Mannion
   job_title: Principal Engineer
   quote: |
@@ -52,22 +71,3 @@
     question or jump on a Meet to troubleshoot. I watch every meetup asynchronously when I'm awake. The other
     thing is providing pathways for people's contributions. eg: supporting folks with an RFC, and being really
     responsive merging PRs (again < 24 hours)."
-
-- name: Claire McGinty
-  job_title: Data Engineer
-  company: Spotify
-  quote: |
-    "Open source projects can be challenging, particularly when there are communication gaps, delays, or roadblocks
-    in applying larger changes or supporting new use cases. Contributing to flyte.org was an incredibly streamlined,
-    supportive, and collaborative experience. Haytham and Ketan were extremely helpful as I implemented my original
-    idea; they shared feedback quickly and added me to the Github organization, so I could run CI builds. They
-    are great at encouraging new contributors and new ideas while also maintaining the product vision and high
-    code quality."
-    
-- name: Jeev Balakrishnan
-  job_title: Staff Software Engineer
-  company: Freenome
-  quote: |
-    "Flyte is quickly becoming a workhorse at Freenome. The regular cadence of high quality backward-compatible releases,
-    quick turnarounds on bug fixes, realtime support on Slack, and a vibrant community of helpful power users across many
-    industries have really supercharged our adoption."
