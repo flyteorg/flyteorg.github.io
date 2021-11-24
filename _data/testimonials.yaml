@@ -37,7 +37,15 @@
     team have built around Flyte. The diversity of problems the community is tackling, along with the commitment
     and engagement from the core team is something special, and the team here at Striveworks is excited to be
     a part of it."
-
+ 
+- name: Sören Brunk
+  job_title: Software Engineer
+  company: USU AI Services
+  quote: |
+    "The continuous dedication the Flyte team shows to help users and listen to feedback is outstanding.
+    This dedication, along with the friendly and welcoming community, has given us a lot of confidence and was 
+     an important factor in our decision to adopt Flyte."
+    
 - name: Nicholas LoFaso
   job_title: Senior Platform Software Engineer
   company: MethaneSAT
