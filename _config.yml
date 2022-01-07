@@ -8,7 +8,7 @@ plugins:
 
 #Links within the site
 documentation: "https://docs.flyte.org/"
-getstarted: "https://docs.flyte.org/en/latest/getting_started.html"
+getstarted: "https://docs.flyte.org/en/latest/getting_started/index.html"
 contribute: "https://docs.flyte.org/en/latest/community/contribute.html"
 learnmore: "https://docs.flyte.org/en/latest/index.html"
 email: "https://groups.google.com/d/forum/flyte-discuss"
