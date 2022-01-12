@@ -1,6 +1,6 @@
 <div class="header-banner">
-  <a href="https://github.com/flyteorg/flyte/releases/tag/v0.18.2" target="_blank">
-    Flyte 0.18.2 is out! 📣
+  <a href="https://github.com/flyteorg/flyte/releases/tag/v0.19.0" target="_blank">
+    Flyte 0.19.0 (Eagle) is out! 🦅
   </a>
 </div>
 <nav
@@ -46,7 +46,7 @@
               text-white
               hover:opacity-75
             "
-            href="."
+            href="{{ site.url }}"
           >
             <svg
               id="flyte-svg-main"
@@ -394,7 +394,7 @@
             href="{{ site.slack }}"
             target="_blank"
           >
-            <img src="{{ "/assets/images/slack.svg" | prepend: site.baseurl}}"
+            <img src="{{ "/assets/images/slack.svg" | prepend: site.url }}"
             class="slack-icon hidden lg:block" title="Slack" alt="Slack" />
             <span class="lg:hidden">Slack</span>
           </a>
@@ -416,7 +416,7 @@
             href="{{ site.twitter }}"
             target="_blank"
           >
-            <img src="{{ "/assets/images/twitter.svg" | prepend: site.baseurl}}"
+            <img src="{{ "/assets/images/twitter.svg" | prepend: site.url }}"
             class="twitter-icon hidden lg:block" title="Twitter" alt="Twitter"
             />
             <span class="lg:hidden">Twitter</span>
@@ -474,10 +474,32 @@
             href="{{ site.youtube }}"
             target="_blank"
           >
-            <img src="{{ "/assets/images/youtube.svg" | prepend: site.baseurl}}"
+            <img src="{{ "/assets/images/youtube.svg" | prepend: site.url }}"
             class="twitter-icon hidden lg:block" title="YouTube" alt="YouTube"
             />
             <span class="lg:hidden">YouTube</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="
+              px-3
+              py-2
+              flex
+              items-center
+              text-md
+              font-bold
+              leading-snug
+              text-white
+              hover:opacity-75
+              h-full
+            "
+            href="/swag"
+          >
+            <img src="{{ "/assets/images/gift-box.png" | prepend: site.url }}"
+            class="swag-icon hidden lg:block" title="Swag 🎁" alt="Swag"
+            />
+            <span class="lg:hidden">Grab Flyte Swag</span>
           </a>
         </li>
       </ul>

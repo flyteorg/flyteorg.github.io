@@ -43,6 +43,64 @@ h1 {
   height: 35px;
 }
 
+/* **** */
+/* SWAG */
+/* **** */
+.swag-icon {
+  width: 32px;
+  height: 31px;
+}
+
+.swag-text-main {
+  font-family: 'Comforter', cursive;
+  line-height: 1.3 !important;
+}
+
+.swag-text {
+  font-family: 'Comforter', cursive;
+  background: linear-gradient(#7f3fec, #9963e5, #b486df);
+}
+
+.swag-text-bg {
+  background-color: #f7f5fc !important;
+}
+
+.bg-green {
+  background-color: #ebfaf6;
+}
+
+.text-green {
+  color: #33cca3;
+}
+
+.text-light-green {
+  color: #66d9ba;
+}
+
+.bg-blue {
+  background-color: #d0e3f3;
+}
+
+.text-blue {
+  color: #2a71ad
+}
+
+.text-light-blue {
+  color: #4d96d4;
+}
+
+.bg-orange {
+  background-color: #f9dbd6;
+}
+
+.text-orange {
+  color: #e14932;
+}
+
+.text-light-orange {
+  color: #e87765;
+}
+
 /* ************** */
 /* MEDIA CAROUSEL */
 /* ************** */
