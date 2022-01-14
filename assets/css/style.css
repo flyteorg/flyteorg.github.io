@@ -46,9 +46,8 @@ h1 {
 /* **** */
 /* SWAG */
 /* **** */
-.swag-icon {
-  width: 32px;
-  height: 31px;
+.swag-font {
+  font-family: 'Comforter', cursive;
 }
 
 .swag-text-main {
