@@ -56,8 +56,10 @@ h1 {
 }
 
 .swag-text {
-  font-family: 'Comforter', cursive;
-  background: linear-gradient(#7f3fec, #9963e5, #b486df);
+  /* font-family: 'Comforter', cursive; */
+  color: #9963e5;
+  text-decoration: underline;
+  /* background: linear-gradient(#7f3fec, #9963e5, #b486df); */
 }
 
 .swag-text-bg {
