@@ -5,18 +5,79 @@
   <body>
     <div class="main overflow-x-hidden bg-gradient-purple-darkest-to-light">
       {% include navbar.html %}
+
+      <!--Modal-->
+      <div
+        class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+        id="slackmodal"
+      >
+        <div class="relative w-auto my-6 mx-auto max-w-xl">
+          <!--content-->
+          <div
+            class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
+          >
+            <!--header-->
+            <div
+              class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t m-auto"
+            >
+              <img src="{{ "/assets/images/slack_RGB.svg" | prepend: site.url
+              }}" width="230px">
+            </div>
+            <!--body-->
+            <div class="relative p-6 flex-auto text-center">
+              <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
+                Hello! If you want to ask questions about Flyte, or just want to
+                say hi, you can join our Slack channel.
+              </p>
+              <button
+                class="bg-purple-darkest active:bg-emerald-600 font-bold text-white text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              >
+                <a href="https://slack.flyte.org/" type="_blank">
+                  Join Flyte Slack
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden opacity-40 fixed inset-0 z-40 bg-black"
+        id="slackmodal-backdrop"
+      ></div>
+
       <main>{{ content }}</main>
     </div>
     {% include footer.html %}
   </body>
 
   <script>
-    fetch("https://api.github.com/repos/flyteorg/flyte")
-      .then((response) => response.json())
-      .then((data) => {
-        document.getElementById("github-stars").innerHTML =
-          data.stargazers_count;
-      });
+    if (localStorage.getItem("stars") === null) {
+      const now = new Date();
+      fetch("https://api.github.com/repos/flyteorg/flyte")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("github-stars").innerHTML =
+            data.stargazers_count;
+          localStorage.setItem(
+            "stars",
+            JSON.stringify({
+              value: data.stargazers_count,
+              expiry: now.getTime() + 3600000,
+            })
+          );
+        });
+    } else {
+      const itemStr = localStorage.getItem("stars");
+      const item = JSON.parse(itemStr);
+      document.getElementById("github-stars").innerHTML = item.value;
+      const now = new Date();
+      // compare the expiry time of the item with the current time
+      if (now.getTime() > item.expiry) {
+        // If the item is expired, delete the item from storage
+        // and return null
+        localStorage.removeItem("stars");
+      }
+    }
 
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
@@ -78,6 +139,28 @@
       mediaCarousel.trigger("stop.owl.autoplay");
     });
 
+    // carousel for the top banner
+    var bannerCarousel = $("#banner-carousel");
+    bannerCarousel.owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplayTimeout: 10000,
+      items: 1,
+      autoplay: true,
+      dots: false,
+      nav: true,
+      navText: [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'>",
+      ],
+    });
+    $(".play").on("click", function () {
+      bannerCarousel.trigger("play.owl.autoplay", [2000]);
+    });
+    $(".stop").on("click", function () {
+      bannerCarousel.trigger("stop.owl.autoplay");
+    });
+
     // testimonials carousel
     var testimonialsCarousel = $("#testimonials-carousel");
     testimonialsCarousel.owlCarousel({
@@ -111,13 +194,13 @@
         } else {
           clearInterval(intervalId);
         }
-      }
+      };
       var intervalId = setInterval(counter, 10);
     };
 
     // animations in the differentiators section
     let callback = (entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         // Each entry describes an intersection change for one observed
         // target element:
         //   entry.boundingClientRect
@@ -130,15 +213,18 @@
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fadeIn");
 
-          if (entry.target.id.startsWith("metric-") && !entry.target.classList.contains("metric-counter-complete")) {
+          if (
+            entry.target.id.startsWith("metric-") &&
+            !entry.target.classList.contains("metric-counter-complete")
+          ) {
             let counterParams = {
-              "metric-users": {"total": 500, "increment": 1},
-              "metric-executions": {"total": 1000000, "increment": 2000},
-              "metric-tasks": {"total": 20000000, "increment": 40000},
-              "metric-containers": {"total": 40000000, "increment": 80000},
-            }[entry.target.id]
+              "metric-users": { total: 500, increment: 1 },
+              "metric-executions": { total: 1000000, increment: 2000 },
+              "metric-tasks": { total: 20000000, increment: 40000 },
+              "metric-containers": { total: 40000000, increment: 80000 },
+            }[entry.target.id];
 
-            metricCounter(entry.target.id, counterParams)
+            metricCounter(entry.target.id, counterParams);
             entry.target.classList.add("metric-counter-complete");
           }
         }
@@ -147,8 +233,8 @@
 
     let options = {
       root: document.querySelector(".main"),
-      threshold: 1.0
-    }
+      threshold: 1.0,
+    };
     let observer = new IntersectionObserver(callback);
     const targets = document.querySelectorAll(".js-show-on-scroll");
     targets.forEach(function (target) {
@@ -161,5 +247,32 @@
       target.classList.add("opacity-0");
       observer.observe(target);
     });
+
+    function toggleModal(modalID) {
+      document.getElementById(modalID).classList.toggle("hidden");
+      document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+      document.getElementById(modalID).classList.toggle("flex");
+      document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+    }
+
+    // Get/Set cookie when user visits the page
+    // Show Slack modal if user has not visited the page before
+    $(document).ready(function () {
+      if (Cookies.get("visited") == null) {
+        setTimeout(function () {
+          toggleModal("slackmodal");
+        }, 10);
+        Cookies.set("visited", true, { expires: 365 });
+      } else {
+        Cookies.set("visited", true, { expires: 365 });
+      }
+    });
+
+    let modal = document.getElementById("slackmodal");
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        toggleModal("slackmodal");
+      }
+    };
   </script>
 </html>

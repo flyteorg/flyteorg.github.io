@@ -1,59 +1,46 @@
 <footer class="flex items-center justify-center bg-purple-black font-body">
   <div class="container p-8 py-10 md:py-18 lg:py-20 text-white">
     <div class="flex flex-wrap sm:flex-no-wrap mb-4">
-      <div class="w-full sm:w-full md:w-1/2 lg:w-4/6 h-auto mb-10 sm:mb-0">
+      <div class="w-full sm:w-full md:w-2/6 h-auto mb-10 sm:mb-0">
         <div
-          class="
-            mb-8
-            lg:mb-10
-            font-mono font-bold
-            text-2xl
-            lg:text-3xl
-            leading-tight
-          "
+          class="mb-8 lg:mb-10 font-mono font-bold text-2xl lg:text-3xl leading-tight"
         >
           Ready To Take Flyte?
         </div>
         <a
           href="{{ site.getstarted }}"
-          class="
-            btn
-            bg-white
-            text-purple-darkest
-            hover:bg-pink hover:text-purple-black
-            rounded
-          "
+          class="btn bg-white text-purple-darkest hover:bg-pink hover:text-purple-black rounded"
           >Get Started</a
         >
       </div>
-      <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/6 h-auto sm:mt-0 mt-8">
-        <div class="mb-2 text-body font-bold uppercase">Site</div>
+      <div class="w-1/2 sm:w-1/2 md:w-1/6 h-auto sm:mt-0 mt-8">
+        <div class="mb-2 text-body font-bold uppercase">Product</div>
         <ul class="list-reset text-base leading-normal">
           <li class="my-2">
             <a
               class="link-white hover:border-purple-lightest"
-              href="{{ site.documentation }}"
-              >Documentation</a
+              href="{{ site.getstarted }}"
+              >Getting Started</a
             >
           </li>
           <li class="my-2">
             <a
               class="link-white hover:border-purple-lightest"
-              href="{{ site.github }}"
-              >GitHub</a
+              href="{{ site.roadmap }}"
+              >Roadmap</a
             >
           </li>
           <li class="my-2">
             <a
               class="link-white hover:border-purple-lightest"
-              href="{{ site.blog }}"
-              >Blog</a
+              href="{{ site.deployments }}"
+              >Current Deployments</a
             >
           </li>
         </ul>
       </div>
-      <div class="w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/6 h-auto sm:mt-0 mt-8 pl-4">
-        <div class="mb-2 text-body font-bold uppercase">Social</div>
+      <div class="w-1/2 sm:w-1/2 md:w-1/6 h-auto sm:mt-0 mt-8">
+        <div class="mb-2 text-body font-bold uppercase">Community</div>
         <ul class="list-reset text-base leading-normal">
           <li class="my-2">
             <a
@@ -65,8 +52,15 @@
           <li class="my-2">
             <a
               class="link-white hover:border-purple-lightest"
-              href="{{ site.twitter }}"
+              href="{{ site.github }}"
               >Twitter</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.twitter }}"
+              >GitHub</a
             >
           </li>
           <li class="my-2">
@@ -79,8 +73,86 @@
           <li class="my-2">
             <a
               class="link-white hover:border-purple-lightest"
-              href="{{ site.email }}"
-              >Email</a
+              href="{{ site.youtube }}"
+              >YouTube</a
+            >
+          </li>
+          <li class="my-2">
+            <a class="link-white hover:border-purple-lightest" href="/swag"
+              >The Swag Program</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.community_syncup }}"
+              >Community Call</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/2 sm:w-1/2 md:w-1/6 h-auto sm:mt-0 mt-8">
+        <div class="mb-2 text-body font-bold uppercase">Resources</div>
+        <ul class="list-reset text-base leading-normal">
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.blog }}"
+              >Blog</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.newsletter }}"
+              >NewsLetter</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.concepts }}"
+              >Concepts</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.email_list }}"
+              >Email List</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/2 sm:w-1/2 md:w-1/6 h-auto sm:mt-0 mt-8">
+        <div class="mb-2 text-body font-bold uppercase">Docs</div>
+        <ul class="list-reset text-base leading-normal">
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.userguide }}"
+              >User Guide</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.tutorials }}"
+              >Tutorials</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.apidocs }}"
+              >API Docs</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="link-white hover:border-purple-lightest"
+              href="{{ site.deployment_guide }}"
+              >Deployment</a
             >
           </li>
         </ul>
@@ -88,7 +160,10 @@
     </div>
     <div class="flex flex-wrap sm:flex-no-wrap mb-4 mt-4 md:mt-8 lg:mt-mt-10">
       <div class="w-full sm:w-1/2 lg:w-4/6 h-auto text-pink mb-3 sm:mb-0">
-        Created and shared with ♥️ &nbsp; by <a style="text-decoration: underline;" href="https://union.ai/">union.ai</a>
+        Created and shared with ♥️ &nbsp; by
+        <a style="text-decoration: underline" href="https://union.ai/"
+          >union.ai</a
+        >
       </div>
       <div class="w-full sm:w-1/2 lg:w-2/6 text-base text-pink">
         2021 © Flyte Project Authors. All rights reserved.

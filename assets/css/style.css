@@ -20,7 +20,6 @@ main {
     #262262,
     #844cde
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-weight: 700;
   color: #000;
   line-height: 20px;
   padding: 8px;
@@ -166,6 +165,30 @@ h1 {
 .center-feature-text {
   align-items: center;
   justify-content: center !important;
+}
+
+/* PREV & NEXT */
+.owl-nav {
+  margin-top: 0px !important;
+}
+.owl-prev {
+  width: 15px;
+  position: absolute;
+  top: 0%;
+  margin-left: -20px;
+  display: block !important;
+  border:0px solid black;
+  margin-top: 0px !important;
+}
+
+.owl-next {
+  width: 15px;
+  position: absolute;
+  top: 0%;
+  right: -3px !important;
+  display: block !important;
+  border:0px solid black;
+  margin-top: 0px !important;
 }
 
 /* ************ */
