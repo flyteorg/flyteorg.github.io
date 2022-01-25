@@ -26,8 +26,8 @@
             <!--body-->
             <div class="relative p-6 flex-auto text-center">
               <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
-                Hello! If you want to ask questions about Flyte, or just want to
-                say hi, you can join our Slack channel.
+                Join us on Slack to learn more about Flyte, ask questions, or
+                just say hi!
               </p>
               <button
                 class="bg-purple-darkest active:bg-emerald-600 font-bold text-white text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -261,7 +261,7 @@
       if (Cookies.get("visited") == null) {
         setTimeout(function () {
           toggleModal("slackmodal");
-        }, 10);
+        }, 120000); // 2 minutes
         Cookies.set("visited", true, { expires: 182 });
       }
     });
