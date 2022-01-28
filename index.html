@@ -6,89 +6,31 @@ title: Flyte
 <section class="mb-10 sm:mb-16 md:mb-20 lg:mb-32">
   <!--hero-->
   <div
-    class="
-      my-8
-      sm:my-16
-      md:my-20
-      lg:my-32
-      container
-      mx-auto
-      px-4
-      flex
-      items-center
-    "
+    class="my-8 sm:my-16 md:my-20 lg:my-32 container mx-auto px-4 flex items-center"
   >
     <!--wrapper-->
     <div>
       <h1
-        class="
-          text-white text-4xl
-          sm:text-5xl
-          md:text-6xl
-          leading-tighter
-          font-body font-regular
-          text-left text-center
-          lg:w-5/6
-          mx-auto
-        "
+        class="text-white text-4xl sm:text-5xl md:text-6xl leading-tighter font-body font-regular text-left text-center lg:w-5/6 mx-auto"
       >
         The Workflow Automation Platform for Complex, Mission-Critical Data and
         ML Processes at Scale
       </h1>
       <div
-        class="
-          flex flex-wrap
-          md:flex-no-wrap
-          justify-center
-          items-center
-          mt-16
-          md:mt-24
-          mb-10
-        "
+        class="flex flex-wrap md:flex-no-wrap justify-center items-center mt-16 md:mt-24 mb-10"
       >
         <a
           href="{{ site.getstarted }}"
-          class="
-            btn
-            mr-6
-            mb-4
-            md:mr-12
-            text-md
-            sm:text-lg
-            border-2 border-white
-            bg-white
-            text-purple-darkest
-            hover:bg-pink hover:border-pink
-            rounded
-          "
+          class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-white bg-white text-purple-darkest hover:bg-pink hover:border-pink rounded"
           >Get Started</a
         >
         <a
           href="{{ site.contribute }}"
-          class="
-            btn
-            mr-6
-            mb-4
-            md:mr-12
-            text-md
-            sm:text-lg
-            border-2 border-pink
-            text-white
-            hover:border-white
-            rounded
-          "
+          class="btn mr-6 mb-4 md:mr-12 text-md sm:text-lg border-2 border-pink text-white hover:border-white rounded"
           >Contribute</a
         >
         <div
-          class="
-            mb-4
-            font-body font-semibold
-            py-2
-            text-md
-            sm:text-lg
-            md:text-xl
-            text-white
-          "
+          class="mb-4 font-body font-semibold py-2 text-md sm:text-lg md:text-xl text-white"
         >
           <a
             href="{{ site.learnmore }}"
@@ -101,38 +43,50 @@ title: Flyte
   </div>
 
   <!--Carousel-->
-  <div class="row ml-10 mr-10 lg:ml-32 lg:mr-32 mt-10 carousel">
+  <div class="row ml-10 mr-10 md:mx-24 lg:mx-48 mt-10 carousel">
     <div class="large-12 columns">
-      <div id="media-carousel" class="owl-carousel owl-theme carousel-items">
+      <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
+        <a
+          href="https://blog.flyte.org/how-opta-made-deploying-flyte-much-easier"
+          target="_blank"
+        >
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/opta_blog.png" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Blog</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                How Opta Makes Deploying Flyte Much Easier
+              </div>
+            </div>
+          </div>
+        </a>
         <a
           href="https://blog.flyte.org/data-parallel-distributed-training-with-horovod-and-flyte"
           target="_blank"
         >
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
-              class="
-                bg-carousel
-                shadow-inner
-                rounded-xl
-                p-4
-                flex flex-col
-                justify-between
-                leading-normal
-                lg:h-60
-                md:h-60
-                sm:h-64
-                h-64
-                w-full
-              "
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
             >
-              <div class="font-bold text-xl text-white">
-                <div class="mb-4 card-title">
-                  <p>Data-Parallel Distributed Training With Horovod and Flyte</p>
-                </div>
-              </div>
-              <div class="mb-2">
+              <img src="{{ "/assets/images/carousel/horovod_blog.png" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
                 <span class="badge">Blog</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
+              >
+                Data-Parallel Distributed Training With Horovod and Flyte
               </div>
             </div>
           </div>
@@ -144,108 +98,46 @@ title: Flyte
         >
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
-              class="
-                bg-carousel
-                shadow-inner
-                rounded-xl
-                p-4
-                flex flex-col
-                justify-between
-                leading-normal
-                lg:h-60
-                md:h-60
-                sm:h-64
-                h-64
-                w-full
-              "
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
             >
-              <div class="font-bold text-xl text-white card-title">
-                <div class="mb-4">
-                  Building a Weather Forecasting Application with Flyte, Pandera, and Streamlit
-                </div>
-              </div>
-              <div class="mb-2">
+              <img src="{{
+              "/assets/images/carousel/weather_forecasting_blog.webp" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
                 <span class="badge">Blog</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Building a Weather Forecasting Application with Flyte, Pandera,
+                and Streamlit
               </div>
             </div>
           </div>
         </a>
         <!--end of card 6-->
         <!--card 1-->
-        <a
-          href="https://www.youtube.com/watch?v=h3oKwm4L1yE"
-          target="_blank"
-        >
+        <a href="https://www.youtube.com/watch?v=h3oKwm4L1yE" target="_blank">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
-              class="
-                bg-carousel
-                shadow-inner
-                rounded-xl
-                p-4
-                flex flex-col
-                justify-between
-                leading-normal
-                lg:h-60
-                md:h-60
-                sm:h-64
-                h-64
-                w-full
-              "
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
             >
-              <div class="mb-4">
-                <div class="font-bold text-xl text-white card-title">
-                  Open-Source Spotlight - Flyte - Niels Bantilan
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div class="text-sm">
-                  <p class="text-white leading-none font-bold">youtube.com</p>
-                  <p></p>
-                </div>
-              </div>
-              <div class="mb-2">
+              <img src="{{ "/assets/images/carousel/spotlight_flyte.webp" |
+              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
                 <span class="badge">Interview</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Open-Source Spotlight: Flyte
               </div>
             </div>
           </div>
         </a>
         <!--end of card 1-->
-        <!--card 5: feature (uncomment here, from <a> to </a>)-->
-        <a
-          href="https://opendatascience.com/batteries-included-workflow-orchestration-tool-flyte/"
-          target="_blank"
-        >
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="
-                bg-carousel
-                shadow-inner
-                rounded-xl
-                p-4
-                flex flex-col
-                justify-between
-                leading-normal
-                lg:h-60
-                md:h-60
-                sm:h-64
-                h-64
-                w-full
-              "
-            >
-              <div class="font-bold text-xl text-white">
-                <div class="mb-4 card-title">
-                  Batteries-Included Workflow Orchestration Tool: Flyte
-                </div>
-              </div>
-              <div class="mb-2">
-                <span class="badge">Blog</span>
-                <span class="badge">ODSC</span>
-              </div>
-            </div>
-          </div>
-        </a>
-        <!--end of card 5-->
         <!--end of cards-->
       </div>
     </div>
@@ -259,18 +151,7 @@ title: Flyte
   <div class="container mx-auto px-4 text-center lg:w-9/12">
     <!--wrapper-->
     <div
-      class="
-        text-2xl
-        sm:text-4xl
-        md:text-5xl
-        text-white
-        font-body font-medium
-        leading-tight
-        mb-4
-        sm:mb-6
-        md:mb-8
-        lg:mb-12
-      "
+      class="text-2xl sm:text-4xl md:text-5xl text-white font-body font-medium leading-tight mb-4 sm:mb-6 md:mb-8 lg:mb-12"
     >
       Flyte makes it easy to create concurrent, scalable, and maintainable
       workflows for machine learning and data processing.
@@ -292,17 +173,7 @@ title: Flyte
   <div class="container mx-auto max-w-full">
     <!--wrapper-->
     <div
-      class="
-        bg-white
-        mx-auto
-        text-black
-        font-body
-        text-left
-        w-full
-        py-4
-        md:py-10
-        rounded
-      "
+      class="bg-white mx-auto text-black font-body text-left w-full py-4 md:py-10 rounded"
       style="background: #f7f5fc"
     >
       <!--item-1-->
@@ -468,18 +339,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pl-0
-            lg:pl-0
-            xl:pl-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -499,11 +359,7 @@ title: Flyte
       </div>
       <!--item-2-->
       <div
-        class="
-          md:flex md:items-center md:flex-row-reverse
-          relative
-          js-show-on-scroll
-        "
+        class="md:flex md:items-center md:flex-row-reverse relative js-show-on-scroll"
       >
         <div class="illustration md:w-7/12 text-center">
           <div class="flex flex-wrap" id="tabs-id">
@@ -511,19 +367,7 @@ title: Flyte
               <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
                   <a
-                    class="
-                      text-xs
-                      font-bold
-                      uppercase
-                      px-5
-                      py-3
-                      shadow-lg
-                      rounded
-                      block
-                      leading-normal
-                      text-white
-                      code-option-bg
-                    "
+                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white code-option-bg"
                     onclick="changeActiveTab(event,'tab-profile')"
                   >
                     <i class="fas fa-space-shuttle text-base mr-1"></i> Python
@@ -531,19 +375,7 @@ title: Flyte
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
                   <a
-                    class="
-                      text-xs
-                      font-bold
-                      uppercase
-                      px-5
-                      py-3
-                      shadow-lg
-                      rounded
-                      block
-                      leading-normal
-                      code-option-text
-                      bg-white
-                    "
+                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal code-option-text bg-white"
                     onclick="changeActiveTab(event,'tab-settings')"
                   >
                     <i class="fas fa-cog text-base mr-1"></i> Java
@@ -551,19 +383,7 @@ title: Flyte
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
                   <a
-                    class="
-                      text-xs
-                      font-bold
-                      uppercase
-                      px-5
-                      py-3
-                      shadow-lg
-                      rounded
-                      block
-                      leading-normal
-                      code-option-text
-                      bg-white
-                    "
+                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal code-option-text bg-white"
                     onclick="changeActiveTab(event,'tab-options')"
                   >
                     <i class="fas fa-briefcase text-base mr-1"></i> Scala
@@ -571,16 +391,7 @@ title: Flyte
                 </li>
               </ul>
               <div
-                class="
-                  relative
-                  flex flex-col
-                  min-w-0
-                  break-words
-                  bg-white
-                  w-full
-                  mb-6
-                  rounded
-                "
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded"
                 style="background: #f7f5fc"
               >
                 <div class="px-4 py-5 flex-auto">
@@ -636,18 +447,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-5/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pr-0
-            lg:pr-0
-            xl:pr-0
-          "
+          class="md:w-5/12 lg:w-5/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -668,21 +468,7 @@ title: Flyte
       <div class="md:flex md:items-center relative js-show-on-scroll">
         <div class="illustration md:w-5/12 text-center">
           <svg
-            class="
-              max-w-350
-              sm:max-w-md
-              md:max-w-full
-              -my-12
-              -mt-24
-              -ml-16
-              sm:mb-2 sm:-mt-10 sm:-ml-24
-              md:mt-0 md:ml-0
-              inline-block
-              md:block
-              w-full
-              sm:w-auto sm:max-w-md
-              md:max-w-full
-            "
+            class="max-w-350 sm:max-w-md md:max-w-full -my-12 -mt-24 -ml-16 sm:mb-2 sm:-mt-10 sm:-ml-24 md:mt-0 md:ml-0 inline-block md:block w-full sm:w-auto sm:max-w-md md:max-w-full"
             width="600"
             height="600"
             viewBox="0 0 600 600"
@@ -830,18 +616,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pl-0
-            lg:pl-0
-            xl:pl-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -865,24 +640,11 @@ title: Flyte
       </div>
       <!--item-4-->
       <div
-        class="
-          md:flex md:items-center md:flex-row-reverse
-          relative
-          js-show-on-scroll
-        "
+        class="md:flex md:items-center md:flex-row-reverse relative js-show-on-scroll"
       >
         <div class="illustration md:w-5/12 text-center md:text-right">
           <svg
-            class="
-              max-w-380
-              md:max-w-full
-              -mb-10
-              -mt-24
-              -mr-24
-              sm:-mt-20 sm:mb-0
-              md:mt-0 md:mr-0
-              inline-block
-            "
+            class="max-w-380 md:max-w-full -mb-10 -mt-24 -mr-24 sm:-mt-20 sm:mb-0 md:mt-0 md:mr-0 inline-block"
             width="507"
             height="498"
             viewBox="0 0 507 498"
@@ -1057,18 +819,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pr-0
-            lg:pr-0
-            xl:pr-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -1093,21 +844,7 @@ title: Flyte
       <div class="md:flex md:items-center relative js-show-on-scroll">
         <div class="illustration md:w-5/12 text-center">
           <svg
-            class="
-              max-w-350
-              sm:max-w-md
-              md:max-w-full
-              -ml-20
-              -mb-32
-              -mt-10
-              sm:-mb-20 sm:mt-4 sm:-ml-32
-              md:mb-0 md:ml-0 md:mt-0
-              inline-block
-              md:block
-              w-full
-              sm:w-auto sm:max-w-md
-              md:max-w-full
-            "
+            class="max-w-350 sm:max-w-md md:max-w-full -ml-20 -mb-32 -mt-10 sm:-mb-20 sm:mt-4 sm:-ml-32 md:mb-0 md:ml-0 md:mt-0 inline-block md:block w-full sm:w-auto sm:max-w-md md:max-w-full"
             width="472"
             height="500"
             viewBox="0 0 472 500"
@@ -1334,18 +1071,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pl-0
-            lg:pl-0
-            xl:pl-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -1370,24 +1096,11 @@ title: Flyte
       </div>
       <!--item 6-->
       <div
-        class="
-          md:flex md:items-center md:flex-row-reverse
-          relative
-          js-show-on-scroll
-        "
+        class="md:flex md:items-center md:flex-row-reverse relative js-show-on-scroll"
       >
         <div class="illustration md:w-5/12 text-center md:text-right">
           <svg
-            class="
-              max-w-350
-              sm:max-w-md
-              md:max-w-full
-              -my-24
-              -mr-24
-              sm:-my-16
-              md:my-0 md:mr-0
-              inline-block
-            "
+            class="max-w-350 sm:max-w-md md:max-w-full -my-24 -mr-24 sm:-my-16 md:my-0 md:mr-0 inline-block"
             width="527"
             height="510"
             viewBox="0 0 527 510"
@@ -1585,18 +1298,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pr-0
-            lg:pr-0
-            xl:pr-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -1619,20 +1321,7 @@ title: Flyte
       <div class="md:flex md:items-center relative js-show-on-scroll">
         <div class="illustration md:w-5/12 text-center">
           <svg
-            class="
-              max-w-350
-              sm:max-w-md
-              md:max-w-full
-              -my-24
-              -ml-20
-              sm:-my-16 sm:-mt-20 sm:-ml-32
-              md:my-0 md:ml-0
-              inline-block
-              md:block
-              w-full
-              sm:w-auto sm:max-w-md
-              md:max-w-full
-            "
+            class="max-w-350 sm:max-w-md md:max-w-full -my-24 -ml-20 sm:-my-16 sm:-mt-20 sm:-ml-32 md:my-0 md:ml-0 inline-block md:block w-full sm:w-auto sm:max-w-md md:max-w-full"
             width="500"
             height="509"
             viewBox="0 0 500 509"
@@ -1837,18 +1526,7 @@ title: Flyte
         </div>
         <div class="md:w-2/12 lg:w-1/12 hidden md:block self-stretch"></div>
         <div
-          class="
-            md:w-5/12
-            lg:w-6/12
-            px-6
-            sm:px-10
-            md:px-16
-            lg:px-24
-            xl:px-32
-            md:pl-0
-            lg:pl-0
-            xl:pl-0
-          "
+          class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
             class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
@@ -1876,34 +1554,12 @@ title: Flyte
   <section class="mx-4 mb-16 md:mb-20 lg:mb-32">
     <div class="container mx-auto text-center lg:w-5/6 max-w-full">
       <p
-        class="
-          font-thin
-          text-gray-400 text-4xl
-          leading-tight
-          mb-12
-          sm:mb-8
-          lg:mb-23 lg:text-5xl
-        "
+        class="font-thin text-gray-400 text-4xl leading-tight mb-12 sm:mb-8 lg:mb-23 lg:text-5xl"
       >
         TRUSTED BY
       </p>
       <div
-        class="
-          grid
-          py-4
-          gap-6
-          justify-center
-          grid-cols-3
-          md:grid-cols-3 md:gap-10
-          lg:grid-cols-5 lg:gap-6
-          px-10
-          sm:px-24
-          md:px-20
-          lg:px-32
-          flex
-          justify-center
-          items-center
-        "
+        class="grid py-4 gap-6 justify-center grid-cols-3 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 flex justify-center items-center"
       >
         <div class="ml-auto mr-auto">
           <a href="https://www.lyft.com" target="_blank">
@@ -1913,14 +1569,14 @@ title: Flyte
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://research.atspotify.com" target="_blank">
-            <img src="{{ "/assets/images/spotify-rnd.png" | prepend:
-            site.url }}" title="Spotify R&D" alt="Spotify R&D" />
+            <img src="{{ "/assets/images/spotify-rnd.png" | prepend: site.url
+            }}" title="Spotify R&D" alt="Spotify R&D" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.freenome.com" target="_blank">
-            <img src="{{ "/assets/images/freenome.svg" | prepend: site.url
-            }}" title="Freenome" alt="Freenome" />
+            <img src="{{ "/assets/images/freenome.svg" | prepend: site.url }}"
+            title="Freenome" alt="Freenome" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
@@ -1937,8 +1593,8 @@ title: Flyte
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://blackshark.ai" target="_blank">
-            <img src="{{ "/assets/images/blackshark.png" | prepend: site.url
-            }}" title="Blackshark" alt="Blackshark" />
+            <img src="{{ "/assets/images/blackshark.png" | prepend: site.url }}"
+            title="Blackshark" alt="Blackshark" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
@@ -1955,30 +1611,19 @@ title: Flyte
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://striveworks.us" target="_blank">
-            <img src="{{ "/assets/images/striveworks.png" | prepend:
-            site.url }}" title="Striveworks" alt="Striveworks"
-            />
+            <img src="{{ "/assets/images/striveworks.png" | prepend: site.url
+            }}" title="Striveworks" alt="Striveworks" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://latch.bio" target="_blank">
-            <img src="{{ "/assets/images/latchbio.svg" | prepend: site.url
-            }}" width="200" title="Latch" alt="Latch" />
+            <img src="{{ "/assets/images/latchbio.svg" | prepend: site.url }}"
+            width="200" title="Latch" alt="Latch" />
           </a>
         </div>
       </div>
       <h3
-        class="
-          font-display
-          text-gray-400
-          leading-tight
-          mt-1
-          sm:mt-2
-          lg:mt-4
-          text-xs
-          sm:text-sm
-          tracking-wide
-        "
+        class="font-display text-gray-400 leading-tight mt-1 sm:mt-2 lg:mt-4 text-xs sm:text-sm tracking-wide"
         style="text-decoration: underline"
       >
         <a
@@ -1991,40 +1636,25 @@ title: Flyte
     </div>
 
     <!-- testimonials -->
-    <div class="container mx-auto md:2/3 lg:w-3/5 max-w-full mt-14">
-      <hr>
+    <div class="container md:2/3 lg:w-3/5 max-w-full mt-14 mx-auto">
+      <hr />
       <div id="testimonials-carousel" class="owl-carousel owl-theme mb-6">
         {% for testimonial in site.data.testimonials %}
-        <div class="max-w-sm w-full lg:max-w-full lg:flex mt-8">
+        <div class="md:max-w-lg lg:max-w-full lg:flex mt-8 m-auto">
           <div
-            class="
-              rounded-xl
-              p-6
-              flex
-              flex-col
-              justify-between
-              leading-normal
-              h-auto
-              w-full
-              text-2xl
-              text-gray-500
-            "
+            class="rounded-xl p-6 flex flex-col justify-between leading-normal h-auto w-full md:text-xl lg:text-2xl text-gray-500 m-auto"
           >
-            <p class="testimonial-quote">
-              {{ testimonial.quote }}
-            </p>
-            <br>
+            <p class="testimonial-quote">{{ testimonial.quote }}</p>
+            <br />
             <p class="font-bold text-gray-600">
-              {{ testimonial.name }}, {{ testimonial.job_title }}
-              {% if testimonial.company %}
-              @ {{ testimonial.company }}
-              {% endif %}
+              {{ testimonial.name }}, {{ testimonial.job_title }} {% if
+              testimonial.company %} @ {{ testimonial.company }} {% endif %}
             </p>
           </div>
         </div>
         {% endfor %}
       </div>
-      <hr>
+      <hr />
     </div>
   </section>
 
@@ -2032,28 +1662,13 @@ title: Flyte
   <section class="pb-8 sm:pb-16 md:pb-20 lg:pb-32">
     <div class="container mx-auto text-center lg:w-5/6 max-w-full">
       <p
-        class="
-          font-thin
-          text-gray-400 text-4xl
-          leading-tight
-          mb-12
-          sm:mb-8
-          lg:mb-23 lg:text-5xl
-        "
+        class="font-thin text-gray-400 text-4xl leading-tight mb-12 sm:mb-8 lg:mb-23 lg:text-5xl"
       >
         INTEGRATIONS
       </p>
     </div>
     <div
-      class="
-        grid
-        py-4
-        justify-center
-        md:grid-cols-8
-        lg:grid-cols-12
-        grid-cols-4
-        gap-5
-      "
+      class="grid py-4 justify-center md:grid-cols-8 lg:grid-cols-12 grid-cols-4 gap-5"
     >
       <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
         <a href="https://spark.apache.org" target="_blank">
@@ -2077,8 +1692,7 @@ title: Flyte
         <a href="https://greatexpectations.io" target="_blank">
           <img class="h-16" src="{{
           "/assets/images/integrations/greatexpectations.svg" | prepend:
-          site.url }}" title="Great Expectations" alt="Great Expectations"
-          />
+          site.url }}" title="Great Expectations" alt="Great Expectations" />
         </a>
       </div>
       <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
@@ -2097,13 +1711,7 @@ title: Flyte
         </a>
       </div>
       <div
-        class="
-          md:col-start-5 md:col-end-6
-          lg:col-start-9 lg:col-end-10
-          col-start-2
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-5 md:col-end-6 lg:col-start-9 lg:col-end-10 col-start-2 ml-auto mr-auto"
         style="align-content: center; display: inherit"
       >
         <a href="https://papermill.readthedocs.io" target="_blank">
@@ -2112,13 +1720,7 @@ title: Flyte
         </a>
       </div>
       <div
-        class="
-          md:col-start-6
-          lg:col-start-10 lg:col-end-11
-          col-start-3
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-6 lg:col-start-10 lg:col-end-11 col-start-3 ml-auto mr-auto"
       >
         <a href="https://pandas.pydata.org" target="_blank">
           <img class="h-16" src="{{ "/assets/images/integrations/pandas.svg" |
@@ -2134,8 +1736,8 @@ title: Flyte
       <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
         <a href="https://cloud.google.com" target="_blank">
           <img class="h-16" src="{{ "/assets/images/integrations/gcp.svg" |
-          prepend: site.url }}" title="Google Cloud Platform" alt="Google
-          Cloud Platform" />
+          prepend: site.url }}" title="Google Cloud Platform" alt="Google Cloud
+          Platform" />
         </a>
       </div>
       <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
@@ -2147,8 +1749,7 @@ title: Flyte
       <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
         <a href="https://aws.amazon.com/pm/sagemaker" target="_blank">
           <img class="h-16" src="{{ "/assets/images/integrations/sagemaker.svg"
-          | prepend: site.url }}" title="AWS Sagemaker" alt="AWS Sagemaker"
-          />
+          | prepend: site.url }}" title="AWS Sagemaker" alt="AWS Sagemaker" />
         </a>
       </div>
       <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
@@ -2170,13 +1771,7 @@ title: Flyte
         </a>
       </div>
       <div
-        class="
-          md:col-start-6
-          lg:col-start-10 lg:col-end-11
-          col-start-3
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-6 lg:col-start-10 lg:col-end-11 col-start-3 ml-auto mr-auto"
         style="align-content: center; display: inherit"
       >
         <a href="https://arrow.apache.org" target="_blank">
@@ -2200,13 +1795,7 @@ title: Flyte
         </a>
       </div>
       <div
-        class="
-          md:col-start-5
-          lg:col-start-6
-          col-start-2
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-5 lg:col-start-6 col-start-2 ml-auto mr-auto"
         style="align-content: center; display: inherit"
       >
         <a href="https://horovod.ai" target="_blank">
@@ -2224,35 +1813,21 @@ title: Flyte
         </a>
       </div>
       <div
-        class="
-          md:col-start-4
-          lg:col-start-8
-          col-start-2
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-4 lg:col-start-8 col-start-2 ml-auto mr-auto"
         style="align-content: center; display: inherit"
       >
         <a href="https://pytorch.org" target="_blank">
-          <img src="{{
-          "/assets/images/integrations/pytorch.svg" | prepend: site.url }}"
-          title="PyTorch" alt="PyTorch" />
+          <img src="{{ "/assets/images/integrations/pytorch.svg" | prepend:
+          site.url }}" title="PyTorch" alt="PyTorch" />
         </a>
       </div>
       <div
-        class="
-          md:col-start-5
-          lg:col-start-9
-          col-start-3
-          ml-auto
-          mr-auto
-        "
+        class="md:col-start-5 lg:col-start-9 col-start-3 ml-auto mr-auto"
         style="align-content: center; display: inherit"
       >
         <a href="https://www.snowflake.com/" target="_blank">
-          <img src="{{
-          "/assets/images/integrations/snowflake.svg" | prepend: site.url }}"
-          title="Snowflake" alt="Snowflake" />
+          <img src="{{ "/assets/images/integrations/snowflake.svg" | prepend:
+          site.url }}" title="Snowflake" alt="Snowflake" />
         </a>
       </div>
     </div>
@@ -2264,14 +1839,7 @@ title: Flyte
     <div class="container mx-auto text-center">
       <!--wrapper-->
       <h3
-        class="
-          font-semibold font-display
-          text-purple-black text-2xl
-          leading-tight
-          mb-6
-          sm:mb-8
-          lg:mb-12 lg:text-3xl
-        "
+        class="font-semibold font-display text-purple-black text-2xl leading-tight mb-6 sm:mb-8 lg:mb-12 lg:text-3xl"
       >
         Stay Connected
       </h3>
