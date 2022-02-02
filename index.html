@@ -48,6 +48,27 @@ title: Flyte
       <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
         <a
+          href="/hackathon"
+        >
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/hackathon/hackathon.jpeg" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Hackathon</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Come join us for a Hackathon!
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
           href="https://blog.flyte.org/how-opta-makes-deploying-flyte-much-easier"
           target="_blank"
         >
@@ -156,7 +177,7 @@ title: Flyte
       Flyte makes it easy to create concurrent, scalable, and maintainable
       workflows for machine learning and data processing.
     </div>
-    <div class="text-body md:text-xl text-white font-body font-regular leading">
+    <div class="text-body md:text-xl text-white font-body font-regular leading-5">
       Flyte is used in production at Lyft, Spotify, Freenome and others. At
       Lyft, Flyte has been serving production model training and data processing
       for over four years, becoming the de-facto platform for teams like
@@ -342,13 +363,13 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Battle-Tested and Truly Open-Source
           </h3>
           <div>
             <p><span class="tagline">Built for Resiliency</span></p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Flyte has been battle-tested at Lyft, Spotify, Freenome, and
               others. It is entirely open-source with an
               <b>Apache 2.0 license under the Linux Foundation</b> with a
@@ -375,7 +396,7 @@ title: Flyte
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
                   <a
-                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal code-option-text bg-white"
+                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-white"
                     onclick="changeActiveTab(event,'tab-settings')"
                   >
                     <i class="fas fa-cog text-base mr-1"></i> Java
@@ -383,7 +404,7 @@ title: Flyte
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
                   <a
-                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal code-option-text bg-white"
+                    class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-white"
                     onclick="changeActiveTab(event,'tab-options')"
                   >
                     <i class="fas fa-briefcase text-base mr-1"></i> Scala
@@ -450,13 +471,13 @@ title: Flyte
           class="md:w-5/12 lg:w-5/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Write Code, Not YAML!
           </h3>
           <div>
             <p><span class="tagline">Leave the infrastructure to us</span></p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Configuring Machine Learning and Data workflows can get complex
               and error-prone with YAML. Flyte provides intuitive, user-friendly
               SDKs to get the workflows up and running in no time.
@@ -619,17 +640,17 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Start Small, Scale Seamlessly
           </h3>
-          <div class="mb-4">
+          <div class="mb-4 leading-9">
             <p>
               <span class="tagline"> Execute locally </span>
             </p>
             <p><span class="tagline">Deploy to a Kubernetes cluster</span></p>
             <p><span class="tagline">Run on demand</span></p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Flyte is a Kubernetes-native workflow automation platform to unify
               data and ML processes. The containerized, microservices-based
               architecture does not have a single point of failure and is
@@ -822,18 +843,18 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Automated Lineage Tracking and Caching
           </h3>
-          <div class="mb-4">
+          <div class="mb-4 leading-9">
             <p>
               <span class="tagline"> Reduce execution time</span>
             </p>
             <p>
               <span class="tagline">Backtrack to the error-source</span>
             </p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Cache repeated actions across multiple executions. Track all the
               generated data and visualize the data dependencies.
             </p>
@@ -1074,13 +1095,13 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Controlled Extensibility
           </h3>
           <div>
             <p><span class="tagline">Great for platform builders</span></p>
-            <ul class="my-4 content-list text-xl text-gray-700">
+            <ul class="my-4 content-list text-base md:text-xl text-gray-700">
               <li>
                 Use built-in platform extensions like AWS Sagemaker, Distributed
                 Pytorch, Distributed TensorFlow, AWS Batch, Kubernetes Pods,
@@ -1301,7 +1322,7 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pr-0 lg:pr-0 xl:pr-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Facilitate Collaboration
           </h3>
@@ -1309,7 +1330,7 @@ title: Flyte
             <p>
               <span class="tagline"> Build together on one platform </span>
             </p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Flyte makes it easy to stitch together workflows from different
               teams and domain experts. It simplifies the complexity of
               multi-step, multi-owner workflows.
@@ -1529,7 +1550,7 @@ title: Flyte
           class="md:w-5/12 lg:w-6/12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 md:pl-0 lg:pl-0 xl:pl-0"
         >
           <h3
-            class="font-bold font-body text-4xl md:text-4xl mb-4 leading-tight"
+            class="font-bold font-body text-2xl md:text-4xl mb-4 leading-tight"
           >
             Build Self-Service Data Platform
           </h3>
@@ -1537,7 +1558,7 @@ title: Flyte
             <p>
               <span class="tagline">Break down data silos</span>
             </p>
-            <p class="my-4 text-xl text-gray-700">
+            <p class="my-4 text-base md:text-xl text-gray-700">
               Empower teams to self-service their data and ML pipelines while
               maintaining a centralized infrastructure platform that enables
               secure governance.
@@ -1550,7 +1571,7 @@ title: Flyte
 </section>
 
 <div class="bg-white">
-  <!-- parters -->
+  <!-- partners -->
   <section class="mx-4 mb-16 md:mb-20 lg:mb-32">
     <div class="container mx-auto text-center lg:w-5/6 max-w-full">
       <p
@@ -1559,7 +1580,7 @@ title: Flyte
         TRUSTED BY
       </p>
       <div
-        class="grid py-4 gap-6 justify-center grid-cols-3 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 flex justify-center items-center"
+        class="grid py-4 gap-6 justify-center grid-cols-3 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 justify-center items-center"
       >
         <div class="ml-auto mr-auto">
           <a href="https://www.lyft.com" target="_blank">
