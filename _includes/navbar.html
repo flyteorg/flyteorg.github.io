@@ -1,14 +1,19 @@
 <div class="header-banner text-xs md:text-base font-medium">
   <div id="banner-carousel" class="owl-carousel owl-theme carousel-items">
+    <a href="/hackathon"
+      >Come join us for a Hackathon 💻 <span class="opacity-70">→</span></a
+    >
     <a
       href="https://twitter.com/LFAIDataFdn/status/1484163807006142467"
       target="_blank"
+      class="hidden second-nav-item"
       >Flyte is now an LF AI & Data Graduate Project 🎓 !
       <span class="opacity-70">→</span></a
     >
     <a
       href="https://github.com/flyteorg/flyte/releases/tag/v0.19.0"
       target="_blank"
+      class="hidden third-nav-item"
     >
       Flyte 0.19.0 (Eagle) is out! 🦅 <span class="opacity-70">→</span>
     </a>
@@ -95,6 +100,8 @@
               fill="white"
             />
           </svg>
+          <img src="{{ "/assets/images/flyte_lockup_on_light.svg" | prepend:
+          site.url }}" id="flyte-logo-on-light-bg" width="140">
         </a>
       </li>
       <li class="nav-item flex">
@@ -104,7 +111,9 @@
         >
           <img src="{{
           "/assets/images/lfaidata-project-badge-graduate-white.svg" | prepend:
-          site.url }}" width="130px">
+          site.url }}" width="130px" id="lfaidata-main"> <img src="{{
+          "/assets/images/lfaidata-project-badge-graduate-black.svg" | prepend:
+          site.url }}" width="130px" id="lfaidata-light-bg">
         </a>
       </li>
     </ul>
@@ -112,7 +121,7 @@
       class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline md:right-8 md:absolute"
       @click="open = !open"
     >
-      <svg fill="#ffffff" viewBox="0 0 20 20" class="w-6 h-6">
+      <svg fill="#ffffff" viewBox="0 0 20 20" class="w-6 h-6" id="nav-svg">
         <path
           x-show="!open"
           fill-rule="evenodd"
@@ -140,7 +149,7 @@
       <button
         @touchstart="open = !open"
         @mouseenter="open = !open"
-        class="flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent mb-2 rounded-lg lg:w-auto lg:inline lg:mt-0 3 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent mb-2 rounded-lg lg:w-auto lg:inline lg:mt-0 3 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Docs</span>
         <svg
@@ -157,6 +166,7 @@
         </svg>
       </button>
       <div
+        x-cloak
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
         x-transition:enter-start="transform opacity-0 scale-95"
@@ -203,7 +213,7 @@
       <button
         @touchstart="open = !open"
         @mouseenter="open = !open"
-        class="flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Learn</span>
         <svg
@@ -220,6 +230,7 @@
         </svg>
       </button>
       <div
+        x-cloak
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
         x-transition:enter-start="transform opacity-0 scale-95"
@@ -256,7 +267,7 @@
       <button
         @touchstart="open = !open"
         @mouseenter="open = !open"
-        class="flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Community</span>
         <svg
@@ -273,6 +284,7 @@
         </svg>
       </button>
       <div
+        x-cloak
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
         x-transition:enter-start="transform opacity-0 scale-95"
@@ -374,7 +386,7 @@
         </div>
       </div>
     </div>
-    <div class="inline-block py-2 px-4">
+    <div class="inline-block py-4 md:py-1 px-3 github-stars-div hidden">
       <a
         style="
           background-color: #b8c6db;
@@ -405,14 +417,14 @@
             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
           ></path>
         </svg>
-        <span class="text-xs">Star</span> </a
+        <span class="text-xs my-auto">Star</span> </a
       ><a
         style="
           border: 1px solid #ccd1d5;
           border-radius: 0 0.25em 0.25em 0;
           background-color: #fff;
           height: 28px;
-          padding: 5px 10px;
+          padding: 5px 10px !important;
           line-height: 16px;
           border-left: 0;
         "

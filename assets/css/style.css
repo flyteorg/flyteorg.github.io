@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -42,15 +46,53 @@ h1 {
   height: 35px;
 }
 
+/* ********* */
+/* HACKATHON */
+/* ********* */
+.hackathon-hero-bg {
+  background: hsla(262, 82%, 59%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(262, 82%, 59%, 0.6) 0%,
+    hsla(262, 82%, 59%, 0.3) 48%,
+    hsla(0, 0%, 100%, 1) 99%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(262, 82%, 59%, 0.6) 0%,
+    hsla(262, 82%, 59%, 0.3) 48%,
+    hsla(0, 0%, 100%, 1) 99%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(262, 82%, 59%, 0.6) 0%,
+    hsla(262, 82%, 59%, 0.3) 48%,
+    hsla(0, 0%, 100%, 1) 99%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7f3fec", endColorstr="#7f3fec", GradientType=1 );
+}
+
+#flyte-logo-on-light-bg {
+  display: none;
+}
+
+#lfaidata-light-bg {
+  display: none;
+}
+
 /* **** */
 /* SWAG */
 /* **** */
 .swag-font {
-  font-family: 'Comforter', cursive;
+  font-family: "Comforter", cursive;
 }
 
 .swag-text-main {
-  font-family: 'Comforter', cursive;
+  font-family: "Comforter", cursive;
   line-height: 1.3 !important;
 }
 
@@ -82,7 +124,7 @@ h1 {
 }
 
 .text-blue {
-  color: #2a71ad
+  color: #2a71ad;
 }
 
 .text-light-blue {
@@ -129,7 +171,7 @@ h1 {
 
 /* TESTIMONIALS */
 .testimonial-quote {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 /* TALK */
@@ -177,7 +219,7 @@ h1 {
   top: 0%;
   margin-left: -20px;
   display: block !important;
-  border:0px solid black;
+  border: 0px solid black;
   margin-top: 0px !important;
 }
 
@@ -187,7 +229,7 @@ h1 {
   top: 0%;
   right: -3px !important;
   display: block !important;
-  border:0px solid black;
+  border: 0px solid black;
   margin-top: 0px !important;
 }
 
@@ -1263,7 +1305,6 @@ svg {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
-
 .flyte-metrics div {
   font-size: 1.7em;
   font-weight: bold;
@@ -1272,6 +1313,10 @@ svg {
 .flyte-metrics .metric {
   font-size: 1.4em;
   font-family: monospace, monospace;
-  color: #793BEE;
+  color: #793bee;
   padding-right: 5px;
+}
+
+[x-cloak] {
+  display: none !important;
 }

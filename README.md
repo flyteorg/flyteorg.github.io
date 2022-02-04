@@ -13,10 +13,12 @@ This site uses the following packages. To set up the environment - directly jump
 - [Bundler](http://bundler.io/)
 - [Jekyll](https://jekyllrb.com/)
 - [Ruby](https://www.ruby-lang.org/en/)
+- [Tailwind](https://tailwindcss.com)
 
 ## Get started
 
 - Install all [prerequisites](https://jekyllrb.com/docs/installation/)
+    - Tailwind can be installed using the command `npm install -D tailwindcss`
 - Install Bundler
 
 ```
@@ -26,6 +28,7 @@ gem install jekyll bundler
 - `bundle install` to install the Ruby gems specified in Gemfile
 - (Optional) Run `bundle update` if you need to update the Ruby gems
 - Run the command `bundle exec jekyll serve --livereload` to test the site locally
+- Open a new tab and run `npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch` in the root of the repo to build CSS
 - Visit `http://127.0.0.1:4000/` to view your site
 
 ## Troubleshooting Guidelines
