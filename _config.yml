@@ -37,3 +37,4 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - node_modules

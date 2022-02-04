@@ -1316,3 +1316,7 @@ svg {
   color: #793bee;
   padding-right: 5px;
 }
+
+[x-cloak] {
+  display: none !important;
+}
