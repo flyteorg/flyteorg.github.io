@@ -237,6 +237,22 @@ h1 {
 /* CAROUSEL END */
 /* ************ */
 
+/* NEWSLETTER SIGN UP */
+.email-field {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: none;
+}
+
+.subscribe-field {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #eed3fb;
+  border: none;
+}
+
+/* NEWSLETTER END */
+
 a {
   background-color: transparent;
 }
