@@ -244,11 +244,26 @@ h1 {
   border: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .email-field {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-bottom: 8px;
+  }
+}
+
 .subscribe-field {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   background-color: #eed3fb;
   border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .subscribe-field {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
 }
 
 /* NEWSLETTER END */

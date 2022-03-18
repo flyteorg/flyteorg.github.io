@@ -762,28 +762,12 @@ select {
   z-index: 40;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.col-start-4 {
-  grid-column-start: 4;
-}
-
-.col-start-7 {
-  grid-column-start: 7;
-}
-
 .col-start-2 {
   grid-column-start: 2;
 }
 
 .col-start-3 {
   grid-column-start: 3;
-}
-
-.col-end-8 {
-  grid-column-end: 8;
 }
 
 .m-auto {
@@ -850,26 +834,6 @@ select {
   margin-bottom: 1.5rem;
 }
 
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-.my-40 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.my-56 {
-  margin-top: 14rem;
-  margin-bottom: 14rem;
-}
-
-.my-44 {
-  margin-top: 11rem;
-  margin-bottom: 11rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -896,6 +860,14 @@ select {
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .ml-10 {
@@ -990,10 +962,6 @@ select {
   margin-bottom: 2rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1012,18 +980,6 @@ select {
 
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
 }
 
 .block {
@@ -1054,8 +1010,8 @@ select {
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-80 {
@@ -1186,10 +1142,6 @@ select {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-10 {
-  grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -1403,6 +1355,11 @@ select {
   padding-bottom: 1.25rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1421,11 +1378,6 @@ select {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-2 {
@@ -1458,6 +1410,10 @@ select {
   padding-bottom: 0.25rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1468,10 +1424,6 @@ select {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .pb-10 {
@@ -1519,6 +1471,11 @@ select {
   line-height: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1532,11 +1489,6 @@ select {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-black {
@@ -2002,11 +1954,26 @@ h1 {
   border: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .email-field {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-bottom: 8px;
+  }
+}
+
 .subscribe-field {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   background-color: #eed3fb;
   border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .subscribe-field {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
 }
 
 /* NEWSLETTER END */
@@ -3594,8 +3561,20 @@ svg {
     right: 2rem;
   }
 
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:col-start-3 {
     grid-column-start: 3;
+  }
+
+  .md\:col-start-7 {
+    grid-column-start: 7;
   }
 
   .md\:col-start-4 {
@@ -3670,20 +3649,16 @@ svg {
     margin-top: 2rem;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .md\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
   .md\:block {
     display: block;
   }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
   }
 
   .md\:h-96 {
@@ -3728,6 +3703,10 @@ svg {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
   .md\:grid-cols-8 {
@@ -3860,14 +3839,14 @@ svg {
     line-height: 1.75rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -3880,12 +3859,20 @@ svg {
     position: relative;
   }
 
-  .lg\:col-start-3 {
-    grid-column-start: 3;
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:col-start-4 {
     grid-column-start: 4;
+  }
+
+  .lg\:col-start-7 {
+    grid-column-start: 7;
+  }
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
   }
 
   .lg\:col-start-5 {
@@ -3894,10 +3881,6 @@ svg {
 
   .lg\:col-start-6 {
     grid-column-start: 6;
-  }
-
-  .lg\:col-start-7 {
-    grid-column-start: 7;
   }
 
   .lg\:col-start-8 {
@@ -3910,6 +3893,10 @@ svg {
 
   .lg\:col-start-10 {
     grid-column-start: 10;
+  }
+
+  .lg\:col-end-8 {
+    grid-column-end: 8;
   }
 
   .lg\:col-end-10 {
@@ -3938,11 +3925,6 @@ svg {
   .lg\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
-  }
-
-  .lg\:my-28 {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
   }
 
   .lg\:mb-32 {
@@ -3979,14 +3961,6 @@ svg {
 
   .lg\:ml-0 {
     margin-left: 0px;
-  }
-
-  .lg\:mt-48 {
-    margin-top: 12rem;
-  }
-
-  .lg\:mt-44 {
-    margin-top: 11rem;
   }
 
   .lg\:inline {
