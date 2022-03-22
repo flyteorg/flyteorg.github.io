@@ -42,15 +42,45 @@ title: Flyte
       </div>
     </div>
   </div>
+  <div class="mt-20 mb-40 px-3">
+    <h2 class="text-white text-center text-3xl font-bold pb-4">
+      Sign Up for Our Newsletter <span class="italic">Flyte Monthly</span>
+    </h2>
+    <p class="text-white text-center pb-4">
+      Find out what we've been up to at Flyte — news, tutorials, workshops,
+      events and more.
+    </p>
+    <form
+      action="https://www.getrevue.co/profile/flyte/add_subscriber"
+      method="post"
+      id="revue-form"
+      name="revue-form"
+      target="_blank"
+      class="grid grid-cols-1 md:grid-cols-10 justify-center"
+    >
+      <input
+        class="form-input text-sm md:text-base block w-full md:col-start-3 md:col-span-4 lg:col-start-4 lg:col-span-3 email-field px-5 h-10 md:h-12"
+        placeholder="Your email address..."
+        type="email"
+        name="member[email]"
+        id="member_email"
+      />
+      <input
+        type="submit"
+        value="Subscribe now"
+        name="member[subscribe]"
+        id="member_submit"
+        class="h-10 md:h-12 text-sm md:text-base md:col-start-7 md:col-span-2 lg:col-start-7 lg:col-end-8 subscribe-field cursor-pointer font-medium"
+      />
+    </form>
+  </div>
 
   <!--Carousel-->
   <div class="row ml-10 mr-10 md:mx-24 lg:mx-48 mt-10 carousel">
     <div class="large-12 columns">
       <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
-        <a
-          href="/hackathon"
-        >
+        <a href="/hackathon">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
               class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
@@ -77,8 +107,8 @@ title: Flyte
             <div
               class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
             >
-              <img src="{{ "/assets/images/carousel/graduation_blog.webp" | prepend:
-              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              <img src="{{ "/assets/images/carousel/graduation_blog.webp" |
+              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
               rounded-xl">
               <div class="p-4">
                 <span class="badge">Blog</span>
@@ -171,7 +201,9 @@ title: Flyte
       Flyte makes it easy to create concurrent, scalable, and maintainable
       workflows for machine learning and data processing.
     </div>
-    <div class="text-body md:text-xl text-white font-body font-regular leading-5">
+    <div
+      class="text-body md:text-xl text-white font-body font-regular leading-5"
+    >
       Flyte is used in production at Lyft, Spotify, Freenome and others. At
       Lyft, Flyte has been serving production model training and data processing
       for over four years, becoming the de-facto platform for teams like
@@ -1919,7 +1951,10 @@ title: Flyte
             />
           </svg>
         </a>
-        <a href="{{ site.email_list }}" class="inline-block mx-6 sm:mx-8 lg:mx-16">
+        <a
+          href="{{ site.email_list }}"
+          class="inline-block mx-6 sm:mx-8 lg:mx-16"
+        >
           <svg
             width="38"
             height="26"
