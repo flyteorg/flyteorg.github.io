@@ -132,6 +132,10 @@
           items: 3,
           autoplay: true,
         },
+        1800: {
+          items: 4,
+          autoplay: true,
+        },
       },
     });
     $(".play").on("click", function () {
@@ -266,8 +270,8 @@
           Cookies.set("visited", true, { expires: 182, secure: true });
         }, 120000); // 2 minutes
       }
-      $("#hero-title").animate({opacity: 1});
-      $("#github-stars").animate({opacity: 1});
+      $("#hero-title").animate({ opacity: 1 });
+      $("#github-stars").animate({ opacity: 1 });
       $(".second-nav-item").delay(1000).fadeIn(600);
       $(".third-nav-item").delay(1000).fadeIn(600);
     });

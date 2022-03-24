@@ -862,12 +862,12 @@ select {
   margin-right: 1.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-36 {
+  margin-top: 9rem;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
+.mb-64 {
+  margin-bottom: 16rem;
 }
 
 .ml-10 {
@@ -966,6 +966,10 @@ select {
   margin-bottom: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1046,6 +1050,10 @@ select {
   width: 100%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1062,6 +1070,18 @@ select {
   width: auto;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1072,6 +1092,10 @@ select {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .max-w-screen-xl {
@@ -1228,6 +1252,10 @@ select {
   border-radius: 0.75rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1328,6 +1356,10 @@ select {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-3 {
@@ -3613,6 +3645,11 @@ svg {
     margin-bottom: 0px;
   }
 
+  .md\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -3689,6 +3726,14 @@ svg {
     width: 16.666667%;
   }
 
+  .md\:w-12 {
+    width: 3rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -3717,6 +3762,10 @@ svg {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
   }
@@ -3729,6 +3778,10 @@ svg {
     gap: 2.5rem;
   }
 
+  .md\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .md\:p-40 {
     padding: 10rem;
   }
@@ -3739,6 +3792,10 @@ svg {
 
   .md\:p-32 {
     padding: 8rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:px-32 {
@@ -4057,6 +4114,10 @@ svg {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:p-10 {
