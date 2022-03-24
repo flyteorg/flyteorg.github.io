@@ -101,19 +101,82 @@ permalink: /swag/
       </div>
     </div>
 
-    <p class="mb-3">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-10 my-8 md:my-16 lg:my-32"
+      id="contributors"
+    >
+      <a href="https://github.com/sbrunk">
+        <div
+          class="grid grid-cols-3 max-w-xl rounded overflow-hidden p-2 md:p-3 mx-auto bg-green w-full"
+        >
+          <div class="m-auto">
+            <img
+              src="https://avatars.githubusercontent.com/u/3939659?v=4"
+              class="rounded-full w-9 md:w-12"
+            />
+          </div>
+
+          <div class="text-sm md:text-lg font-bold m-auto text-center">
+            Sören Brunk
+          </div>
+          <div class="m-auto">
+            <img src="{{ "/assets/images/pilot.png" | prepend: site.url }}"
+            class="w-8 md:w-10">
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/maximsmol">
+        <div
+          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-green w-full"
+        >
+          <div class="m-auto">
+            <img
+              src="https://avatars.githubusercontent.com/u/1472826?v=4"
+              class="rounded-full w-9 md:w-12"
+            />
+          </div>
+
+          <div class="text-sm md:text-lg font-bold m-auto text-center">
+            Max Smolin
+          </div>
+          <div class="m-auto">
+            <img src="{{ "/assets/images/pilot.png" | prepend: site.url }}"
+            class="w-8 md:w-10">
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/kennyworkman">
+        <div
+          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
+        >
+          <div class="m-auto">
+            <img
+              src="https://avatars.githubusercontent.com/u/31255434?v=4"
+              class="rounded-full w-9 md:w-12"
+            />
+          </div>
+
+          <div class="text-sm md:text-lg font-bold m-auto text-center">
+            Kenny Workman
+          </div>
+          <div class="m-auto">
+            <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
+            class="w-8 md:w-12">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <p class="mb-2">
       To start contributing to Flyte,
       <a href="{{ site.contribute }}" class="underline hover:opacity-75"
         >click here</a
       >.
     </p>
-    <p>
-      If your contribution heavily adds value to Flyte, we will customize your
-      swag and add you as a Flyte contributor!
-    </p>
 
     <p class="text-sm mt-20 text-gray-500">
-      Note: Every contribution is evaluated thoroughly, and authors of
+      Note: Contributions are evaluated
+      <span class="font-bold">once per month</span>, and the authors of
       contributions will be notified on an individual basis.
     </p>
   </div>
