@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1364,12 +1364,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-decoration-thickness: 2px;
 }
 
-.opacity-70 {
-  opacity: 0.7;
-}
-
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .opacity-100 {
