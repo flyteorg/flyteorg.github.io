@@ -112,6 +112,7 @@
       document.getElementById(tabID).classList.add("block");
     }
 
+
     // carousel at top of the main page
     var mediaCarousel = $("#media-carousel");
     mediaCarousel.owlCarousel({
@@ -145,6 +146,70 @@
       mediaCarousel.trigger("stop.owl.autoplay");
     });
 
+/**
+ * Feature showcase carousel
+ */
+    const featureTimeout = 4000;
+    const featureCarousel = $("#feature-carousel");
+    let featureCurrentIndex = 1;
+    let featureDebounce = null;
+
+    const featureUpdateNavItems = (current, previous) => {
+      if(previous > 0){
+        $(`#feature-${previous}`).removeClass('feature-nav-current');
+      }
+      $(`#feature-${current}`).addClass('feature-nav-current');
+    }
+    
+    const featureNavClick = (target) => {
+      const index = $(target).attr("data-index");
+      /* Reset video playback */
+      const video = $(`#feature-video-index-${index}`)[0];
+      video.pause();
+      video.currentTime = 0;
+      video.load();
+
+      /* Reset carousel autoplay */
+      featureCarousel.trigger("stop.owl.autoplay");
+      featureCarousel.trigger('to.owl.carousel', index - 1)
+
+      /* Note: needs debouce, value can probably be lowered tho if needed */
+      featureDebounce = setTimeout(()=>{
+        featureCarousel.trigger("play.owl.autoplay", featureTimeout);
+      }, 500);
+    }
+
+    featureCarousel.owlCarousel({
+      loop: true,
+      items: 1,
+      margin: 10,
+      autoplayTimeout: featureTimeout,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+          autoplay: true,
+        },
+      },
+    }).on('changed.owl.carousel',function(event) {
+      /**
+       * Need to normalize the 'index' value returned from Owl.
+       * issue: https://github.com/OwlCarousel2/OwlCarousel2/issues/1029
+       */
+      const allItems = event.item.count || 1;
+      let currentIndex = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+      if (currentIndex > allItems || currentIndex == 0) {
+        currentIndex = currentIndex < 0 ? 0 : currentIndex 
+        currentIndex = allItems - (currentIndex % allItems);
+      }
+
+      /* Update components */
+      featureUpdateNavItems(currentIndex, featureCurrentIndex)
+      featureCurrentIndex = currentIndex
+    });
+
+
+
     // carousel for the top banner
     var bannerCarousel = $("#banner-carousel");
     bannerCarousel.owlCarousel({
@@ -159,7 +224,7 @@
         "<i class='fa fa-chevron-left'></i>",
         "<i class='fa fa-chevron-right'>",
       ],
-    });
+    })
     $(".play").on("click", function () {
       bannerCarousel.trigger("play.owl.autoplay", [2000]);
     });
@@ -182,6 +247,7 @@
         },
       },
     });
+    $(".feature-video").on("")
     $(".play").on("click", function () {
       testimonialsCarousel.trigger("play.owl.autoplay", [2000]);
     });
