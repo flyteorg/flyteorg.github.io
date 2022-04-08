@@ -33,6 +33,7 @@ deployment_guide: "https://docs.flyte.org/en/latest/deployment/index.html"
 roadmap: "https://github.com/orgs/flyteorg/projects/3"
 status: "https://status.flyte.org/"
 deployments: "https://github.com/flyteorg/flyte#%EF%B8%8F-current-deployments--contributors"
+discuss: "https://discuss.flyte.io"
 
 exclude:
   - Gemfile
