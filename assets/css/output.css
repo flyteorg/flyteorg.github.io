@@ -1050,8 +1050,12 @@ select {
   width: 100%;
 }
 
-.w-12 {
-  width: 3rem;
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-1\/2 {
@@ -1068,18 +1072,6 @@ select {
 
 .w-auto {
   width: auto;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .min-w-0 {
@@ -1350,16 +1342,16 @@ select {
   padding: 4rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .py-3 {
@@ -3718,20 +3710,20 @@ svg {
     width: 58.333333%;
   }
 
-  .md\:w-3\/6 {
-    width: 50%;
-  }
-
-  .md\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .md\:w-12 {
     width: 3rem;
   }
 
   .md\:w-10 {
     width: 2.5rem;
+  }
+
+  .md\:w-3\/6 {
+    width: 50%;
+  }
+
+  .md\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .md\:max-w-full {
