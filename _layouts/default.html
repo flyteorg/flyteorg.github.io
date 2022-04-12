@@ -148,47 +148,49 @@
 
 /**
  * Feature showcase carousel
+ * @TODO: We are temporarily disabling the slides. Instead we will combine all
+ * video content into one slide; disable navigation, disable autoplay.
  */
-    const featureTimeout = 15000;
+    const featureTimeout = 90000;
     const featureCarousel = $("#feature-carousel");
     let featureCurrentIndex = 1;
     let featureDebounce = null;
 
     const featureUpdateNavItems = (current, previous) => {
-      if(previous > 0){
-        $(`#feature-${previous}`).removeClass('feature-nav-current');
-      }
-      $(`#feature-${current}`).addClass('feature-nav-current');
+      // if(previous > 0){
+      //   $(`#feature-${previous}`).removeClass('feature-nav-current');
+      // }
+      // $(`#feature-${current}`).addClass('feature-nav-current');
     }
     
     const featureNavClick = (target) => {
-      const index = $(target).attr("data-index");
-      /* Reset video playback */
-      const video = $(`#feature-video-index-${index}`)[0];
-      video.pause();
-      video.currentTime = 0;
-      video.load();
+      // const index = $(target).attr("data-index");
+      // /* Reset video playback */
+      // const video = $(`#feature-video-index-${index}`)[0];
+      // video.pause();
+      // video.currentTime = 0;
+      // video.load();
 
-      /* Reset carousel autoplay */
-      featureCarousel.trigger("stop.owl.autoplay");
-      featureCarousel.trigger('to.owl.carousel', index - 1)
+      // /* Reset carousel autoplay */
+      // featureCarousel.trigger("stop.owl.autoplay");
+      // featureCarousel.trigger('to.owl.carousel', index - 1)
 
-      /* Note: needs debouce, value can probably be lowered tho if needed */
-      featureDebounce = setTimeout(()=>{
-        featureCarousel.trigger("play.owl.autoplay", featureTimeout);
-      }, 500);
+      // /* Note: needs debouce, value can probably be lowered tho if needed */
+      // featureDebounce = setTimeout(()=>{
+      //   featureCarousel.trigger("play.owl.autoplay", featureTimeout);
+      // }, 500);
     }
 
     featureCarousel.owlCarousel({
       loop: true,
       items: 1,
       margin: 10,
-      autoplayTimeout: featureTimeout,
+      autoplayTimeout: false,
       dots: false,
       responsive: {
         0: {
           items: 1,
-          autoplay: true,
+          autoplay: false,
         },
       },
     }).on('changed.owl.carousel',function(event) {
@@ -196,16 +198,16 @@
        * Need to normalize the 'index' value returned from Owl.
        * issue: https://github.com/OwlCarousel2/OwlCarousel2/issues/1029
        */
-      const allItems = event.item.count || 1;
-      let currentIndex = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
-      if (currentIndex > allItems || currentIndex == 0) {
-        currentIndex = currentIndex < 0 ? 0 : currentIndex 
-        currentIndex = allItems - (currentIndex % allItems);
-      }
+      // const allItems = event.item.count || 1;
+      // let currentIndex = (event.item.index + 1) - event.relatedTarget._clones.length / 2;
+      // if (currentIndex > allItems || currentIndex == 0) {
+      //   currentIndex = currentIndex < 0 ? 0 : currentIndex 
+      //   currentIndex = allItems - (currentIndex % allItems);
+      // }
 
-      /* Update components */
-      featureUpdateNavItems(currentIndex, featureCurrentIndex)
-      featureCurrentIndex = currentIndex
+      // /* Update components */
+      // featureUpdateNavItems(currentIndex, featureCurrentIndex)
+      // featureCurrentIndex = currentIndex
     });
 
 
