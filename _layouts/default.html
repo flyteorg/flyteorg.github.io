@@ -145,6 +145,31 @@
       mediaCarousel.trigger("stop.owl.autoplay");
     });
 
+/**
+ * Feature showcase carousel
+ * @TODO: We are temporarily disabling the slides. Instead we will combine all
+ * video content into one slide; disable navigation, disable autoplay.
+ */
+ const featureTimeout = 90000;
+    const featureCarousel = $("#feature-carousel");
+    let featureCurrentIndex = 1;
+    let featureDebounce = null;
+
+    featureCarousel.owlCarousel({
+      loop: true,
+      items: 1,
+      margin: 10,
+      autoplayTimeout: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+          autoplay: false,
+        },
+      },
+    }).on('changed.owl.carousel',function(event) {
+    });
+
     // carousel for the top banner
     var bannerCarousel = $("#banner-carousel");
     bannerCarousel.owlCarousel({
@@ -182,6 +207,7 @@
         },
       },
     });
+    $(".feature-video").on("")
     $(".play").on("click", function () {
       testimonialsCarousel.trigger("play.owl.autoplay", [2000]);
     });

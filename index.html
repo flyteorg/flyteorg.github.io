@@ -42,39 +42,31 @@ title: Flyte
       </div>
     </div>
   </div>
-  <div class="mt-36 mb-64 px-3">
-    <h2 class="text-white text-center text-3xl font-bold pb-4">
-      Sign Up for Our Newsletter <span class="italic">Flyte Monthly</span>
-    </h2>
-    <p class="text-white text-center pb-4">
-      Find out what we've been up to at Flyte — news, tutorials, workshops,
-      events and more.
-    </p>
-    <form
-      action="https://www.getrevue.co/profile/flyte/add_subscriber"
-      method="post"
-      id="revue-form"
-      name="revue-form"
-      target="_blank"
-      class="grid grid-cols-1 md:grid-cols-10 justify-center"
-    >
-      <input
-        class="form-input text-sm md:text-base block w-full md:col-start-3 md:col-span-4 lg:col-start-4 lg:col-span-3 email-field px-5 h-10 md:h-12"
-        placeholder="Your email address..."
-        type="email"
-        name="member[email]"
-        id="member_email"
-        required
-      />
-      <input
-        type="submit"
-        value="Subscribe now"
-        name="member[subscribe]"
-        id="member_submit"
-        class="h-10 md:h-12 text-sm md:text-base md:col-start-7 md:col-span-2 lg:col-start-7 lg:col-end-8 subscribe-field cursor-pointer font-medium"
-      />
-    </form>
+
+    <!--Feature Showcase Carousel-->
+    <div class="row ml-10 mr-10 md:mx-24 sm:mb-24 sm:mt-12 lg:mx-48">
+      <div id="feature-carousel-container">
+        <div id="feature-carousel-content" class="md:feature-video-nowrap">
+          <div id="feature-carousel-navigation">
+            <ol>
+              <li data-index="1" id="feature-1">1. Write your code</li>
+              <li data-index="2" id="feature-2">2. Test Locally </li>
+              <li data-index="3" id="feature-3">3. Ship to cluster</li>
+              <li data-index="4" id="feature-4">4. Execute & observe</li>
+              <li data-index="5" id="feature-5">5. Retrieve & interact</li>
+            </ol>
+          </div>
+          <div id="feature-carousel" class="owl-carousel owl-theme">
+              <section class="feature-slide">
+                <div class="feature-slide-video">
+                  <video src="/assets/video/flyte_e2e.mp4" id="feature-video-index-1" class="feature-video" width="600" height="338" autoplay loop muted />
+                </div>
+              </section>
+          </div>
+        </div>
+      </div>
   </div>
+  <!--End Feature Showcase Carousel-->
 
   <!--Carousel-->
   <div class="row ml-10 mr-10 md:mx-24 lg:mx-48 mt-10 carousel">
@@ -2021,4 +2013,29 @@ title: Flyte
     <!--/wrapper-->
   </section>
   <!--/social-->
+
+  <!--Sign up-->
+  <section class="px-2 py-12 md:py-16 lg:py-26 bg-gradient-purple-light-to-darkest">
+    <!--wrapper-->
+    <div class="container mx-auto text-center">
+
+      <h2 class="text-white text-center text-3xl font-bold pb-4">
+        Sign Up for Our Newsletter <span class="italic">Flyte Monthly</span>
+      </h2>
+      <p class="text-white text-center pb-4">
+        Find out what we've been up to at Flyte — news, tutorials, workshops,
+        events and more.
+      </p>
+      <form action="https://www.getrevue.co/profile/flyte/add_subscriber" method="post" id="revue-form"
+        name="revue-form" target="_blank" class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-8  justify-center">
+        <input
+          class="form-input text-sm md:text-base block w-full md:col-start-3 md:col-span-4 lg:col-start-3 lg:col-span-3 email-field px-5 h-10 md:h-12"
+          placeholder="Your email address..." type="email" name="member[email]" id="member_email" required />
+        <input type="submit" value="Subscribe now" name="member[subscribe]" id="member_submit"
+          class="h-10 md:h-12 text-sm md:text-base md:col-start-7 md:col-span-2 lg:col-start-6 lg:col-end-7 subscribe-field cursor-pointer font-medium" />
+      </form>
+    </div>
+    <!--/wrapper-->
+  </section>
+  <!-- /Sign up-->
 </div>
