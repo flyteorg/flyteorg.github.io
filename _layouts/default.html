@@ -179,7 +179,7 @@
       items: 1,
       autoplay: true,
       dots: false,
-      nav: true,
+      nav: false,
       navText: [
         "<i class='fa fa-chevron-left'></i>",
         "<i class='fa fa-chevron-right'>",
@@ -191,6 +191,14 @@
     $(".stop").on("click", function () {
       bannerCarousel.trigger("stop.owl.autoplay");
     });
+
+    // load navText after 2 seconds
+    setTimeout(function () {
+      var carouselData = bannerCarousel.data();
+      var carouselOptions = carouselData['owl.carousel'].options;
+      carouselOptions.nav = true;
+      bannerCarousel.trigger('refresh.owl.carousel');
+    }, 2000);
 
     // testimonials carousel
     var testimonialsCarousel = $("#testimonials-carousel");
