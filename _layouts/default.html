@@ -197,7 +197,7 @@
       var carouselData = bannerCarousel.data();
       var carouselOptions = carouselData['owl.carousel'].options;
       carouselOptions.nav = true;
-      $("#banner-carousel").trigger('refresh.owl.carousel');
+      bannerCarousel.trigger('refresh.owl.carousel');
     }, 2000);
 
     // testimonials carousel
