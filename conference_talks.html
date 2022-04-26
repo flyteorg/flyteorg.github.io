@@ -18,8 +18,8 @@ permalink: /conference-talks/
         <p>{{ conference.name }}</p>
         {% for talk in conference.talks %}
         <p class="text-slate-600 font-light">
-          {{ talk.title }} {% for item in site.data.conferences.miscellaneous %}
-          {% if talk[item] %}|
+          {{ talk.title }} {% for item in
+          site.data.conference_talks.miscellaneous %} {% if talk[item] %}|
           <a
             href="{{ talk[item] }}"
             class="hover:underline hover:decoration-4 hover:decoration-purple-400 text-slate-400"
