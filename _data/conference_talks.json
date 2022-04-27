@@ -1,0 +1,186 @@
+{
+  "conferences": [
+    {
+      "year": "2022",
+      "data": [
+        {
+          "name": "Data Council Austin",
+          "talks": [
+            {
+              "title": "Type-Safe Data Processing and Machine Learning Pipelines with Flyte and Pandera",
+              "link": "https://www.datacouncil.ai/talks/type-safe-data-processing-and-machine-learning-pipelines-with-flyte-and-pandera?hsLang=en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "data": [
+        {
+          "name": "OSPOCon 2021",
+          "talks": [
+            {
+              "title": "Building and Growing an Open Source Community for an Incubating Project",
+              "video": "https://www.youtube.com/watch?v=DhXlTzCDeGI&list=PLbzoR-pLrL6q8QMGJ4dFnqejkHDm76kJV&index=37"
+            },
+            {
+              "title": "Enforcing Data Quality in Data Processing and ML Pipelines with Flyte and Pandera",
+              "video": "https://www.youtube.com/watch?v=IB3KrIk4ics&list=PLbzoR-pLrL6q8QMGJ4dFnqejkHDm76kJV&index=84",
+              "deck": "https://static.sched.com/hosted_files/osselc21/fe/OSPOCon%202021_%20Enforcing%20Data%20Quality%20in%20Data%20Processing%20and%20ML%20Pipelines%20with%20Flyte%20and%20Pandera.pdf"
+            },
+            {
+              "title": "Self-serve Feature Engineering Platform Using Flyte and Feast",
+              "video": "https://www.youtube.com/watch?v=Km2ii0F8Yl0&list=PLbzoR-pLrL6q8QMGJ4dFnqejkHDm76kJV&index=215",
+              "deck": "https://static.sched.com/hosted_files/osselc21/6b/Self-serve%20Feature%20Engineering%20Platform%20Using%20Flyte%20and%20Feast%20%281%29.pdf"
+            },
+            {
+              "title": "Efficient Data Parallel Distributed Training with Flyte, Spark & Horovod",
+              "video": "https://www.youtube.com/watch?v=gF3cVTdgLUY&list=PLbzoR-pLrL6q8QMGJ4dFnqejkHDm76kJV&index=77",
+              "deck": "https://static.sched.com/hosted_files/osselc21/be/Efficient%20Data%20Parallel%20Distributed%20Training%20with%20Flyte%2C%20Spark%20%26%20Horovod.pdf"
+            }
+          ]
+        },
+        {
+          "name": "KubeCon + CloudNativeCon North America",
+          "talks": [
+            {
+              "title": "How Spotify Leverages Flyte To Coordinate Financial Analytics Company-Wide",
+              "deck": "https://static.sched.com/hosted_files/kccncna2021/7f/Flyte%20at%20Spotify.pdf"
+            }
+          ]
+        },
+        {
+          "name": "PyData Global",
+          "talks": [
+            {
+              "title": "Robust, End-to-end Online Machine Learning Applications with Flytekit, Pandera and Streamlit",
+              "video": "https://www.youtube.com/watch?v=yblbP7lI2IM"
+            }
+          ]
+        },
+        {
+          "name": "ODSC West Reconnect",
+          "talks": [
+            {
+              "title": "Deep Dive Into Flyte",
+              "link": "https://odsc.com/speakers/deep-dive-into-flyte/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "data": [
+        {
+          "name": "OSS + ELC NA",
+          "talks": [
+            {
+              "title": "Flyte: Production Grade Orchestration for Data and ML",
+              "deck": "https://static.sched.com/hosted_files/ossna2020/68/Flyte%20OSS%20Con.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Data Council",
+          "talks": [
+            {
+              "title": "Flyte: Cloud Native Machine Learning & Data Processing Platform",
+              "video": "https://www.youtube.com/watch?v=1BjXC5TZAiI"
+            }
+          ]
+        },
+        {
+          "name": "FB AI@Scale",
+          "talks": [
+            {
+              "title": "Making MLOps & DataOps a reality",
+              "video": "https://www.facebook.com/atscaleevents/videos/ai-scale-flyte-making-mlops-and-dataops-a-reality/1047312585732459/"
+            }
+          ]
+        },
+        {
+          "name": "GAIC",
+          "talks": [
+            {
+              "title": "Flyte: Cloud Native Machine Learning & Data Processing Platform",
+              "link": "http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-virtual-conference-122/speaker-details/ketan-umare-113746.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "data": [
+        {
+          "name": "Kubecon",
+          "talks": [
+            {
+              "title": "Flyte: Cloud Native Machine Learning and Data Processing Platform",
+              "video": "https://www.youtube.com/watch?v=KdUJGSP1h9U",
+              "deck": "https://kccncna19.sched.com/event/UaYY/flyte-cloud-native-machine-learning-data-processing-platform-ketan-umare-haytham-abuelfutuh-lyft"
+            },
+            {
+              "title": "Running LargeScale Stateful workloads on Kubernetes at Lyft",
+              "video": "https://www.youtube.com/watch?v=ECeVQoble0g"
+            }
+          ]
+        },
+        {
+          "name": "re:invent",
+          "talks": [
+            {
+              "title": "Implementing ML workflows with Kubernetes and Amazon Sagemaker",
+              "video": "https://youtu.be/G-wzIQQJKaE"
+            },
+            {
+              "title": "Cloud-native machine learning at Lyft with AWS Batch and Amazon EKS",
+              "video": "https://www.youtube.com/watch?v=n_rRb8u1GSM"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Open Data Science",
+      "data": [
+        {
+          "title": "West Warm Up session with Ketan Umare - Creator of Flyte",
+          "link": "https://twitter.com/odsc/status/1451594432369758212"
+        }
+      ]
+    },
+    {
+      "name": "MLOps Coffee Session",
+      "data": [
+        {
+          "title": "Flyte: an open-source tool for scalable, extensible, and portable workflows",
+          "link": "https://anchor.fm/mlops/episodes/MLOps-Coffee-Sessions-12-Flyte-an-open-source-tool-for-scalable--extensible---and-portable-workflows-eksa5k"
+        }
+      ]
+    },
+    {
+      "name": "Software Engineering Daily",
+      "data": [
+        {
+          "title": "Flyte: Lyft Data Processing Platform",
+          "link": "https://softwareengineeringdaily.com/2020/03/12/flyte-lyft-data-processing-platform-with-allyson-gale-and-ketan-umare/"
+        }
+      ]
+    },
+    {
+      "name": "TWIML & AI",
+      "data": [
+        {
+          "title": "Scalable and Maintainable ML Workflows at Lyft - Flyte",
+          "link": "https://twimlai.com/twiml-talk-343-scalable-and-maintainable-workflows-at-lyft-with-flyte-w-haytham-abuelfutuh-and-ketan-umare/"
+        }
+      ]
+    }
+  ],
+  "miscellaneous": ["deck", "video", "link"]
+}
