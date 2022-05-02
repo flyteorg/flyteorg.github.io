@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Update latest_release.json
         run: |
-          run: echo "{"release" : {{ steps.keydb.outputs.release }}}" > ./_data/latest_release.json
+          echo "{"release" : {{ steps.keydb.outputs.release }}}" > ./_data/latest_release.json
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v3
