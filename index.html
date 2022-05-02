@@ -14,7 +14,7 @@ title: Flyte
         id="hero-title"
         class="text-white text-4xl sm:text-5xl md:text-6xl leading-tighter font-body font-regular text-left text-center lg:w-5/6 mx-auto opacity-0"
       >
-        The Workflow Automation Platform for Complex, Mission-Critical Data and 
+        The Workflow Automation Platform for Complex, Mission-Critical Data and
         Machine Learning Processes at Scale
       </h1>
       <div
@@ -43,28 +43,37 @@ title: Flyte
     </div>
   </div>
 
-    <!--Feature Showcase Carousel-->
-    <div class="row ml-10 mr-10 md:mx-24 sm:mb-24 sm:mt-12 lg:mx-48">
-      <div id="feature-carousel-container">
-        <div id="feature-carousel-content" class="md:feature-video-nowrap">
-          <div id="feature-carousel-navigation">
-            <ol>
-              <li data-index="1" id="feature-1">1. Write your code</li>
-              <li data-index="2" id="feature-2">2. Test Locally </li>
-              <li data-index="3" id="feature-3">3. Ship to cluster</li>
-              <li data-index="4" id="feature-4">4. Execute & observe</li>
-              <li data-index="5" id="feature-5">5. Retrieve & interact</li>
-            </ol>
-          </div>
-          <div id="feature-carousel" class="owl-carousel owl-theme">
-              <section class="feature-slide">
-                <div class="feature-slide-video">
-                  <video src="/assets/video/flyte_e2e.mp4" id="feature-video-index-1" class="feature-video" width="600" height="338" autoplay loop muted />
-                </div>
-              </section>
-          </div>
+  <!--Feature Showcase Carousel-->
+  <div class="row ml-10 mr-10 md:mx-24 sm:mb-24 sm:mt-12 lg:mx-48">
+    <div id="feature-carousel-container">
+      <div id="feature-carousel-content" class="md:feature-video-nowrap">
+        <div id="feature-carousel-navigation">
+          <ol>
+            <li data-index="1" id="feature-1">1. Write your code</li>
+            <li data-index="2" id="feature-2">2. Test Locally</li>
+            <li data-index="3" id="feature-3">3. Ship to cluster</li>
+            <li data-index="4" id="feature-4">4. Execute & observe</li>
+            <li data-index="5" id="feature-5">5. Retrieve & interact</li>
+          </ol>
+        </div>
+        <div id="feature-carousel" class="owl-carousel owl-theme">
+          <section class="feature-slide">
+            <div class="feature-slide-video">
+              <video
+                src="/assets/video/flyte_e2e.mp4"
+                id="feature-video-index-1"
+                class="feature-video"
+                width="600"
+                height="338"
+                autoplay
+                loop
+                muted
+              />
+            </div>
+          </section>
         </div>
       </div>
+    </div>
   </div>
   <!--End Feature Showcase Carousel-->
 
@@ -73,6 +82,44 @@ title: Flyte
     <div class="large-12 columns">
       <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
+        <a href="https://www.youtube.com/watch?v=OLD5-G9R9fw" target="_blank">
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/mlops_community.webp" |
+              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Talk</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
+              >
+                Engineering Labs & How Flyte Orchestrates Tasks and Workflows
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=0OATtyM7xY8" target="_blank">
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/spotify_talk.jpg" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Case Study</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Leveraging Flyte for frictionless upgrades: Spotify
+              </div>
+            </div>
+          </div>
+        </a>
         <a
           href="https://blog.flyte.org/orchestrating-data-pipelines-at-lyft-comparing-flyte-and-airflow"
           target="_blank"
@@ -114,48 +161,6 @@ title: Flyte
                 class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
               >
                 Why We Switched Our Data Orchestration Service: Spotify
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=1668vZczslw" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/latchbio_case_study.png" |
-              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl">
-              <div class="p-4">
-                <span class="badge">Case Study</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Workflow Orchestration for Biocomputing ~ adopting Flyte @
-                LatchBio
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://blog.flyte.org/from-incubation-to-graduation-and-beyond"
-          target="_blank"
-        >
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/graduation_blog.webp" |
-              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl">
-              <div class="p-4">
-                <span class="badge">Blog</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
-              >
-                From Incubation to Graduation, and Beyond: FlytePath
               </div>
             </div>
           </div>
@@ -203,7 +208,7 @@ title: Flyte
       <div class="md:flex md:items-center relative js-show-on-scroll transform">
         <div class="md:w-5/12 py-10 sm:py-20 items-center">
           <div
-            class="flyte-metrics ml-auto mr-auto pl-0 md:pl-5 lg:pl-0"
+            class="flyte-metrics ml-auto mr-auto md:pl-5 lg:pl-0"
             width="350"
             height="200"
             alt="Flyte Metrics"
@@ -213,6 +218,7 @@ title: Flyte
               viewBox="0 0 490.60366 164.00981"
               width="100%"
               height="100"
+              class="px-28 md:px-14 sm:px-10"
             >
               <defs>
                 <style>
@@ -393,7 +399,7 @@ title: Flyte
                     class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white code-option-bg"
                     onclick="changeActiveTab(event,'tab-profile')"
                   >
-                    <i class="fas fa-space-shuttle text-base mr-1"></i> Python
+                    <i class="fa-brands fa-python text-base mr-1"></i> Python
                   </a>
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -401,7 +407,7 @@ title: Flyte
                     class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-white"
                     onclick="changeActiveTab(event,'tab-settings')"
                   >
-                    <i class="fas fa-cog text-base mr-1"></i> Java
+                    <i class="fa-brands fa-java mr-1"></i> Java
                   </a>
                 </li>
                 <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -409,7 +415,7 @@ title: Flyte
                     class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-white"
                     onclick="changeActiveTab(event,'tab-options')"
                   >
-                    <i class="fas fa-briefcase text-base mr-1"></i> Scala
+                    <i class="fa-solid fa-code mr-1"></i> Scala
                   </a>
                 </li>
               </ul>
@@ -417,47 +423,41 @@ title: Flyte
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded"
                 style="background: #f7f5fc"
               >
-                <div class="px-4 py-5 flex-auto">
-                  <div class="tab-content tab-space">
-                    <div class="block iframe-block" id="tab-profile">
+                <div class="px-4 py-5 flex-auto justify-center align-middle">
+                  <div class="tab-content tab-space inline-block">
+                    <div
+                      class="block iframe-block overflow-auto"
+                      id="tab-profile"
+                    >
                       <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=python&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520pandas%2520as%2520pd%250Afrom%2520flytekit%2520import%2520Resources%252C%2520task%250A%250A%250A%2540task%28limits%253DResources%28cpu%253D%25222%2522%252C%2520mem%253D%2522150Mi%2522%29%29%250Adef%2520total_pay%28hourly_pay%253A%2520float%252C%2520hours_worked%253A%2520int%252C%2520df%253A%2520pd.DataFrame%29%2520-%253E%2520pd.DataFrame%253A%250A%2520%2520%2520%2520return%2520df.assign%28total_pay%253Dhourly_pay%2520*%2520hours_worked%29"
-                        style="
-                          width: 100%;
-                          height: 220px;
-                          border: 0;
-                          transform: scale(1);
-                          overflow: hidden;
-                        "
+                        style="height: 220px; border: 0; transform: scale(1)"
+                        class="code-block-width"
                         sandbox="allow-scripts allow-same-origin"
                         title="Flyte code snippets"
                       >
                       </iframe>
                     </div>
-                    <div class="hidden iframe-block" id="tab-settings">
+                    <div
+                      class="hidden iframe-block overflow-auto"
+                      id="tab-settings"
+                    >
                       <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=text%2Fx-java&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520com.google.auto.service.AutoService%253B%250Aimport%2520com.google.auto.value.AutoValue%253B%250Aimport%2520org.flyte.flytekit.SdkRunnableTask%253B%250Aimport%2520org.flyte.flytekit.jackson.JacksonSdkType%253B%250A%250A%2540AutoService%28SdkRunnableTask.class%29%250Apublic%2520class%2520TotalPayTask%2520extends%2520SdkRunnableTask%253CTotalPayTask.Input%252C%2520TotalPayTask.Output%253E%2520%257B%250A%2520%2520public%2520TotalPayTask%28%29%2520%257B%250A%2520%2520%2520%2520super%28JacksonSdkType.of%28Input.class%29%252C%2520JacksonSdkType.of%28Output.class%29%29%253B%250A%2520%2520%257D%250A%2520%2520%2540AutoValue%250A%2520%2520public%2520abstract%2520static%2520class%2520Input%2520%257B%250A%2520%2520%2520%2520public%2520abstract%2520double%2520hourlyPay%28%29%253B%250A%2520%2520%2520%2520public%2520abstract%2520long%2520hoursWorked%28%29%253B%250A%2520%2520%257D%250A%2520%2520%2540AutoValue%250A%2520%2520public%2520abstract%2520static%2520class%2520Output%2520%257B%250A%2520%2520%2520%2520public%2520abstract%2520double%2520output%28%29%253B%250A%2520%2520%2520%2520public%2520static%2520Output%2520create%28double%2520output%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520new%2520AutoValue_TotalPayTask_Output%28output%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%250A%2520%2520%2540Override%250A%2520%2520public%2520Output%2520run%28Input%2520input%29%2520%257B%250A%2520%2520%2520%2520return%2520Output.create%28input.hourlyPay%28%29%2520*%2520input.hoursWorked%28%29%29%253B%250A%2520%2520%257D%250A%257D"
-                        style="
-                          width: 100%;
-                          height: 295px;
-                          border: 0;
-                          transform: scale(1);
-                          overflow: scroll;
-                        "
+                        style="height: 295px; border: 0; transform: scale(1)"
+                        class="code-block-width"
                         sandbox="allow-scripts allow-same-origin"
                       >
                       </iframe>
                     </div>
-                    <div class="hidden iframe-block" id="tab-options">
+                    <div
+                      class="hidden iframe-block overflow-auto"
+                      id="tab-options"
+                    >
                       <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=sharp&l=text%2Fx-scala&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=0&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=import%2520org.flyte.flytekit.SdkRunnableTask%250Aimport%2520org.flyte.flytekitscala.SdkScalaType%250A%250Acase%2520class%2520TotalPayInput%28hourlyPay%253A%2520Double%252C%2520hoursWorked%253A%2520Long%29%250Acase%2520class%2520TotalPayOutput%28output%253A%2520Double%29%250A%250Aclass%2520TotalPayTask%2520extends%2520SdkRunnableTask%28SdkScalaType%255BTotalPayInput%255D%252C%2520SdkScalaType%255BTotalPayOutput%255D%29%2520%257B%250A%2520%2520def%2520run%28input%253A%2520TotalPayInput%29%253A%2520TotalPayOutput%2520%253D%2520%250A%2520%2520%2520%2520TotalPayOutput%28output%2520%253D%2520input.hourlyPay%2520%252B%2520input.hoursWorked%29%250A%257D"
-                        style="
-                          width: 100%;
-                          height: 295px;
-                          border: 0;
-                          transform: scale(1);
-                          overflow: scroll;
-                        "
+                        style="height: 295px; border: 0; transform: scale(1)"
+                        class="code-block-width"
                         sandbox="allow-scripts allow-same-origin"
                       >
                       </iframe>
@@ -477,7 +477,7 @@ title: Flyte
           >
             Write Code, Not YAML!
           </h3>
-          <div>
+          <div class="mb-4 leading-9">
             <p><span class="tagline">Leave the infrastructure to us</span></p>
             <p class="my-4 text-base md:text-xl text-gray-700">
               Configuring Machine Learning and Data workflows can get complex
@@ -492,9 +492,9 @@ title: Flyte
         <div class="illustration md:w-5/12 text-center">
           <svg
             class="max-w-350 sm:max-w-md md:max-w-full -my-12 -mt-24 -ml-16 sm:mb-2 sm:-mt-10 sm:-ml-24 md:mt-0 md:ml-0 inline-block md:block w-full sm:w-auto sm:max-w-md md:max-w-full"
-            width="600"
-            height="600"
-            viewBox="0 0 600 600"
+            width="500"
+            height="500"
+            viewBox="0 0 500 500"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             vector-effect="non-scaling-stroke"
@@ -1328,7 +1328,7 @@ title: Flyte
           >
             Facilitate Collaboration
           </h3>
-          <div>
+          <div class="mb-4 leading-9">
             <p>
               <span class="tagline"> Build together on one platform </span>
             </p>
@@ -1577,71 +1577,71 @@ title: Flyte
   <section class="mx-4 mb-16 md:mb-20 lg:mb-32">
     <div class="container mx-auto text-center lg:w-5/6 max-w-full">
       <p
-        class="font-thin text-gray-400 text-4xl leading-tight mb-12 sm:mb-8 lg:mb-23 lg:text-5xl"
+        class="font-thin text-gray-400 text-2xl md:text-3xl leading-tight mb-6 lg:mb-23 lg:text-4xl"
       >
         TRUSTED BY
       </p>
       <div
-        class="grid py-4 gap-6 justify-center grid-cols-3 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 justify-center items-center"
+        class="grid py-4 gap-6 justify-center grid-cols-2 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 justify-center items-center"
       >
         <div class="ml-auto mr-auto">
           <a href="https://www.lyft.com" target="_blank">
             <img src="{{ "/assets/images/lyft.svg" | prepend: site.url }}"
-            title="Lyft" alt="Lyft" />
+            title="Lyft" alt="Lyft" class="w-28"/>
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://research.atspotify.com" target="_blank">
             <img src="{{ "/assets/images/spotify-rnd.png" | prepend: site.url
-            }}" title="Spotify R&D" alt="Spotify R&D" />
+            }}" title="Spotify R&D" alt="Spotify R&D" class="w-32" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.freenome.com" target="_blank">
             <img src="{{ "/assets/images/freenome.svg" | prepend: site.url }}"
-            title="Freenome" alt="Freenome" />
+            title="Freenome" alt="Freenome" class="w-28" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.usu.com" target="_blank">
             <img src="{{ "/assets/images/usu.svg" | prepend: site.url }}"
-            title="USU" alt="USU" />
+            title="USU" alt="USU" class="w-20"/>
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.woven-planet.global" target="_blank">
             <img src="{{ "/assets/images/l5.svg" | prepend: site.url }}"
-            title="Level 5" alt="Level 5" />
+            title="Level 5" alt="Level 5" class="w-28 md:w-32"/>
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://blackshark.ai" target="_blank">
             <img src="{{ "/assets/images/blackshark.png" | prepend: site.url }}"
-            title="Blackshark" alt="Blackshark" />
+            title="Blackshark" alt="Blackshark" class="w-28 md:w-32" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.gojek.com" target="_blank">
             <img src="{{ "/assets/images/gojek.png" | prepend: site.url }}"
-            title="Gojek" alt="Gojek" />
+            title="Gojek" alt="Gojek"class="w-20" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://www.runx.dev" target="_blank">
             <img src="{{ "/assets/images/runx.svg" | prepend: site.url }}"
-            title="RunX" alt="RunX" />
+            title="RunX" alt="RunX" class="w-20"/>
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://striveworks.us" target="_blank">
             <img src="{{ "/assets/images/striveworks.png" | prepend: site.url
-            }}" title="Striveworks" alt="Striveworks" />
+            }}" title="Striveworks" alt="Striveworks" class="w-28 md:w-32"/>
           </a>
         </div>
         <div class="ml-auto mr-auto">
           <a href="https://latch.bio" target="_blank">
             <img src="{{ "/assets/images/latchbio.svg" | prepend: site.url }}"
-            width="200" title="Latch" alt="Latch" />
+            width="200" title="Latch" alt="Latch" class="w-28"/>
           </a>
         </div>
       </div>
@@ -1683,342 +1683,250 @@ title: Flyte
 
   <!-- <section class="mx-4 mb-8 sm:mb-16 md:mb-20 lg:mb-32"> -->
   <section class="pb-8 sm:pb-16 md:pb-20 lg:pb-32">
-    <div class="container mx-auto text-center lg max-w-full">
+    <div class="container mx-auto text-center lg:w-5/6 max-w-full">
       <p
-        class="font-thin text-gray-400 text-4xl leading-tight mb-12 sm:mb-8 lg:mb-23 lg:text-5xl"
+        class="font-thin text-gray-400 text-2xl md:text-3xl leading-tight mb-6 lg:mb-23 lg:text-4xl"
       >
         INTEGRATIONS
       </p>
-    </div>
-    <div
-      class="grid py-4 justify-center md:grid-cols-8 lg:grid-cols-12 grid-cols-4 gap-5"
-    >
-      <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/k8s_spark/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/spark.svg" |
-          prepend: site.url }}" title="Apache Spark" alt="Apache Spark" />
-        </a>
-      </div>
-      <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/hive/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/hive.jpg" |
-          prepend: site.url }}" title="Hive" alt="Hive" />
-        </a>
-      </div>
-      <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/kubeflow.svg" |
-          prepend: site.url }}" title="Kubeflow" alt="Kubeflow" />
-        </a>
-      </div>
-      <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/greatexpectations/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{
-          "/assets/images/integrations/greatexpectations.svg" | prepend:
-          site.url }}" title="Great Expectations" alt="Great Expectations" />
-        </a>
-      </div>
-      <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/dolt/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/dolthub.svg" |
-          prepend: site.url }}" title="Dolt" alt="Dolt" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/pandera_examples/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/pandera.svg" |
-          prepend: site.url }}" title="Pandera" alt="Pandera" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-5 md:col-end-6 lg:col-start-9 lg:col-end-10 col-start-2 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/papermilltasks/index.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/papermill.png" | prepend:
-          site.url }}" title="Papermill" alt="Papermill" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-6 lg:col-start-10 lg:col-end-11 col-start-3 ml-auto mr-auto"
-      >
-        <a href="https://pandas.pydata.org" target="_blank">
-          <img class="h-16" src="{{ "/assets/images/integrations/pandas.svg" |
-          prepend: site.url }}" title="Pandas" alt="Pandas" />
-        </a>
-      </div>
-      <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
-        <a href="https://parquet.apache.org" target="_blank">
-          <img class="h-16" src="{{ "/assets/images/integrations/parquet.svg" |
-          prepend: site.url }}" title="Parquet" alt="Parquet" />
-        </a>
-      </div>
-      <div class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto">
-        <a href="https://cloud.google.com" target="_blank">
-          <img class="h-16" src="{{ "/assets/images/integrations/gcp.svg" |
-          prepend: site.url }}" title="Google Cloud Platform" alt="Google Cloud
-          Platform" />
-        </a>
-      </div>
-      <div class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/aws/athena/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/athena.svg" |
-          prepend: site.url }}" title="AWS Athena" alt="AWS Athena" />
-        </a>
-      </div>
-      <div class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/en/latest/deployment/plugin_setup/aws/sagemaker.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/sagemaker.svg"
-          | prepend: site.url }}" title="AWS Sagemaker" alt="AWS Sagemaker" />
-        </a>
-      </div>
-      <div class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/pod/index.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/kubernetes.svg"
-          | prepend: site.url }}" title="Kubernetes" alt="Kubernetes" />
-        </a>
-      </div>
-      <div class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/en/latest/deployment/plugin_setup/gcp/bigquery.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/bigquery.svg" |
-          prepend: site.url }}" title="BigQuery" alt="BigQuery" />
-        </a>
-      </div>
-      <div class="md:col-start-5 lg:col-start-9 col-start-2 ml-auto mr-auto">
-        <a href="https://prestodb.io" target="_blank">
-          <img class="h-16" src="{{ "/assets/images/integrations/prestodb.svg" |
-          prepend: site.url }}" title="Presto" alt="Presto" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-6 lg:col-start-10 lg:col-end-11 col-start-3 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a href="https://arrow.apache.org" target="_blank">
-          <img src="{{ "/assets/images/integrations/arrow.png" | prepend:
-          site.url }}" title="Apache Arrow" alt="Apache Arrow" />
-        </a>
-      </div>
-      <div class="md:col-start-3 lg:col-start-3 col-start-2 ml-auto mr-auto">
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/tf_mnist.html"
-          target="_blank"
-        >
-          <img class="h-16" src="{{ "/assets/images/integrations/tensorflow.svg"
-          | prepend: site.url }}" title="TensorFlow" alt="TensorFlow" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-4 lg:col-start-4 col-start-3 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/sql/sql-alchemy.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/sqlalchemy.png" | prepend:
-          site.url }}" title="SQlAlchemy" alt="SQlAlchemy" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-5 lg:col-start-5 col-start-2 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/ml_training/spark_horovod/index.html"
-          target="_blank"
-        >
-          <img class="h-20" src="{{ "/assets/images/integrations/horovod.png" |
-          prepend: site.url }}" title="Horovod" alt="Horovod" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-6 lg:col-start-6 col-start-3 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/feature_engineering/feast_integration/index.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/feast.png" | prepend:
-          site.url }}" title="Feast" alt="Feast" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-3 lg:col-start-7 col-start-2 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfpytorch/index.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/pytorch.svg" | prepend:
-          site.url }}" title="PyTorch" alt="PyTorch" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-4 lg:col-start-8 col-start-3 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/snowflake/index.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/snowflake.svg" | prepend:
-          site.url }}" title="Snowflake" alt="Snowflake" />
-        </a>
-      </div>
-      <div
-        class="md:col-start-5 lg:col-start-9 col-start-2 ml-auto mr-auto"
-        style="align-content: center; display: inherit"
-      >
-        <a
-          href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/modin_examples/index.html"
-          target="_blank"
-        >
-          <img src="{{ "/assets/images/integrations/modin.png" | prepend:
-          site.url }}" title="Modin" alt="Modin" />
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!--/differentiators-->
-  <section class="px-2 py-12 md:py-16 lg:py-26" style="background: #f7f5fc">
-    <!--social-->
-    <div class="container mx-auto text-center">
-      <!--wrapper-->
-      <h3
-        class="font-semibold font-display text-purple-black text-2xl leading-tight mb-6 sm:mb-8 lg:mb-12 lg:text-3xl"
+      <div
+        class="grid py-4 justify-center md:grid-cols-8 lg:grid-cols-10 grid-cols-4 gap-5 px-10 md:px-20 lg:px-32"
       >
-        Stay Connected
-      </h3>
-      <div>
-        <a href="{{ site.slack }}" class="inline-block mx-6 sm:mx-8 lg:mx-16">
-          <svg
-            width="31"
-            height="31"
-            viewBox="0 0 31 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/k8s_spark/index.html"
+            target="_blank"
           >
-            <title>Slack</title>
-            <path
-              d="M6.73474 19.4387C6.73474 21.1809 5.32662 22.589 3.58438 22.589C1.84214 22.589 0.410156 21.1809 0.410156 19.4387C0.410156 17.6964 1.81827 16.2883 3.56051 16.2883H6.71087V19.4387H6.73474Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M8.30957 19.4384C8.30957 17.6962 9.71768 16.2881 11.4599 16.2881C13.2022 16.2881 14.6103 17.6962 14.6103 19.4384V27.3382C14.6103 29.0805 13.2022 30.4886 11.4599 30.4886C9.71768 30.4886 8.30957 29.0805 8.30957 27.3382V19.4384Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M11.4599 6.81335C9.71768 6.81335 8.30957 5.40524 8.30957 3.66299C8.30957 1.92075 9.71768 0.48877 11.4599 0.48877C13.2022 0.48877 14.6103 1.89688 14.6103 3.63913V6.78949H11.4599V6.81335Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M11.4603 8.38867C13.2025 8.38867 14.6106 9.79679 14.6106 11.539C14.6106 13.2813 13.2025 14.6894 11.4603 14.6894H3.56051C1.81827 14.6894 0.410156 13.2813 0.410156 11.539C0.410156 9.79679 1.81827 8.38867 3.56051 8.38867H11.4603Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M24.0859 11.539C24.0859 9.79679 25.4941 8.38867 27.2363 8.38867C28.9785 8.38867 30.3867 9.79679 30.3867 11.539C30.3867 13.2813 28.9785 14.6894 27.2363 14.6894H24.0859V11.539Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M22.5107 11.5389C22.5107 13.2811 21.1026 14.6892 19.3603 14.6892C17.6181 14.6892 16.21 13.2811 16.21 11.5389V3.63913C16.21 1.89688 17.6181 0.48877 19.3603 0.48877C21.1026 0.48877 22.5107 1.89688 22.5107 3.63913V11.5389Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M19.3603 24.1641C21.1026 24.1641 22.5107 25.5722 22.5107 27.3144C22.5107 29.0567 21.1026 30.4648 19.3603 30.4648C17.6181 30.4648 16.21 29.0567 16.21 27.3144V24.1641H19.3603Z"
-              fill="#641BF2"
-            />
-            <path
-              d="M19.3603 22.589C17.6181 22.589 16.21 21.1809 16.21 19.4387C16.21 17.6964 17.6181 16.2883 19.3603 16.2883H27.2601C29.0023 16.2883 30.4104 17.6964 30.4104 19.4387C30.4104 21.1809 29.0023 22.589 27.2601 22.589H19.3603Z"
-              fill="#641BF2"
-            />
-          </svg>
-        </a>
-        <a href="{{ site.github }}" class="inline-block mx-6 sm:mx-8 lg:mx-16">
-          <svg
-            width="31"
-            height="31"
-            viewBox="0 0 31 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            <img class="h-16 w-24" src="{{ "/assets/images/integrations/spark.svg" |
+            prepend: site.url }}" title="Apache Spark" alt="Apache Spark" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/hive/index.html"
+            target="_blank"
           >
-            <title>Github</title>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M15.3643 0.895508C7.1074 0.895508 0.410156 7.59275 0.410156 15.8496C0.410156 22.4551 4.72208 28.0515 10.5936 30.0698C11.3276 30.1616 11.6028 29.7028 11.6028 29.3359C11.6028 28.9689 11.6028 28.0515 11.6028 26.7671C7.47438 27.6845 6.55694 24.7487 6.55694 24.7487C5.91474 23.0056 4.90557 22.5469 4.90557 22.5469C3.52942 21.6295 4.99731 21.6295 4.99731 21.6295C6.4652 21.7212 7.29089 23.1891 7.29089 23.1891C8.66704 25.4827 10.7771 24.8405 11.6028 24.4735C11.6946 23.4643 12.1533 22.8221 12.5202 22.4551C9.2175 22.0882 5.73126 20.8038 5.73126 15.0239C5.73126 13.3726 6.28172 12.0882 7.29089 10.9873C7.19915 10.712 6.64869 9.15239 7.47438 7.13404C7.47438 7.13404 8.75878 6.76707 11.6028 8.69367C12.7955 8.3267 14.0799 8.23496 15.3643 8.23496C16.6487 8.23496 17.9331 8.41844 19.1258 8.69367C21.9698 6.76707 23.2542 7.13404 23.2542 7.13404C24.0799 9.15239 23.5294 10.712 23.4377 11.079C24.3551 12.0882 24.9973 13.4643 24.9973 15.1157C24.9973 20.8955 21.5111 22.0882 18.2083 22.4551C18.7588 22.9139 19.2175 23.8313 19.2175 25.2074C19.2175 27.2258 19.2175 28.7854 19.2175 29.3359C19.2175 29.7028 19.4927 30.1616 20.2267 30.0698C26.19 28.0515 30.4102 22.4551 30.4102 15.8496C30.3184 7.59275 23.6212 0.895508 15.3643 0.895508Z"
-              fill="#641BF2"
-            />
-          </svg>
-        </a>
-        <a
-          href="{{ site.email_list }}"
-          class="inline-block mx-6 sm:mx-8 lg:mx-16"
+            <img class="h-16" src="{{ "/assets/images/integrations/hive.jpg" |
+            prepend: site.url }}" title="Hive" alt="Hive" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/index.html"
+            target="_blank"
+          >
+            <img class="h-16" src="{{ "/assets/images/integrations/kubeflow.svg"
+            | prepend: site.url }}" title="Kubeflow" alt="Kubeflow" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/greatexpectations/index.html"
+            target="_blank"
+          >
+            <img class="h-16" src="{{
+            "/assets/images/integrations/greatexpectations.svg" | prepend:
+            site.url }}" title="Great Expectations" alt="Great Expectations" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/dolt/index.html"
+            target="_blank"
+          >
+            <img class="h-16 w-24" src="{{ "/assets/images/integrations/dolthub.svg"
+            | prepend: site.url }}" title="Dolt" alt="Dolt" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
         >
-          <svg
-            width="38"
-            height="26"
-            viewBox="0 0 38 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/pandera_examples/index.html"
+            target="_blank"
           >
-            <title>Email</title>
-            <path
-              d="M38 0.880795V24.4106C38 24.9139 37.6225 25.4172 37.1192 25.4172H0.880795C0.377483 25.4172 0 24.9139 0 24.4106V0.880795C0 0.377483 0.377483 0 0.880795 0H37.1192C37.6225 0 38 0.377483 38 0.880795ZM33.3444 22.5232L23.6556 12.9603L19.6291 16.106C19.2517 16.3576 18.7483 16.3576 18.4967 16.106L14.3444 12.9603L4.65563 22.5232H33.3444ZM2.76821 20.5099L12.0795 11.1987L2.76821 4.27815V20.5099ZM5.66225 2.76821L19 12.9603L32.4636 2.76821H5.66225ZM35.2318 4.27815L25.9205 11.1987L35.2318 20.5099V4.27815Z"
-              fill="#641BF2"
-            />
-          </svg>
-        </a>
+            <img class="h-16" src="{{ "/assets/images/integrations/pandera.svg"
+            | prepend: site.url }}" title="Pandera" alt="Pandera" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/papermilltasks/index.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/papermill.png" | prepend:
+            site.url }}" title="Papermill" alt="Papermill" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://pandas.pydata.org" target="_blank">
+            <img class="h-16" src="{{ "/assets/images/integrations/pandas.svg" |
+            prepend: site.url }}" title="Pandas" alt="Pandas" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://parquet.apache.org" target="_blank">
+            <img class="h-16" src="{{ "/assets/images/integrations/parquet.svg"
+            | prepend: site.url }}" title="Parquet" alt="Parquet" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://cloud.google.com" target="_blank">
+            <img class="h-12" src="{{ "/assets/images/integrations/gcp.svg" |
+            prepend: site.url }}" title="Google Cloud Platform" alt="Google
+            Cloud Platform" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/aws/athena/index.html"
+            target="_blank"
+          >
+            <img class="h-14" src="{{ "/assets/images/integrations/athena.svg" |
+            prepend: site.url }}" title="AWS Athena" alt="AWS Athena" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/en/latest/deployment/plugin_setup/aws/sagemaker.html"
+            target="_blank"
+          >
+            <img class="h-14" src="{{
+            "/assets/images/integrations/sagemaker.svg" | prepend: site.url }}"
+            title="AWS Sagemaker" alt="AWS Sagemaker" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/pod/index.html"
+            target="_blank"
+          >
+            <img class="h-16" src="{{
+            "/assets/images/integrations/kubernetes.svg" | prepend: site.url }}"
+            title="Kubernetes" alt="Kubernetes" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/en/latest/deployment/plugin_setup/gcp/bigquery.html"
+            target="_blank"
+          >
+            <img class="h-14" src="{{ "/assets/images/integrations/bigquery.svg"
+            | prepend: site.url }}" title="BigQuery" alt="BigQuery" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://prestodb.io" target="_blank">
+            <img class="h-14" src="{{ "/assets/images/integrations/prestodb.svg"
+            | prepend: site.url }}" title="Presto" alt="Presto" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a href="https://arrow.apache.org" target="_blank">
+            <img src="{{ "/assets/images/integrations/arrow.png" | prepend:
+            site.url }}" title="Apache Arrow" alt="Apache Arrow" />
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/tf_mnist.html"
+            target="_blank"
+          >
+            <img class="h-14" src="{{
+            "/assets/images/integrations/tensorflow.svg" | prepend: site.url }}"
+            title="TensorFlow" alt="TensorFlow" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/sql/sql-alchemy.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/sqlalchemy.png" | prepend:
+            site.url }}" title="SQlAlchemy" alt="SQlAlchemy" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/ml_training/spark_horovod/index.html"
+            target="_blank"
+          >
+            <img class="h-16" src="{{ "/assets/images/integrations/horovod.png"
+            | prepend: site.url }}" title="Horovod" alt="Horovod" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/feature_engineering/feast_integration/index.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/feast.png" | prepend:
+            site.url }}" title="Feast" alt="Feast" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfpytorch/index.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/pytorch.svg" | prepend:
+            site.url }}" class="h-16" title="PyTorch" alt="PyTorch" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/snowflake/index.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/snowflake.svg" | prepend:
+            site.url }}" class="h-12" title="Snowflake" alt="Snowflake" />
+          </a>
+        </div>
+        <div
+          class="ml-auto mr-auto"
+          style="align-content: center; display: inherit"
+        >
+          <a
+            href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/modin_examples/index.html"
+            target="_blank"
+          >
+            <img src="{{ "/assets/images/integrations/modin.png" | prepend:
+            site.url }}" title="Modin" alt="Modin" />
+          </a>
+        </div>
       </div>
     </div>
-    <!--/wrapper-->
   </section>
-  <!--/social-->
 
   <!--Sign up-->
-  <section class="px-2 py-12 md:py-16 lg:py-26 bg-gradient-purple-light-to-darkest">
+  <section
+    class="px-6 py-12 md:py-16 lg:py-26 bg-gradient-purple-light-to-darkest"
+  >
     <!--wrapper-->
     <div class="container mx-auto text-center">
-
       <h2 class="text-white text-center text-3xl font-bold pb-4">
         Sign Up for Our Newsletter <span class="italic">Flyte Monthly</span>
       </h2>
@@ -2026,13 +1934,29 @@ title: Flyte
         Find out what we've been up to at Flyte — news, tutorials, workshops,
         events and more.
       </p>
-      <form action="https://www.getrevue.co/profile/flyte/add_subscriber" method="post" id="revue-form"
-        name="revue-form" target="_blank" class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-8  justify-center">
+      <form
+        action="https://www.getrevue.co/profile/flyte/add_subscriber"
+        method="post"
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
+        class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-8 justify-center"
+      >
         <input
           class="form-input text-sm md:text-base block w-full md:col-start-3 md:col-span-4 lg:col-start-3 lg:col-span-3 email-field px-5 h-10 md:h-12"
-          placeholder="Your email address..." type="email" name="member[email]" id="member_email" required />
-        <input type="submit" value="Subscribe now" name="member[subscribe]" id="member_submit"
-          class="h-10 md:h-12 text-sm md:text-base md:col-start-7 md:col-span-2 lg:col-start-6 lg:col-end-7 subscribe-field cursor-pointer font-medium" />
+          placeholder="Your email address..."
+          type="email"
+          name="member[email]"
+          id="member_email"
+          required
+        />
+        <input
+          type="submit"
+          value="Subscribe now"
+          name="member[subscribe]"
+          id="member_submit"
+          class="h-10 md:h-12 text-sm md:text-base md:col-start-7 md:col-span-2 lg:col-start-6 lg:col-end-7 subscribe-field cursor-pointer font-medium"
+        />
       </form>
     </div>
     <!--/wrapper-->
