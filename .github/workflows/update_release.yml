@@ -1,8 +1,7 @@
 name: Auto-update release
-# on:
-#   schedule:
-#     - cron:  '0 10 * * *'
-on: [push]
+on:
+  schedule:
+    - cron:  '0 10 * * *'
 
 jobs:
   build:
