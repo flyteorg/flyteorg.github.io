@@ -1,1 +1,1 @@
-{ "release": "0.19.4" }
+{release : {{ steps.keydb.outputs.release }}}
