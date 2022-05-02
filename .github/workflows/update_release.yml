@@ -2,6 +2,7 @@ name: Auto-update release
 # on:
 #   schedule:
 #     - cron:  '0 10 * * *'
+on: [push]
 
 jobs:
   build:
