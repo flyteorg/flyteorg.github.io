@@ -1,0 +1,37 @@
+name: Auto-update release
+on:
+  schedule:
+    - cron:  '0 10 * * *'
+
+jobs:
+  build:
+    name: Fetch latest release
+    runs-on: ubuntu-latest
+    steps:
+      - id: keydb
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: flyteorg
+          repo: flyte
+          excludes: prerelease, draft
+      - uses: actions/checkout@v2
+      - name: Update latest_release.json
+        run: |
+          echo "{"release" : {{ steps.keydb.outputs.release }}}" > ./_data/latest_release.json
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.FLYTE_BOT_PAT }}
+          commit-message: '[auto-update-release] update flyte release'
+          committer: Flyte Bot <admin@flyte.org>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: true
+          branch: flyte-release
+          base: master
+          delete-branch: true
+          title: 'auto-update release'
+          team-reviewers: |
+            owners
+            maintainers
+          draft: false

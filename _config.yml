@@ -34,6 +34,9 @@ roadmap: "https://github.com/orgs/flyteorg/projects/3"
 status: "https://status.flyte.org/"
 deployments: "https://github.com/flyteorg/flyte#%EF%B8%8F-current-deployments--contributors"
 discuss: "https://discuss.flyte.io"
+unionml: "https://github.com/unionai-oss/unionml"
+latchsdk: "https://latchbio.substack.com/p/the-latch-sdk?s=r"
+flytectl_gh_action: "https://github.com/unionai-oss/flytectl-setup-action"
 
 exclude:
   - Gemfile

@@ -1,18 +1,19 @@
 <div class="header-banner text-xs md:text-base font-medium">
   <div id="banner-carousel" class="owl-carousel owl-theme carousel-items">
     <a
-      href="https://www.addevent.com/calendar/kE355955"
-      target="_blank"
-      class="hidden second-nav-item"
-      >Join our bi-weekly community sync! <span class="opacity-70">→</span></a
-    >
-    <a
-      href="https://github.com/flyteorg/flyte/releases/tag/v0.19.4"
+      href="https://github.com/flyteorg/flyte/releases/tag/v{{site.data.latest_release.release}}"
       target="_blank"
       class="hidden third-nav-item"
     >
-      Flyte 0.19.4 is out! <span class="opacity-70">→</span>
+      Flyte {{ site.data.latest_release.release}} is out!
+      <span class="opacity-70">→</span>
     </a>
+    <a
+      href="https://www.addevent.com/calendar/kE355955"
+      target="_blank"
+      class="hidden second-nav-item"
+      >Join our bi-weekly community sync <span class="opacity-70">→</span></a
+    >
   </div>
 </div>
 
@@ -140,11 +141,12 @@
     <div
       @mouseover.away="open = false"
       class="relative inline-block"
-      x-data="{ open: false }"
+      x-data="{ open: false, isTouch: false }"
     >
+      <!-- mouseenter event does an XOR operation; if isTouch is true, then open = negation of open; if isTouch is false, then open = same as open -->
       <button
-        @touchstart="open = !open"
-        @mouseenter="open = !open"
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
         class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent mb-2 rounded-lg lg:w-auto lg:inline lg:mt-0 3 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Docs</span>
@@ -209,11 +211,11 @@
     <div
       @mouseover.away="open = false"
       class="relative"
-      x-data="{ open: false }"
+      x-data="{ open: false, isTouch: false }"
     >
       <button
-        @touchstart="open = !open"
-        @mouseenter="open = !open"
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
         class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Learn</span>
@@ -268,11 +270,65 @@
     <div
       @mouseover.away="open = false"
       class="relative"
-      x-data="{ open: false }"
+      x-data="{ open: false, isTouch: false }"
     >
       <button
-        @touchstart="open = !open"
-        @mouseenter="open = !open"
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
+        class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      >
+        <span class="text-base">Ecosystem</span>
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        x-cloak
+        x-show="open"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-48"
+      >
+        <div class="px-2 py-2 bg-white rounded-md shadow">
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.unionml }}"
+            >UnionML</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.latchsdk }}"
+            >Latch SDK</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="{{ site.flytectl_gh_action}}"
+            >Flytectl GitHub Action</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      @mouseover.away="open = false"
+      class="relative"
+      x-data="{ open: false, isTouch: false }"
+    >
+      <button
+        @touchstart="open = !open, isTouch = true"
+        @mouseenter="open = (!open && !isTouch) || (open && isTouch)"
         class="navbar-item flex flex-row text-white items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
       >
         <span class="text-base">Community</span>
@@ -347,13 +403,13 @@
             >Open Source Community Sync</a
           >
           <div
-            @mouseover.away="open = false"
+            @mouseover.away="subOpen = false"
             class="relative"
-            x-data="{ open: false }"
+            x-data="{ subOpen: false, subIsTouch: false }"
           >
             <button
-              @touchstart="open = !open"
-              @mouseenter="open = !open"
+              @touchstart="subOpen = !subOpen, subIsTouch = true"
+              @mouseenter="subOpen = (!subOpen && !subIsTouch) || (subOpen && subIsTouch)"
               class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left mb-2 bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             >
               <span>Weekly Office Hours</span>
@@ -371,7 +427,7 @@
               </svg>
             </button>
             <div
-              x-show="open"
+              x-show="subOpen"
               x-transition:enter="transition ease-out duration-100"
               x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:enter-end="transform opacity-100 scale-100"

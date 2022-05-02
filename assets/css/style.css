@@ -1433,3 +1433,28 @@ svg {
 [x-cloak] {
   display: none !important;
 }
+
+.code-block-width {
+  width: 790px;
+}
+
+@media (max-width: 768px) {
+  .flyte-metrics div {
+    font-size: 1.2em;
+  }
+  .flyte-metrics .metric {
+    font-size: 1em;
+  }
+  .code-block-width {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flyte-metrics div {
+    font-size: 1.2em;
+  }
+  .flyte-metrics .metric {
+    font-size: 1.2em;
+  }
+}
