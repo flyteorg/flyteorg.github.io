@@ -29,7 +29,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: true
           branch: flyte-release
-          base: master
+          base: development
           delete-branch: true
           title: 'auto-update release'
           team-reviewers: |
