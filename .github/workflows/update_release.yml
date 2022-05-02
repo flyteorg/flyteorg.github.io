@@ -15,6 +15,7 @@ jobs:
           owner: flyteorg
           repo: flyte
           excludes: prerelease, draft
+      - uses: actions/checkout@v2
       - name: Update latest_release.json
         run: |
           run: echo "`jq '.release="{{ steps.keydb.outputs.release }}"' ./_data/latest_release.json`" > ./_data/latest_release.json
