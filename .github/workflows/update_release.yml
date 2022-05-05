@@ -1,23 +1,17 @@
 name: Auto-update release
 on:
-  schedule:
-    - cron:  '0 10 * * *'
+  repository_dispatch:
+    types: [release]
 
 jobs:
   build:
     name: Fetch latest release
     runs-on: ubuntu-latest
     steps:
-      - id: keydb
-        uses: pozetroninc/github-action-get-latest-release@master
-        with:
-          owner: flyteorg
-          repo: flyte
-          excludes: prerelease, draft
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Update latest_release.json
         run: |
-          echo '{"release" : "${{ steps.keydb.outputs.release }}"}' > ./_data/latest_release.json
+          echo '{"release" : "${{ github.event.client_payload.tag }}"}' > ./_data/latest_release.json
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
