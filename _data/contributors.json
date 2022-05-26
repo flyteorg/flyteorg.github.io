@@ -1,0 +1,48 @@
+{
+  "pilot": [
+    {
+      "name": "Sören Brunk",
+      "github_url": "https://github.com/sbrunk",
+      "avatar": "https://avatars.githubusercontent.com/u/3939659?v=4"
+    },
+    {
+      "name": "Max Smolin",
+      "github_url": "https://github.com/maximsmol",
+      "avatar": "https://avatars.githubusercontent.com/u/1472826?v=4"
+    }
+  ],
+  "host": [
+    {
+      "name": "Kenny Workman",
+      "github_url": "https://github.com/kennyworkman",
+      "avatar": "https://avatars.githubusercontent.com/u/31255434?v=4"
+    },
+    {
+      "name": "Constantine Slisenka",
+      "github_url": "https://github.com/cslisenka",
+      "avatar": "https://avatars.githubusercontent.com/u/1867416?v=4"
+    },
+    {
+      "name": "Guillaume Perchais",
+      "github_url": "https://github.com/Gui11aum3",
+      "avatar": "https://avatars.githubusercontent.com/u/21953442?v=4"
+    },
+    {
+      "name": "Charalampos Kiosidis",
+      "github_url": "https://github.com/ckiosidis",
+      "avatar": "https://avatars.githubusercontent.com/u/6562898?v=4"
+    }
+  ],
+  "passenger": [
+    {
+      "name": "Eugene Jahn",
+      "github_url": "https://github.com/eugenejahn",
+      "avatar": "https://avatars.githubusercontent.com/u/25038146?v=4"
+    },
+    {
+      "name": "Nick Müller",
+      "github_url": "https://github.com/MorpheusXAUT",
+      "avatar": "https://avatars.githubusercontent.com/u/452166?v=4"
+    }
+  ]
+}
