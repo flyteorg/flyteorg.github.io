@@ -105,19 +105,17 @@ permalink: /swag/
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-10 my-8 md:my-16 lg:my-32"
       id="contributors"
     >
-      <a href="https://github.com/sbrunk">
+      {% for pilot in site.data.contributors.pilot %}
+      <a href="{{ pilot.github_url }}">
         <div
           class="grid grid-cols-3 max-w-xl rounded overflow-hidden p-2 md:p-3 mx-auto bg-green w-full"
         >
           <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/3939659?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
+            <img src="{{ pilot.avatar }}" class="rounded-full w-9 md:w-12" />
           </div>
 
           <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Sören Brunk
+            {{ pilot.name }}
           </div>
           <div class="m-auto">
             <img src="{{ "/assets/images/pilot.png" | prepend: site.url }}"
@@ -125,39 +123,17 @@ permalink: /swag/
           </div>
         </div>
       </a>
-      <a href="https://github.com/maximsmol">
-        <div
-          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-green w-full"
-        >
-          <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/1472826?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
-          </div>
-
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Max Smolin
-          </div>
-          <div class="m-auto">
-            <img src="{{ "/assets/images/pilot.png" | prepend: site.url }}"
-            class="w-8 md:w-10">
-          </div>
-        </div>
-      </a>
-      <a href="https://github.com/kennyworkman">
+      {% endfor %} {% for host in site.data.contributors.host %}
+      <a href="{{ host.github_url }}">
         <div
           class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
         >
           <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/31255434?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
+            <img src="{{ host.avatar }}" class="rounded-full w-9 md:w-12" />
           </div>
 
           <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Kenny Workman
+            {{ host.name }}
           </div>
           <div class="m-auto">
             <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
@@ -165,66 +141,25 @@ permalink: /swag/
           </div>
         </div>
       </a>
-      <a href="https://github.com/cslisenka">
+      {% endfor %} {% for passenger in site.data.contributors.passenger %}
+      <a href="{{ passenger.github_url }}">
         <div
-          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
+          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-orange w-full"
         >
           <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/1867416?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
+            <img src="{{ passenger.avatar }}" class="rounded-full w-9 md:w-12" />
           </div>
 
           <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Constantine Slisenka
+            {{ passenger.name }}
           </div>
           <div class="m-auto">
-            <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
+            <img src="{{ "/assets/images/passenger.png" | prepend: site.url }}"
             class="w-8 md:w-12">
           </div>
         </div>
       </a>
-      <a href="https://github.com/Gui11aum3">
-        <div
-          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
-        >
-          <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/21953442?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
-          </div>
-
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Guillaume Perchais
-          </div>
-          <div class="m-auto">
-            <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
-            class="w-8 md:w-12">
-          </div>
-        </div>
-      </a>
-      <a href="https://github.com/ckiosidis">
-        <div
-          class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
-        >
-          <div class="m-auto">
-            <img
-              src="https://avatars.githubusercontent.com/u/6562898?v=4"
-              class="rounded-full w-9 md:w-12"
-            />
-          </div>
-
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            Charalampos Kiosidis
-          </div>
-          <div class="m-auto">
-            <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
-            class="w-8 md:w-12">
-          </div>
-        </div>
-      </a>
+      {% endfor %}
     </div>
 
     <p class="mb-2">

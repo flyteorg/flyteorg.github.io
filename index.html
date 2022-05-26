@@ -82,6 +82,67 @@ title: Flyte
     <div class="large-12 columns">
       <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
+        <a
+          href="https://blog.flyte.org/build-an-event-driven-neural-style-transfer-application-using-aws-lambda"
+          target="_blank"
+        >
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/aws_lambda_blog.png" |
+              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Blog</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
+              >
+                Build an Event-Driven Neural Style Transfer Application Using
+                AWS Lambda
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=4ktHNeT8kq4" target="_blank">
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/freenome.webp" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">Case Study</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Taking Flyte at Freenome
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.blog/2022-05-20-release-radar-apr-2022/" target="_blank">
+          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+            >
+              <img src="{{ "/assets/images/carousel/release_radar.png" | prepend:
+              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
+              rounded-xl">
+              <div class="p-4">
+                <span class="badge">News</span>
+              </div>
+              <div
+                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
+              >
+                Flyte's on GitHub Release Radar!
+              </div>
+            </div>
+          </div>
+        </a>
         <a href="https://www.youtube.com/watch?v=OLD5-G9R9fw" target="_blank">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
@@ -97,25 +158,6 @@ title: Flyte
                 class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
               >
                 Engineering Labs & How Flyte Orchestrates Tasks and Workflows
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=0OATtyM7xY8" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/spotify_talk.jpg" | prepend:
-              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl">
-              <div class="p-4">
-                <span class="badge">Case Study</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Leveraging Flyte for frictionless upgrades: Spotify
               </div>
             </div>
           </div>
@@ -139,28 +181,6 @@ title: Flyte
               >
                 Orchestrating Data Pipelines at Lyft: Comparing Flyte and
                 Airflow
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://engineering.atspotify.com/2022/03/why-we-switched-our-data-orchestration-service/"
-          target="_blank"
-        >
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/spotify_flyte_blog.png" |
-              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl">
-              <div class="p-4">
-                <span class="badge">Blog</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white px-4 card-title"
-              >
-                Why We Switched Our Data Orchestration Service: Spotify
               </div>
             </div>
           </div>
@@ -1698,8 +1718,9 @@ title: Flyte
             href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/k8s_spark/index.html"
             target="_blank"
           >
-            <img class="h-16 w-24" src="{{ "/assets/images/integrations/spark.svg" |
-            prepend: site.url }}" title="Apache Spark" alt="Apache Spark" />
+            <img class="h-16 w-24" src="{{
+            "/assets/images/integrations/spark.svg" | prepend: site.url }}"
+            title="Apache Spark" alt="Apache Spark" />
           </a>
         </div>
         <div class="ml-auto mr-auto">
@@ -1735,8 +1756,9 @@ title: Flyte
             href="https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/dolt/index.html"
             target="_blank"
           >
-            <img class="h-16 w-24" src="{{ "/assets/images/integrations/dolthub.svg"
-            | prepend: site.url }}" title="Dolt" alt="Dolt" />
+            <img class="h-16 w-24" src="{{
+            "/assets/images/integrations/dolthub.svg" | prepend: site.url }}"
+            title="Dolt" alt="Dolt" />
           </a>
         </div>
         <div
