@@ -180,6 +180,15 @@
           "link": "https://twimlai.com/twiml-talk-343-scalable-and-maintainable-workflows-at-lyft-with-flyte-w-haytham-abuelfutuh-and-ketan-umare/"
         }
       ]
+    },
+    {
+      "name": "Contributor",
+      "data": [
+        {
+          "title": "Flyte with Ketan Umare",
+          "link": "https://www.contributor.fyi/flyte"
+        }
+      ]
     }
   ],
   "miscellaneous": ["deck", "video", "link"]
