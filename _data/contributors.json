@@ -9,6 +9,11 @@
       "name": "Max Smolin",
       "github_url": "https://github.com/maximsmol",
       "avatar": "https://avatars.githubusercontent.com/u/1472826?v=4"
+    },
+    {
+      "name": "Matthew Griffin",
+      "github_url": "https://github.com/NotMatthewGriffin",
+      "avatar": "https://avatars.githubusercontent.com/u/19853373?v=4"
     }
   ],
   "host": [
@@ -43,6 +48,16 @@
       "name": "Nick Müller",
       "github_url": "https://github.com/MorpheusXAUT",
       "avatar": "https://avatars.githubusercontent.com/u/452166?v=4"
+    },
+    {
+      "name": "Robert Everson",
+      "github_url": "https://github.com/reverson",
+      "avatar": "https://avatars.githubusercontent.com/u/391264?v=4"
+    },
+    {
+      "name": "David Przybilla",
+      "github_url": "https://github.com/dav009",
+      "avatar": "https://avatars.githubusercontent.com/u/1659415?v=4"
     }
   ]
 }
