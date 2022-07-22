@@ -1,0 +1,113 @@
+---
+layout: default
+title: Integrations
+permalink: /integrations/
+---
+
+<section class="hero-unit text-center swag-text-bg py-20">
+  <h1 class="text-xl md:text-4xl lg:text-5xl leading-tighter font-black">
+    Integrations
+  </h1>
+  <p class="font-extralight p-3 text-lg">
+    Extend Flyte's functionality with third-party integrations
+  </p>
+</section>
+
+<div
+  class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 my-16 sm:my-16 md:my-32 font-sans p-3"
+>
+  {% for integration in site.data.integrations %}
+  <div class="flex justify-center">
+    <div
+      class="rounded-lg shadow-lg bg-white max-w-sm p-4 sm:p-4 md:p-4 lg:p-4 mx-auto border-2 border-purple-600 w-full"
+    >
+      <div style="height: 80px" class="justify-center flex">
+        <img
+          class="rounded m-auto"
+          src="/assets/images/integrations/{{ integration.logo }}"
+          width="{{ integration.image-width }}"
+        />
+      </div>
+      <div class="p-4">
+        <h5 class="text-xl font-medium mb-4 text-center">
+          {{ integration.name }}
+        </h5>
+        <p class="mb-4 text-center font-extralight text-xs">
+          {% if integration.type == "Flytekit Plugin" %}
+          <span class="bg-red-100 border-red-300 p-1 border-2 rounded-md"
+            >{{ integration.type }}</span
+          >
+          {% elsif integration.type == "Native Backend Plugin" %}
+          <span class="bg-blue-100 border-blue-300 p-1 border-2 rounded-md"
+            >{{ integration.type }}</span
+          >
+          {% elsif integration.type == "External Service Plugin" %}
+          <span class="bg-green-100 border-green-300 p-1 border-2 rounded-md"
+            >{{ integration.type }}</span
+          >
+          {% else %}
+          <span class="bg-orange-100 border-orange-300 p-1 border-2 rounded-md"
+            >{{ integration.type }}</span
+          >
+          {% endif %}
+        </p>
+        <p class="mb-4 font-extralight text-center text-sm">
+          {{ integration.description }}
+        </p>
+        <p class="text-sm mb-2 text-center font-light">
+          {% if integration.documentation %}
+          <a
+            href="{{ integration.documentation }}"
+            target="_blank"
+            class="block hover:underline"
+            ><i class="fa-solid fa-book mr-1"></i>Documentation</a
+          >
+          {% endif %} {% if integration.github %}
+          <a
+            href="{{ integration.github }}"
+            target="_blank"
+            class="block hover:underline"
+            ><i class="fa-brands fa-github mr-1"></i>View on GitHub</a
+          >
+          {% endif %}
+        </p>
+      </div>
+      {% if integration.command %}
+      <!-- Target -->
+      <div class="grid grid-cols-8 border-2 p-2 rounded-md">
+        <input
+          value="{{ integration.command }}"
+          class="col-span-7 text-sm"
+          id="foo-{{ forloop.index }}"
+          readonly
+        />
+
+        <!-- Trigger -->
+        <button
+          class="copy-button"
+          data-clipboard-target="#foo-{{ forloop.index }}"
+          data-tooltip-target="tooltip-click"
+          data-tooltip-trigger="click"
+        >
+          <i class="fa-solid fa-copy float-right"></i>
+        </button>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  $(".main")
+    .removeClass("bg-gradient-purple-darkest-to-light")
+    .addClass("hackathon-hero-bg");
+  $(".navbar-item").removeClass("text-white");
+  $("#flyte-logo-on-light-bg").css("display", "block");
+  $("#flyte-svg-mobile").css("display", "none");
+  $("#flyte-svg-main").css("display", "none");
+  $("#lfaidata-main").css("display", "none");
+  $("#lfaidata-light-bg").css("display", "block");
+  $("#nav-svg").css("fill", "#000000");
+  new Clipboard(".copy-button");
+</script>
