@@ -1,16 +1,22 @@
 <div class="header-banner text-xs md:text-base font-medium">
   <div id="banner-carousel" class="owl-carousel owl-theme carousel-items">
     <a
+      href="https://twitter.com/i/spaces/1ZkKzbXLekWKv?s=20"
+      target="_blank"
+      class="hidden nav-item top-carousel-item"
+      >Tune into our "ML in Production" discussion — w/ Kelsey Hightower!
+      <span class="opacity-70">→</span></a
+    >
+    <a
       href="https://www.union.ai/unionml"
       target="_blank"
-      class="hidden nav-item"
-      >Introducing UnionML: The easiest way to build and deploy ML
-      microservices!</a
+      class="hidden nav-item top-carousel-item"
+      >UnionML: The easiest way to build and deploy ML microservices</a
     >
     <a
       href="https://github.com/flyteorg/flyte/releases/tag/v{{site.data.latest_release.release}}"
       target="_blank"
-      class="hidden nav-item"
+      class="hidden nav-item top-carousel-item"
     >
       Flyte {{ site.data.latest_release.release}} is out!
       <span class="opacity-70">→</span>
@@ -18,7 +24,7 @@
     <a
       href="https://www.addevent.com/calendar/kE355955"
       target="_blank"
-      class="hidden nav-item"
+      class="hidden nav-item top-carousel-item"
       >Join our bi-weekly community sync <span class="opacity-70">→</span></a
     >
   </div>
@@ -317,6 +323,11 @@
           >
           <a
             class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="integrations/"
+            >Flyte Integrations</a
+          >
+          <a
+            class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg lg:mt-1 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="{{ site.latchsdk }}"
             >Latch SDK</a
           >
@@ -366,7 +377,7 @@
         x-transition:leave="transition ease-in duration-75"
         x-transition:leave-start="transform opacity-100 scale-100"
         x-transition:leave-end="transform opacity-0 scale-95"
-        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-56"
+        class="static lg:absolute right-0 w-full origin-top-right rounded-md shadow-lg lg:w-56 z-50"
       >
         <div class="px-2 py-2 bg-white rounded-md shadow">
           <a

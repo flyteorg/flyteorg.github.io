@@ -106,7 +106,7 @@ permalink: /swag/
       id="contributors"
     >
       {% for pilot in site.data.contributors.pilot %}
-      <a href="{{ pilot.github_url }}">
+      <div class="flex justify-center">
         <div
           class="grid grid-cols-3 max-w-xl rounded overflow-hidden p-2 md:p-3 mx-auto bg-green w-full"
         >
@@ -114,17 +114,21 @@ permalink: /swag/
             <img src="{{ pilot.avatar }}" class="rounded-full w-9 md:w-12" />
           </div>
 
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            {{ pilot.name }}
+          <div
+            class="text-sm md:text-lg font-bold m-auto text-center hover:underline"
+          >
+            <a href="{{ pilot.github_url }}" target="_blank">
+              {{ pilot.name }}
+            </a>
           </div>
           <div class="m-auto">
             <img src="{{ "/assets/images/pilot.png" | prepend: site.url }}"
             class="w-8 md:w-10">
           </div>
         </div>
-      </a>
+      </div>
       {% endfor %} {% for host in site.data.contributors.host %}
-      <a href="{{ host.github_url }}">
+      <div class="flex justify-center">
         <div
           class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-blue w-full"
         >
@@ -132,33 +136,44 @@ permalink: /swag/
             <img src="{{ host.avatar }}" class="rounded-full w-9 md:w-12" />
           </div>
 
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            {{ host.name }}
+          <div
+            class="text-sm md:text-lg font-bold m-auto text-center hover:underline"
+          >
+            <a href="{{ host.github_url }}" target="_blank">
+              {{ host.name }}
+            </a>
           </div>
           <div class="m-auto">
             <img src="{{ "/assets/images/host.png" | prepend: site.url }}"
             class="w-8 md:w-12">
           </div>
         </div>
-      </a>
+      </div>
       {% endfor %} {% for passenger in site.data.contributors.passenger %}
-      <a href="{{ passenger.github_url }}">
+      <div class="flex justify-center">
         <div
           class="grid grid-cols-3 max-w-sm rounded overflow-hidden p-3 mx-auto bg-orange w-full"
         >
           <div class="m-auto">
-            <img src="{{ passenger.avatar }}" class="rounded-full w-9 md:w-12" />
+            <img
+              src="{{ passenger.avatar }}"
+              class="rounded-full w-9 md:w-12"
+            />
           </div>
 
-          <div class="text-sm md:text-lg font-bold m-auto text-center">
-            {{ passenger.name }}
+          <div
+            class="text-sm md:text-lg font-bold m-auto text-center hover:underline"
+          >
+            <a href="{{ passenger.github_url }}" target="_blank">
+              {{ passenger.name }}
+            </a>
           </div>
           <div class="m-auto">
             <img src="{{ "/assets/images/passenger.png" | prepend: site.url }}"
             class="w-8 md:w-12">
           </div>
         </div>
-      </a>
+      </div>
       {% endfor %}
     </div>
 

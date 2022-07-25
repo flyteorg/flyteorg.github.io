@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Airflow",
+    "type": "Airflow Provider",
+    "description": "Trigger Flyte executions from within Airflow.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/airflow/index.html",
+    "github": "https://github.com/flyteorg/airflow-provider-flyte",
+    "logo": "airflow.png",
+    "command": "pip install airflow-provider-flyte",
+    "image-width": "50"
+  },
+  {
+    "name": "Pandera",
+    "type": "Flytekit Plugin",
+    "description": "Validate pandas dataframes.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/pandera_examples/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-pandera",
+    "logo": "pandera.svg",
+    "command": "pip install flytekitplugins-pandera",
+    "image-width": "150"
+  },
+  {
+    "name": "Spark",
+    "type": "Native Backend Plugin",
+    "description": "Run Spark jobs on a Kubernetes cluster.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/k8s_spark/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-spark",
+    "logo": "spark.svg",
+    "command": "pip install flytekitplugins-spark",
+    "image-width": "80"
+  },
+  {
+    "name": "Sagemaker",
+    "type": "Native Backend Plugin",
+    "description": "Train models using SageMaker.",
+    "documentation": "hhttps://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/aws/sagemaker_training/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/aws/sagemaker.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-aws-sagemaker",
+    "logo": "sagemaker.svg",
+    "command": "pip install flytekitplugins-awssagemaker",
+    "image-width": "70"
+  },
+  {
+    "name": "Great Expectations",
+    "type": "Flytekit Plugin",
+    "description": "Validate data with Great Expectations.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/greatexpectations/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-greatexpectations",
+    "logo": "greatexpectations.svg",
+    "command": "pip install flytekitplugins-great-expectations",
+    "image-width": "80"
+  },
+  {
+    "name": "Kubeflow PyTorch",
+    "type": "Native Backend Plugin",
+    "description": "Run distributed PyTorch training jobs w/ Kubeflow.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfpytorch/index.html#",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-pytorch",
+    "logo": "kubeflow.svg",
+    "command": "pip install flytekitplugins-kfpytorch",
+    "image-width": "120"
+  },
+  {
+    "name": "Kubeflow TensorFlow",
+    "type": "Native Backend Plugin",
+    "description": "Run distributed TF training jobs w/ Kubeflow.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-tensorflow",
+    "logo": "kubeflow.svg",
+    "command": "pip install flytekitplugins-kftenorflow",
+    "image-width": "120"
+  },
+  {
+    "name": "Hive",
+    "type": "External Service Plugin",
+    "description": "Run Hive jobs in Flyte workflows.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/hive/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-hive",
+    "logo": "hive.jpg",
+    "command": "pip install flytekitplugins-hive",
+    "image-width": "80"
+  },
+  {
+    "name": "Kubernetes Pods",
+    "type": "Native Backend Plugin",
+    "description": "Run K8s pods for arbitrary workloads.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/pod/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-k8s-pod",
+    "logo": "kubernetes.svg",
+    "command": "pip install flytekitplugins-pod",
+    "image-width": "120"
+  },
+  {
+    "name": "SQLAlchemy",
+    "type": "Flytekit Plugin",
+    "description": "Execute SQL queries as Flyte tasks.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/sql/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-sqlalchemy",
+    "logo": "sqlalchemy.png",
+    "command": "pip install flytekitplugins-sqlalchemy",
+    "image-width": "120"
+  },
+  {
+    "name": "Dolt",
+    "type": "Flytekit Plugin",
+    "description": "Version your SQL databases w/ Dolt.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/dolt/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-dolt",
+    "logo": "dolthub.svg",
+    "command": "pip install flytekitplugins-dolt",
+    "image-width": "120"
+  },
+  {
+    "name": "Papermill",
+    "type": "Flytekit Plugin",
+    "description": "Execute Jupyter notebooks w/ Papermill.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/papermilltasks/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-papermill",
+    "logo": "papermill.png",
+    "command": "pip install flytekitplugins-papermill",
+    "image-width": "150"
+  },
+  {
+    "name": "MPI",
+    "type": "Native Backend Plugin",
+    "description": "Run distributed training jobs w/ MPI operator.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfmpi/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-mpi",
+    "logo": "kubeflow.svg",
+    "command": "pip install flytekitplugins-kfmpi",
+    "image-width": "120"
+  },
+  {
+    "name": "Modin",
+    "type": "Flytekit Plugin",
+    "description": "Scale pandas workflows w/ Modin.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/modin_examples/index.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-modin",
+    "logo": "modin.png",
+    "command": "pip install flytekitplugins-modin",
+    "image-width": "120"
+  },
+  {
+    "name": "AWS Athena",
+    "type": "External Service Plugin",
+    "description": "Execute queries using AWS Athena.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/aws/athena/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/aws/athena.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-aws-athena",
+    "logo": "athena.svg",
+    "command": "pip install flytekitplugins-athena",
+    "image-width": "50"
+  },
+  {
+    "name": "Snowflake",
+    "type": "External Service Plugin",
+    "description": "Run Snowflake jobs in Flyte workflows.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/external_services/snowflake/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/webapi/snowflake.html#deployment-plugin-setup-webapi-snowflake",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-snowflake",
+    "logo": "snowflake.svg",
+    "command": "pip install flytekitplugins-snowflake",
+    "image-width": "50"
+  },
+  {
+    "name": "AWS Batch",
+    "type": "External Service Plugin",
+    "description": "Run Flyte tasks on AWS batch service.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/aws/batch/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/aws/batch.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-aws-batch",
+    "logo": "batch.jpg",
+    "command": "pip install flytekitplugins-awsbatch",
+    "image-width": "60"
+  },
+  {
+    "name": "BigQuery",
+    "type": "External Service Plugin",
+    "description": "Run BigQuery jobs in Flyte workflows.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/gcp/bigquery/index.html",
+    "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/gcp/bigquery.html",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-bigquery",
+    "logo": "bigquery.svg",
+    "command": "pip install flytekitplugins-bigquery",
+    "image-width": "60"
+  },
+  {
+    "name": "Whylogs",
+    "type": "Flytekit Plugin",
+    "description": "Generate summaries of datasets w/ Whylogs.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-whylogs",
+    "logo": "whylogs.png",
+    "command": "pip install flytekitplugins-whylogs",
+    "image-width": "120"
+  },
+  {
+    "name": "ONNX Scikit Learn",
+    "type": "Flytekit Plugin",
+    "description": "Generate ONNX models from Scikit Learn models.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-onnx-scikitlearn",
+    "logo": "onnx.png",
+    "command": "pip install flytekitplugins-onnxscikitlearn",
+    "image-width": "100"
+  },
+  {
+    "name": "ONNX PyTorch",
+    "type": "Flytekit Plugin",
+    "description": "Generate ONNX models from PyTorch models.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-onnx-pytorch",
+    "logo": "onnx.png",
+    "command": "pip install flytekitplugins-onnxpytorch",
+    "image-width": "100"
+  },
+  {
+    "name": "ONNX TensorFlow",
+    "type": "Flytekit Plugin",
+    "description": "Generate ONNX models from TensorFlow models.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-onnx-tensorflow",
+    "logo": "onnx.png",
+    "command": "pip install flytekitplugins-onnxtensorflow",
+    "image-width": "100"
+  },
+  {
+    "name": "Polars",
+    "type": "Flytekit Plugin",
+    "description": "Support polars.DataFrame as a data type.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-polars",
+    "logo": "polars.svg",
+    "command": "pip install flytekitplugins-polars",
+    "image-width": "80"
+  },
+  {
+    "name": "Horovod",
+    "type": "Tutorial",
+    "description": "Run distributed training w/ Horovod.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/ml_training/spark_horovod/index.html",
+    "logo": "horovod.png",
+    "image-width": "80"
+  },
+  {
+    "name": "Feast",
+    "type": "Tutorial",
+    "description": "Manage and serve ML features w/ Feast.",
+    "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/case_studies/feature_engineering/feast_integration/index.html",
+    "logo": "feast.png",
+    "image-width": "100"
+  }
+]
