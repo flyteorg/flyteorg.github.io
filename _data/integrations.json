@@ -15,9 +15,9 @@
     "description": "Validate pandas dataframes.",
     "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/flytekit_plugins/pandera_examples/index.html",
     "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-pandera",
-    "logo": "pandera.svg",
+    "logo": "pandera.png",
     "command": "pip install flytekitplugins-pandera",
-    "image-width": "150"
+    "image-width": "70"
   },
   {
     "name": "Spark",
@@ -58,9 +58,9 @@
     "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfpytorch/index.html#",
     "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
     "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-pytorch",
-    "logo": "kubeflow.svg",
+    "logo": "kubeflow.png",
     "command": "pip install flytekitplugins-kfpytorch",
-    "image-width": "120"
+    "image-width": "60"
   },
   {
     "name": "Kubeflow TensorFlow",
@@ -69,9 +69,9 @@
     "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kftensorflow/index.html",
     "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
     "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-tensorflow",
-    "logo": "kubeflow.svg",
+    "logo": "kubeflow.png",
     "command": "pip install flytekitplugins-kftenorflow",
-    "image-width": "120"
+    "image-width": "60"
   },
   {
     "name": "Hive",
@@ -130,9 +130,9 @@
     "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/kubernetes/kfmpi/index.html",
     "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/k8s/index.html",
     "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-kf-mpi",
-    "logo": "kubeflow.svg",
+    "logo": "kubeflow.png",
     "command": "pip install flytekitplugins-kfmpi",
-    "image-width": "120"
+    "image-width": "60"
   },
   {
     "name": "Modin",
@@ -184,7 +184,7 @@
     "documentation": "https://docs.flyte.org/projects/cookbook/en/latest/auto/integrations/gcp/bigquery/index.html",
     "plugin_setup": "https://docs.flyte.org/en/latest/deployment/plugin_setup/gcp/bigquery.html",
     "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-bigquery",
-    "logo": "bigquery.svg",
+    "logo": "bigquery.png",
     "command": "pip install flytekitplugins-bigquery",
     "image-width": "60"
   },

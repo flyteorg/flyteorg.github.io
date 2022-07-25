@@ -745,31 +745,10 @@ select {
   position: relative;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.left-0 {
   left: 0px;
 }
 
@@ -779,6 +758,10 @@ select {
 
 .bottom-3 {
   bottom: 0.75rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .z-50 {
@@ -799,10 +782,6 @@ select {
 
 .m-auto {
   margin: auto;
-}
-
-.m-3 {
-  margin: 0.75rem;
 }
 
 .mx-auto {
@@ -845,6 +824,11 @@ select {
   margin-bottom: 4rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -858,11 +842,6 @@ select {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mt-2 {
@@ -1073,6 +1052,10 @@ select {
   width: 5rem;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-9 {
   width: 2.25rem;
 }
@@ -1095,14 +1078,6 @@ select {
 
 .w-auto {
   width: auto;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .min-w-0 {
@@ -4003,12 +3978,12 @@ svg {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:grid-cols-6 {
@@ -4039,16 +4014,16 @@ svg {
     padding: 2.5rem;
   }
 
-  .md\:p-3 {
-    padding: 0.75rem;
-  }
-
   .md\:p-4 {
     padding: 1rem;
   }
 
   .md\:p-32 {
     padding: 8rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:py-10 {
@@ -4079,11 +4054,6 @@ svg {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .md\:py-1 {
@@ -4349,16 +4319,16 @@ svg {
     padding: 2.5rem;
   }
 
+  .lg\:p-3 {
+    padding: 0.75rem;
+  }
+
   .lg\:p-4 {
     padding: 1rem;
   }
 
   .lg\:p-52 {
     padding: 13rem;
-  }
-
-  .lg\:p-3 {
-    padding: 0.75rem;
   }
 
   .lg\:px-56 {
