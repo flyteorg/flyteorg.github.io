@@ -145,30 +145,31 @@
       mediaCarousel.trigger("stop.owl.autoplay");
     });
 
-/**
- * Feature showcase carousel
- * @TODO: We are temporarily disabling the slides. Instead we will combine all
- * video content into one slide; disable navigation, disable autoplay.
- */
- const featureTimeout = 90000;
+    /**
+     * Feature showcase carousel
+     * @TODO: We are temporarily disabling the slides. Instead we will combine all
+     * video content into one slide; disable navigation, disable autoplay.
+     */
+    const featureTimeout = 90000;
     const featureCarousel = $("#feature-carousel");
     let featureCurrentIndex = 1;
     let featureDebounce = null;
 
-    featureCarousel.owlCarousel({
-      loop: true,
-      items: 1,
-      margin: 10,
-      autoplayTimeout: false,
-      dots: false,
-      responsive: {
-        0: {
-          items: 1,
-          autoplay: false,
+    featureCarousel
+      .owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 10,
+        autoplayTimeout: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+            autoplay: false,
+          },
         },
-      },
-    }).on('changed.owl.carousel',function(event) {
-    });
+      })
+      .on("changed.owl.carousel", function (event) {});
 
     // carousel for the top banner
     var bannerCarousel = $("#banner-carousel");
@@ -180,13 +181,14 @@
       autoplay: true,
       dots: false,
       nav: false,
+      autoHeight: true,
       navText: [
         "<i class='fa fa-chevron-left'></i>",
-        "<i class='fa fa-chevron-right'>",
+        "<i class='fa fa-chevron-right'></i>",
       ],
     });
     $(".play").on("click", function () {
-      bannerCarousel.trigger("play.owl.autoplay", [2000]);
+      bannerCarousel.trigger("play.owl.autoplay", [10000]);
     });
     $(".stop").on("click", function () {
       bannerCarousel.trigger("stop.owl.autoplay");
@@ -195,9 +197,9 @@
     // load navText after 2 seconds
     setTimeout(function () {
       var carouselData = bannerCarousel.data();
-      var carouselOptions = carouselData['owl.carousel'].options;
+      var carouselOptions = carouselData["owl.carousel"].options;
       carouselOptions.nav = true;
-      bannerCarousel.trigger('refresh.owl.carousel');
+      bannerCarousel.trigger("refresh.owl.carousel");
     }, 2000);
 
     // testimonials carousel
@@ -215,7 +217,7 @@
         },
       },
     });
-    $(".feature-video").on("")
+    $(".feature-video").on("");
     $(".play").on("click", function () {
       testimonialsCarousel.trigger("play.owl.autoplay", [2000]);
     });

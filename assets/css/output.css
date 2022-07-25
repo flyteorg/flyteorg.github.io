@@ -737,8 +737,17 @@ select {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .inset-0 {
@@ -750,6 +759,26 @@ select {
 
 .right-0 {
   right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
 }
 
 .z-50 {
@@ -770,6 +799,10 @@ select {
 
 .m-auto {
   margin: auto;
+}
+
+.m-3 {
+  margin: 0.75rem;
 }
 
 .mx-auto {
@@ -825,6 +858,11 @@ select {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mt-2 {
@@ -1057,6 +1095,14 @@ select {
 
 .w-auto {
   width: auto;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .min-w-0 {
@@ -1471,9 +1517,9 @@ select {
   padding-bottom: 3rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .px-2 {
@@ -1838,7 +1884,13 @@ main {
   padding: 8px;
   text-align: center;
   color: #ffffff;
-  height: 40px;
+}
+
+.top-carousel-item {
+  padding-left: 1.25rem;
+  /* 20px */
+  padding-right: 1.25rem;
+  /* 20px */
 }
 
 h1 {
@@ -3987,16 +4039,16 @@ svg {
     padding: 2.5rem;
   }
 
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
   .md\:p-4 {
     padding: 1rem;
   }
 
   .md\:p-32 {
     padding: 8rem;
-  }
-
-  .md\:p-3 {
-    padding: 0.75rem;
   }
 
   .md\:py-10 {
@@ -4027,6 +4079,11 @@ svg {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:py-1 {
@@ -4298,6 +4355,10 @@ svg {
 
   .lg\:p-52 {
     padding: 13rem;
+  }
+
+  .lg\:p-3 {
+    padding: 0.75rem;
   }
 
   .lg\:px-56 {
