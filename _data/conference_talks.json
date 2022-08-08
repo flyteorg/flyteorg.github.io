@@ -8,7 +8,34 @@
           "talks": [
             {
               "title": "Type-Safe Data Processing and Machine Learning Pipelines with Flyte and Pandera",
-              "link": "https://www.datacouncil.ai/talks/type-safe-data-processing-and-machine-learning-pipelines-with-flyte-and-pandera?hsLang=en"
+              "video": "https://www.youtube.com/watch?v=R-6Q2E9DT8Q&list=PLAesBe-zAQmEod2ARZjjAHmGFoGcjaXK6"
+            }
+          ]
+        },
+        {
+          "name": "Data @Scale 2022",
+          "talks": [
+            {
+              "title": "Making Data Quality an integral part of developing Machine Learning and Data Products",
+              "video": "https://atscaleconference.com/videos/making-data-quality-an-integral-part-of-developing-machine-learning-and-data-products/"
+            }
+          ]
+        },
+        {
+          "name": "KCD Chennai 2022",
+          "talks": [
+            {
+              "title": "MLOps with Flyte: Remove the Barriers to Successfully Implement Machine Learning for Production Workloads",
+              "video": "https://www.youtube.com/watch?v=9DMAkrM_gOA&list=PLj6h78yzYM2PyeHXo0wdOp9oCf45SZS86"
+            }
+          ]
+        },
+        {
+          "name": "Scipy 2022",
+          "talks": [
+            {
+              "title": "Reliable, Reproducible, Recoverable & Auditable Machine Learning for Production Workloads with Flyte",
+              "video": "https://www.youtube.com/watch?v=EykWaiHHDNg"
             }
           ]
         }
@@ -146,6 +173,15 @@
   ],
   "podcasts": [
     {
+      "name": "Kelsey Hightower Twitter Space",
+      "data": [
+        {
+          "title": "Machine Learning in Production",
+          "link": "https://twitter.com/i/spaces/1ZkKzbXLekWKv"
+        }
+      ]
+    },
+    {
       "name": "Open Data Science",
       "data": [
         {
@@ -157,6 +193,10 @@
     {
       "name": "MLOps Coffee Session",
       "data": [
+        {
+          "title": "Why You Need More Than Airflow",
+          "link": "https://go.mlops.community/Oz48gY"
+        },
         {
           "title": "Flyte: an open-source tool for scalable, extensible, and portable workflows",
           "link": "https://anchor.fm/mlops/episodes/MLOps-Coffee-Sessions-12-Flyte-an-open-source-tool-for-scalable--extensible---and-portable-workflows-eksa5k"
