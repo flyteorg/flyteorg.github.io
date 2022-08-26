@@ -3866,6 +3866,11 @@ svg {
     margin-bottom: 4rem;
   }
 
+  .md\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -4175,6 +4180,11 @@ svg {
     margin-bottom: 11rem;
   }
 
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .lg\:mb-32 {
     margin-bottom: 8rem;
   }
@@ -4209,6 +4219,10 @@ svg {
 
   .lg\:ml-0 {
     margin-left: 0px;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .lg\:inline {
