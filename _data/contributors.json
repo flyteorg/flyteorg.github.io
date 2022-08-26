@@ -46,6 +46,16 @@
       "name": "Robin Kahlow",
       "github_url": "https://github.com/RobinKa",
       "avatar": "https://avatars.githubusercontent.com/u/2614101?v=4"
+    },
+    {
+      "name": "Evan Sadler",
+      "github_url": "https://github.com/esadler-hbo",
+      "avatar": "https://avatars.githubusercontent.com/u/97543480?v=4"
+    },
+    {
+      "name": "Calvin Leather",
+      "github_url": "https://github.com/CalvinLeather",
+      "avatar": "https://avatars.githubusercontent.com/u/6288302?v=4"
     }
   ],
   "passenger": [
@@ -68,6 +78,11 @@
       "name": "David Przybilla",
       "github_url": "https://github.com/dav009",
       "avatar": "https://avatars.githubusercontent.com/u/1659415?v=4"
+    },
+    {
+      "name": "Sujith Samuel",
+      "github_url": "https://github.com/samuel-sujith",
+      "avatar": "https://avatars.githubusercontent.com/u/33272587?v=4"
     }
   ]
 }
