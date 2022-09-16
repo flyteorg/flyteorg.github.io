@@ -3861,11 +3861,6 @@ svg {
     margin-bottom: 0px;
   }
 
-  .md\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .md\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -4201,6 +4196,10 @@ svg {
     margin-bottom: 2.5rem;
   }
 
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:ml-auto {
     margin-left: auto;
   }
@@ -4219,10 +4218,6 @@ svg {
 
   .lg\:ml-0 {
     margin-left: 0px;
-  }
-
-  .lg\:mb-16 {
-    margin-bottom: 4rem;
   }
 
   .lg\:inline {
