@@ -82,123 +82,28 @@ title: Flyte
     <div class="large-12 columns">
       <div id="media-carousel" class="owl-carousel owl-theme">
         <!--cards-->
-        <a href="https://blog.flyte.org/ray-and-flyte" target="_blank">
+        {% for carousel_item in site.data.carousel %}
+        <a href="{{ carousel_item.url }}" target="_blank">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
             <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
+              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal md:h-96 sm:h-80 h-80 w-full"
             >
               <img
-                src="https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1661400148396%2F-iy8AJru-.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
+                src="{{ carousel_item.image }}"
                 class="object-cover p-1 h-48 sm:h-48 md:h-52 rounded-xl"
               />
               <div class="p-4">
-                <span class="badge">Blog</span>
+                <span class="badge">{{ carousel_item.badge }}</span>
               </div>
               <div
                 class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
               >
-                Ray and Flyte: Distributed Computing and Orchestration
+                 {{ carousel_item.title }}
               </div>
             </div>
           </div>
         </a>
-        <a href="https://blog.flyte.org/flyte-cheat-sheet" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img
-                src="https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1663157065179%2F3cs0g2WZ2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
-                class="object-cover p-1 h-48 sm:h-48 md:h-52 rounded-xl"
-              />
-              <div class="p-4">
-                <span class="badge">Blog</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Flyte Cheat Sheet
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=no26Y4w_S1Q" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/schibsted.jpg" |
-              prepend: site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl" />
-              <div class="p-4">
-                <span class="badge">Case Study</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                How the Schibsted Media Group Are Planning to Onboard Their ML
-                Workflows to Flyte
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=AJnNXrdaQHE" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/biotech.png" | prepend:
-              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl" />
-              <div class="p-4">
-                <span class="badge">Panel Discussion</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Flyte for Biotech
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=HE7lJFW6ki8" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/fireside.png" | prepend:
-              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl" />
-              <div class="p-4">
-                <span class="badge">Panel Discussion</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Fireside Chat
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=3P49vFWkUxs" target="_blank">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div
-              class="bg-carousel shadow-inner rounded-xl flex flex-col leading-normal lg:h-96 md:h-96 sm:h-80 h-80 w-full"
-            >
-              <img src="{{ "/assets/images/carousel/whylogs.webp" | prepend:
-              site.url }}" class="object-cover p-1 h-48 sm:h-48 md:h-52
-              rounded-xl" />
-              <div class="p-4">
-                <span class="badge">Integration</span>
-              </div>
-              <div
-                class="font-bold text-sm sm:text-sm md:text-lg lg:text-xl text-white card-title px-4"
-              >
-                Model Monitoring with WhyLogs and Flyte
-              </div>
-            </div>
-          </div>
-        </a>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -1616,7 +1521,7 @@ title: Flyte
         TRUSTED BY
       </p>
       <div
-        class="grid py-4 gap-6 justify-center grid-cols-2 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap-6 px-10 sm:px-24 md:px-20 lg:px-32 justify-center items-center"
+        class="grid py-4 gap-y-6 gap-x-6 justify-center grid-cols-2 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 px-10 sm:px-24 md:px-20 lg:px-32 justify-center items-center"
       >
         <div class="ml-auto mr-auto">
           <a href="https://www.lyft.com" target="_blank">
@@ -1675,7 +1580,25 @@ title: Flyte
         <div class="ml-auto mr-auto">
           <a href="https://latch.bio" target="_blank">
             <img src="{{ "/assets/images/latchbio.svg" | prepend: site.url }}"
-            width="200" title="Latch" alt="Latch" class="w-28"/>
+            title="Latch" alt="Latch" class="w-28"/>
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://pachama.com/" target="_blank">
+            <img src="{{ "/assets/images/pachama.svg" | prepend: site.url }}"
+            title="Pachama" alt="Pachama" class="w-28"/>
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://ntropy.com/" target="_blank">
+            <img src="{{ "/assets/images/ntropy.svg" | prepend: site.url }}"
+            title="Ntropy" alt="Ntropy" class="w-8"/>
+          </a>
+        </div>
+        <div class="ml-auto mr-auto">
+          <a href="https://porchgroup.com/" target="_blank">
+            <img src="{{ "/assets/images/porch.png" | prepend: site.url }}"
+            title="Porch" alt="Porch" class="w-20"/>
           </a>
         </div>
       </div>

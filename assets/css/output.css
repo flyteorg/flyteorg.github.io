@@ -1052,16 +1052,16 @@ select {
   width: 5rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
 
 .w-9 {
   width: 2.25rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-1\/2 {
@@ -1210,10 +1210,6 @@ select {
   justify-content: space-between;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1224,6 +1220,15 @@ select {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .self-stretch {
@@ -4006,6 +4011,11 @@ svg {
     gap: 1.75rem;
   }
 
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
   .md\:p-40 {
     padding: 10rem;
   }
@@ -4316,12 +4326,13 @@ svg {
     justify-content: space-between;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .lg\:p-10 {
