@@ -1,0 +1,38 @@
+[
+  {
+    "title": "How Infinome is Using Flyte - Krishna Yerramsetty",
+    "url": "https://www.youtube.com/watch?v=GsJK3_-SRwo",
+    "image": "https://i.ytimg.com/an_webp/GsJK3_-SRwo/mqdefault_6s.webp?du=3000&sqp=CLD2xJkG&rs=AOn4CLBieY0vMJFK5H67XhipSndvTkEqfA",
+    "badge": "Case Study"
+  },
+  {
+    "title": "Flyte Cheat Sheet",
+    "url": "https://blog.flyte.org/flyte-cheat-sheet",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1663157065179%2F3cs0g2WZ2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "badge": "Blog"
+  },
+  {
+    "title": "Ray and Flyte: Distributed Computing and Orchestration",
+    "url": "https://blog.flyte.org/ray-and-flyte",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1661400148396%2F-iy8AJru-.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "badge": "Blog"
+  },
+  {
+    "title": "Flyte for Biotech",
+    "url": "https://www.youtube.com/watch?v=AJnNXrdaQHE",
+    "image": "/assets/images/carousel/biotech.png",
+    "badge": "Panel Discussion"
+  },
+  {
+    "title": "Fireside Chat",
+    "url": "https://www.youtube.com/watch?v=HE7lJFW6ki8",
+    "image": "/assets/images/carousel/fireside.png",
+    "badge": "Panel Discussion"
+  },
+  {
+    "title": "Model Monitoring with WhyLogs and Flyte",
+    "url": "https://www.youtube.com/watch?v=3P49vFWkUxs",
+    "image": "/assets/images/carousel/whylogs.webp",
+    "badge": "Integration"
+  }
+]
