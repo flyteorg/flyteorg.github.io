@@ -2,8 +2,14 @@
   {
     "title": "How Infinome is Using Flyte - Krishna Yerramsetty",
     "url": "https://www.youtube.com/watch?v=GsJK3_-SRwo",
-    "image": "https://i.ytimg.com/an_webp/GsJK3_-SRwo/mqdefault_6s.webp?du=3000&sqp=CLD2xJkG&rs=AOn4CLBieY0vMJFK5H67XhipSndvTkEqfA",
+    "image": "https://i.ytimg.com/an_webp/GsJK3_-SRwo/mqdefault_6s.webp?du=3000&sqp=CLKRzJkG&rs=AOn4CLBOmuoLno0_DTsCZDNw9yyulQNsqw",
     "badge": "Case Study"
+  },
+  {
+    "title": "Meet Flyte and UnionML at Hacktoberfest 2022",
+    "url": "https://blog.flyte.org/meet-flyte-and-unionml-at-hacktoberfest-2022",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1664291742263%2FfVeNYo1dP.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "badge": "Blog"
   },
   {
     "title": "Flyte Cheat Sheet",
