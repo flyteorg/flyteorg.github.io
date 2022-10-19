@@ -4242,10 +4242,6 @@ svg {
     display: none;
   }
 
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
   .lg\:w-5\/6 {
     width: 83.333333%;
   }

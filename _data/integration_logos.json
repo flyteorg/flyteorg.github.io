@@ -30,5 +30,6 @@
   },
   { "logo": "bigquery.png", "width": "56px", "name": "BigQuery" },
   { "logo": "onnx.png", "width": "", "name": "ONNX" },
-  { "logo": "parquet.svg", "width": "", "name": "Parquet" }
+  { "logo": "parquet.svg", "width": "", "name": "Parquet" },
+  { "logo": "dbt.svg", "width": "64px", "name": "DBT" }
 ]

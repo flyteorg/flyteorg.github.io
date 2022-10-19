@@ -229,6 +229,15 @@
     "image-width": "100"
   },
   {
+    "name": "DBT",
+    "type": "Flytekit Plugin",
+    "description": "Perform DBT tasks.",
+    "github": "https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-dbt",
+    "logo": "dbt.svg",
+    "command": "pip install flytekitplugins-dbt",
+    "image-width": "100"
+  },
+  {
     "name": "Polars",
     "type": "Flytekit Plugin",
     "description": "Support polars.DataFrame as a data type.",
