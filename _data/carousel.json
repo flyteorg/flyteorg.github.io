@@ -1,14 +1,14 @@
 [
   {
     "title": "Flyte Map Tasks: A Simpler Alternative to Apache Spark",
-    "url": "https://www.youtube.com/watch?v=GsJK3_-SRwo",
+    "url": "https://blog.flyte.org/flyte-map-tasks-a-simpler-alternative-to-apache-spark",
     "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1664881284402%2Fsj_A8A4go.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
     "badge": "Blog"
   },
   {
     "title": "How Infinome is Using Flyte - Krishna Yerramsetty",
     "url": "https://www.youtube.com/watch?v=GsJK3_-SRwo",
-    "image": "https://i.ytimg.com/an_webp/GsJK3_-SRwo/mqdefault_6s.webp?du=3000&sqp=CNLBv5oG&rs=AOn4CLBQo-q6ALHgiz39QUX9Refj0dbOKg",
+    "image": "/assets/images/carousel/infinome.webp",
     "badge": "Case Study"
   },
   {
