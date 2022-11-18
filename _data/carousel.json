@@ -1,32 +1,32 @@
 [
   {
-    "title": "Flyte Map Tasks: A Simpler Alternative to Apache Spark",
-    "url": "https://blog.flyte.org/flyte-map-tasks-a-simpler-alternative-to-apache-spark",
-    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1664881284402%2Fsj_A8A4go.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
-    "badge": "Blog"
-  },
-  {
-    "title": "How Infinome is Using Flyte - Krishna Yerramsetty",
-    "url": "https://www.youtube.com/watch?v=GsJK3_-SRwo",
-    "image": "/assets/images/carousel/infinome.webp",
+    "title": "Flyte @ Embark Veterinary: Research and Operational Dataflows ",
+    "url": "https://www.youtube.com/watch?v=zk3KFKYBRhU",
+    "image": "/assets/images/carousel/embark.webp",
     "badge": "Case Study"
   },
   {
-    "title": "Meet Flyte and UnionML at Hacktoberfest 2022",
-    "url": "https://blog.flyte.org/meet-flyte-and-unionml-at-hacktoberfest-2022",
-    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1664291742263%2FfVeNYo1dP.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "title": "Flyte x UnionML: Hacktoberfest 2022 Wrap-Up",
+    "url": "https://blog.flyte.org/hacktoberfest-2022-wrap-up",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1668495828238%2F3pWKikbeJ.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "badge": "Announcement"
+  },
+  {
+    "title": "Flyte Monthly: Nov 2022 Newsletter",
+    "url": "https://blog.flyte.org/flyte-monthly-nov-2022",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1668419914743%2FQuR70XFzn.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
     "badge": "Blog"
+  },
+  {
+    "title": "Flyte @ Lacuna.ai - Leveraging Flyte for Transportation Data Science",
+    "url": "https://www.youtube.com/watch?v=2-3nOahd3IY",
+    "image": "/assets/images/carousel/lacuna.jpg",
+    "badge": "Case Study"
   },
   {
     "title": "Flyte Cheat Sheet",
     "url": "https://blog.flyte.org/flyte-cheat-sheet",
     "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1663157065179%2F3cs0g2WZ2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
     "badge": "Blog"
-  },
-  {
-    "title": "Flyte for Biotech",
-    "url": "https://www.youtube.com/watch?v=AJnNXrdaQHE",
-    "image": "/assets/images/carousel/biotech.png",
-    "badge": "Panel Discussion"
   }
 ]
