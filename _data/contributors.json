@@ -14,6 +14,11 @@
       "name": "Matthew Griffin",
       "github_url": "https://github.com/NotMatthewGriffin",
       "avatar": "https://avatars.githubusercontent.com/u/19853373?v=4"
+    },
+    {
+      "name": "Ryan Nazareth",
+      "github_url": "https://github.com/ryankarlos",
+      "avatar": "https://avatars.githubusercontent.com/u/16509490?v=4"
     }
   ],
   "host": [
@@ -76,6 +81,16 @@
       "name": "Justin Tyberg",
       "github_url": "https://github.com/jtyberg",
       "avatar": "https://avatars.githubusercontent.com/u/359081?v=4"
+    },
+    {
+      "name": "Daniel Shuy",
+      "github_url": "https://github.com/daniel-shuy",
+      "avatar": "https://avatars.githubusercontent.com/u/17351764?v=4"
+    },
+    {
+      "name": "Jeremy Smith",
+      "github_url": "https://github.com/jerempy",
+      "avatar": "https://avatars.githubusercontent.com/u/95110820?v=4"
     }
   ],
   "passenger": [
