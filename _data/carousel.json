@@ -1,32 +1,32 @@
 [
   {
+    "title": "Talk on Operationalizing ML: An Interview Study + Panel",
+    "url": "https://www.meetup.com/union-ai/events/289700411/",
+    "image": "https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F508777919%2F676x380.webp&w=3840&q=75",
+    "badge": "Event"
+  },
+  {
+    "title": "Flyte at Pachama",
+    "url": "https://www.youtube.com/watch?v=ALZym7Ismc4",
+    "image": "/assets/images/carousel/pachama.webp",
+    "badge": "Case Study"
+  },
+  {
+    "title": "Airflow vs. Flyte Cheat Sheet",
+    "url": "https://blog.flyte.org/airflow-vs-flyte-cheat-sheet",
+    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1669802435719%2FYejgPExn-.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
+    "badge": "Blog"
+  },
+  {
     "title": "Flyte @ Embark Veterinary: Research and Operational Dataflows ",
     "url": "https://www.youtube.com/watch?v=zk3KFKYBRhU",
     "image": "/assets/images/carousel/embark.webp",
     "badge": "Case Study"
   },
   {
-    "title": "Flyte x UnionML: Hacktoberfest 2022 Wrap-Up",
-    "url": "https://blog.flyte.org/hacktoberfest-2022-wrap-up",
-    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1668495828238%2F3pWKikbeJ.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
-    "badge": "Announcement"
-  },
-  {
     "title": "Flyte Monthly: Nov 2022 Newsletter",
     "url": "https://blog.flyte.org/flyte-monthly-nov-2022",
     "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1668419914743%2FQuR70XFzn.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
-    "badge": "Blog"
-  },
-  {
-    "title": "Flyte @ Lacuna.ai - Leveraging Flyte for Transportation Data Science",
-    "url": "https://www.youtube.com/watch?v=2-3nOahd3IY",
-    "image": "/assets/images/carousel/lacuna.jpg",
-    "badge": "Case Study"
-  },
-  {
-    "title": "Flyte Cheat Sheet",
-    "url": "https://blog.flyte.org/flyte-cheat-sheet",
-    "image": "https://blog.flyte.org/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1663157065179%2F3cs0g2WZ2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
     "badge": "Blog"
   }
 ]
